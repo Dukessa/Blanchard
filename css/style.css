@@ -1942,6 +1942,7 @@ section,
 }
 
 .swiper-slider:active {
+  outline: none;
   border: 1px solid var(--amethyst);
 }
 
