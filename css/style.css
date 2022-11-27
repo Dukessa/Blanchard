@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 1 version
+*/
+
 
 html {
   scroll-behavior: smooth;
@@ -2036,19 +2043,20 @@ section,
 .icon-i {
   position: absolute;
   display: inline-block;
-  top: 35%;
-  left: 48%;
+  top: 40%;
+  left: 50%;
   height: 14px;
   font-size: 14px;
   line-height: 19px;
-  -webkit-transform: translate(-52%, -57%);
-  transform: translate(-52%, -57%);
+  -webkit-transform: translate(-60%, -50%);
+  transform: translate(-60%, -50%);
   color: var(--black);
   opacity: 1;
 }
 
 .icon__hover {
   position: absolute;
+  display: inline-block;
   width: 9.54px;
   height: 1.48px;
   background-color: var(--white);
@@ -2056,17 +2064,17 @@ section,
 }
 
 .icon__hover-left {
-  top: 40%;
-  left: 23%;
-  -webkit-transform: rotate(-45deg) translateY(-57%);
-  transform: rotate(-45deg) translateY(-57%);
+  top: 50%;
+  left: 25%;
+  -webkit-transform: rotate(-45deg) translateY(-50%);
+  transform: rotate(-45deg) translateY(-50%);
 }
 
 .icon__hover-right {
-  top: 40%;
-  right: 23%;
-  -webkit-transform: rotate(45deg) translateY(-57%);
-  transform: rotate(45deg) translateY(-57%);
+  top: 50%;
+  right: 25%;
+  -webkit-transform: rotate(45deg) translateY(-50%);
+  transform: rotate(45deg) translateY(-50%);
 }
 
 .icon:hover svg path {
