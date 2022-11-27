@@ -1299,7 +1299,7 @@
 
   .popup__box {
     flex-direction: column;
-    justify-content: normal;
+    justify-content: center;
     width: 100%;
     height: 100vh;
     overflow: scroll;
@@ -1307,12 +1307,16 @@
 
   .popup__img {
     width: calc(100% - var(--pright) - var(--pleft));
-    height: 50vh;
+    height: auto;
+  }
+
+  .popup__img img {
+    height: auto;
   }
 
   .popup__item {
     width: calc(100% - var(--pright) - var(--pleft));
-    height: 50vh;
+    height: auto;
     min-height: 400px;
   }
 
@@ -1357,7 +1361,6 @@
     align-content: normal;
     justify-content: space-between;
     padding: 26px 0 0 0;
-    height: 180px;
   }
 
   .tabs__title {
@@ -1589,7 +1592,8 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 321px) {
+
   .hero__box {
     overflow: scroll;
   }
@@ -1606,9 +1610,5 @@
   .form__desc {
     margin-bottom: 21px;
     font-size: 14px;
-  }
-  
-  .accordion__item__box {
-    height: 200px;
   }
 }
