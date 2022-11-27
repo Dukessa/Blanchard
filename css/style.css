@@ -2041,6 +2041,7 @@ section,
 
 .icon-i {
   position: absolute;
+  display: inline-block;
   top: 35%;
   left: 48%;
   height: 14px;
