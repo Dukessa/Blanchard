@@ -1133,6 +1133,9 @@
   }
 
   /*hero*/
+  .hero__container {
+    height: auto;
+  }
 
   .hero__container img {
     min-height: 310px;
