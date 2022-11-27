@@ -187,6 +187,7 @@
   }
 
   .search-svg {
+    outline: none;
     margin-right: 0;
   }
 
