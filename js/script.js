@@ -12,7 +12,7 @@ function init() {
   });
 
   myMap.behaviors.disable('scrollZoom');
-
+  myMap.behaviors.disable('drag');
 
   var myPlacemark = new ymaps.Placemark([55.758468, 37.601088], {}, {
     iconLayout: 'default#image',
