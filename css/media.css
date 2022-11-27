@@ -1589,6 +1589,9 @@
 }
 
 @media (max-width: 321px) {
+  .hero__box {
+    overflow: scroll;
+  }
 
   .search--js {
     right: calc(var(--pright) + 23px);
