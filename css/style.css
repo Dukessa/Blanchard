@@ -1525,7 +1525,6 @@ section,
 .gag__box {
   display: flex;
   justify-content: space-between;
-  padding-top: 25px;
   padding-right: 0;
   padding-left: 0;
   padding-bottom: 25px;
@@ -1839,13 +1838,12 @@ section,
 
 .partners__link:focus-visible {
   outline: none;
-  padding: 2px 5px 2px 5px;
+  padding: 2px 5px 2px 0;
   background-color: var(--amethyst);
   color: var(--white);
 }
 
 .partners__link:hover {
-
   border-bottom: 1px solid var(--amethyst);
   background-color: transparent;
   color: var(--amethyst);
@@ -2063,8 +2061,6 @@ section,
   visibility: visible;
 }
 
-
-
 /*form*/
 
 .title-hidden {
@@ -2225,6 +2221,7 @@ section,
 }
 
 .telegram:focus-visible {
+  outline: none;
   border: 2px solid var(--amethyst);
 }
 
