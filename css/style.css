@@ -1918,6 +1918,7 @@ section,
   align-content: center;
   align-items: center;
   border: 1px solid var(--silver);
+  outline: none;
 }
 
 .swiper-slider img {
@@ -1926,6 +1927,7 @@ section,
           filter: grayscale(1);
   -o-object-fit: contain;
      object-fit: contain;
+  outline: none;
   opacity: 0.4;
   transition: all 0.3s ease-in-out;
 }
