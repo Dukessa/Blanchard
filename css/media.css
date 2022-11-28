@@ -1509,6 +1509,10 @@
     flex-direction: column;
     align-items: flex-start;
   }
+  
+  .just-validate-error-label {
+    top: -18px;
+  }
 
   .whatsapp {
     width: 50px;
