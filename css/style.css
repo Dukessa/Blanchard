@@ -1202,12 +1202,12 @@ section,
 .swiper__box-item::after {
   content: "";
   position: absolute;
-  top: 48%;
+  top: 50%;
   right: 0;
   bottom: 0;
-  left: 49%;
+  left: 50%;
   width: 87%;
-  height: 85%;
+  height: 90%;
   background-image: url("../img/hover.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -1215,6 +1215,7 @@ section,
   transform: translate(-50%, -50%);
   z-index: 2000;
   visibility: hidden;
+  opacity: 0;
 }
 
 .swiper__box-item::before {
@@ -1230,14 +1231,17 @@ section,
   background-size: 100% 100%;
   z-index: 2000;
   visibility: hidden;
+  opacity: 0;
 }
 
 .swiper__box-item:hover::after {
   visibility: visible;
+  opacity: 1;
 }
 
 .swiper__box-item:active::before {
   visibility: visible;
+  opacity: 1;
 }
 
 .swiper-pagination-lock {
