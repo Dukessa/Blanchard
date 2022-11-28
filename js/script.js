@@ -7,9 +7,9 @@ function init() {
     zoom: 13,
     controls: []
   },
-  {
-    suppressMapOpenBlock: true
-  });
+    {
+      suppressMapOpenBlock: true
+    });
 
   myMap.behaviors.disable('scrollZoom');
   myMap.behaviors.disable('drag');
@@ -96,6 +96,24 @@ document.querySelectorAll('.accordion__container').forEach(function (element) {
     element.querySelector('.accordion__item').classList.toggle('accordion__item-js');
     element.querySelector('.acordion-title').classList.toggle('item-title--js');
     element.querySelector('.accordion__btn').classList.toggle('slider-btn--js');
+  });
+
+  element.querySelectorAll('.accordion__item-btn').forEach(function (button) {
+    button.addEventListener('click', function () {
+      element.closest('.accordion__container').classList.remove('accordion__container-js');
+      element.querySelector('.accordion__item').classList.remove('accordion__item-js');
+      element.querySelector('.acordion-title').classList.remove('item-title--js');
+      element.querySelector('.accordion__btn').classList.remove('slider-btn--js');
+    });
+  });
+
+  document.querySelectorAll('.tabs-link').forEach(function (link) {
+    link.addEventListener('click', function () {
+      element.closest('.accordion__container').classList.remove('accordion__container-js');
+      element.querySelector('.accordion__item').classList.remove('accordion__item-js');
+      element.querySelector('.acordion-title').classList.remove('item-title--js');
+      element.querySelector('.accordion__btn').classList.remove('slider-btn--js');
+    });
   });
 });
 
@@ -316,13 +334,13 @@ document.querySelectorAll('.header__container').forEach(function (element) {
 
 //popup
 
-document.querySelectorAll('.swiper__box-item').forEach(function(element) {
-  element.addEventListener('click', function() {
+document.querySelectorAll('.swiper__box-item').forEach(function (element) {
+  element.addEventListener('click', function () {
     document.querySelector('.popup').classList.remove('js--off');
     document.querySelector('.popup').classList.add('popup--js');
   });
 
-  document.querySelector('.popup__close').addEventListener('click', function() {
+  document.querySelector('.popup__close').addEventListener('click', function () {
     document.querySelector('.popup').classList.remove('popup--js');
     document.querySelector('.popup').classList.add('js--off');
   });
