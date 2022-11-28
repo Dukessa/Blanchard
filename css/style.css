@@ -1236,7 +1236,7 @@ section,
   visibility: visible;
 }
 
-.swiper__box-item:active::before:not(:hover) {
+.swiper__box-item:active::before {
   visibility: visible;
 }
 
