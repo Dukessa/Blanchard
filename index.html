@@ -14,8 +14,7 @@
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" type="text/css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" type="text/css">
   <link rel="stylesheet" href="css/normalize.css" type="text/css">
-  <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script defer src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/media.css" type="text/css">
@@ -34,14 +33,14 @@
         </div>
 
 
-        <div class="header__container-box" tabindex="0">
+        <div class="header__container-box">
           <a class="header__logo" role="link" aria-label="Логотип">
             <img src="./svg/main-logotip.svg" alt="Логотип" aria-hidden="true">
           </a>
         </div>
 
         <nav class="nav header__container-nav">
-          <ul class="header__nav scrollto" tabindex="0" role="menu" aria-label="навигация по странице">
+          <ul class="header__nav scrollto" role="menu" aria-label="навигация по странице">
             <li class="nav__box">
               <a href="#preview" class="nav__link">О&nbsp;нас</a>
             </li>
@@ -78,9 +77,9 @@
 
         <div class="header__menu menu">
           <nav class="nav menu__nav">
-            <ul class="nav__container" tabindex="0" role="menu" aria-label="Выбор художников">
+            <ul class="nav__container" role="menu" aria-label="Выбор художников">
               <li class="menu__link">
-                <button class="menu__link-item" tabindex="0">
+                <button class="menu__link-item">
                   Реализм
                   <span class="menu__icon">
                     <span class="header__line menu__icon-left"></span>
@@ -88,16 +87,18 @@
                   </span>
                 </button>
 
-                <div class="menu__item js--off" data-simplebar tabindex="0" role="menuitem">
+                <div class="menu__item js--off" data-simplebar role="menuitem">
                   <a href="#" class="menu__item-style tintoretto">Тинторетто</a>
                   <a href="#" class="menu__item-style friedrich">Фридрих</a>
+                  <a href="#" class="menu__item-style leonardo">Леонардо</a>
+                  <a href="#" class="menu__item-style verrocchio">Верроккьо</a>
                   <a href="#" class="menu__item-style leonardo">Леонардо</a>
                   <a href="#" class="menu__item-style verrocchio">Верроккьо</a>
                 </div>
               </li>
 
               <li class="menu__link">
-                <button class="menu__link-item" tabindex="0">
+                <button class="menu__link-item">
                   Импрессионизм
                   <span class="menu__icon">
                     <span class="header__line menu__icon-left"></span>
@@ -105,7 +106,7 @@
                   </span>
                 </button>
 
-                <div class="menu__item js--off" data-simplebar tabindex="0" role="menuitem">
+                <div class="menu__item js--off" data-simplebar role="menuitem">
                   <a href="#" class="menu__item-style monet">Моне</a>
                   <a href="#" class="menu__item-style sisley">Сислей</a>
                   <a href="#" class="menu__item-style manet">Мане</a>
@@ -114,7 +115,7 @@
               </li>
 
               <li class="menu__link">
-                <button class="menu__link-item" tabindex="0">
+                <button class="menu__link-item">
                   Постимпрессионизм
                   <span class="menu__icon">
                     <span class="header__line menu__icon-left"></span>
@@ -122,7 +123,7 @@
                   </span>
                 </button>
 
-                <div class="menu__item js--off" data-simplebar tabindex="0" role="menuitem">
+                <div class="menu__item js--off" data-simplebar role="menuitem">
                   <a href="#" class="menu__item-style gofh">Ван Гог</a>
                   <a href="#" class="menu__item-style cezanne">Сезанн</a>
                   <a href="#" class="menu__item-style gauguin">Гоген</a>
@@ -131,7 +132,7 @@
               </li>
 
               <li class="menu__link">
-                <button class="menu__link-item" tabindex="0">
+                <button class="menu__link-item">
                   Авангард
                   <span class="menu__icon">
                     <span class="header__line menu__icon-left"></span>
@@ -139,7 +140,7 @@
                   </span>
                 </button>
 
-                <div class="menu__item js--off" data-simplebar tabindex="0" role="menuitem">
+                <div class="menu__item js--off" data-simplebar role="menuitem">
                   <a href="#" class="menu__item-style kandinsky">Кандинский</a>
                   <a href="#" class="menu__item-style marinetti">Маринетти</a>
                   <a href="#" class="menu__item-style malevich">Малевич</a>
@@ -148,7 +149,7 @@
               </li>
 
               <li class="menu__link">
-                <button class="menu__link-item" tabindex="0">
+                <button class="menu__link-item">
                   Футуризм
                   <span class="menu__icon">
                     <span class="header__line menu__icon-left"></span>
@@ -156,7 +157,7 @@
                   </span>
                 </button>
 
-                <div class="menu__item js--off" data-simplebar tabindex="0" role="menuitem">
+                <div class="menu__item js--off" data-simplebar role="menuitem">
                   <a href="#" class="menu__item-style carra">Карра</a>
                   <a href="#" class="menu__item-style pratella">Прателла</a>
                   <a href="#" class="menu__item-style severini">Северини</a>
@@ -177,7 +178,7 @@
               </svg>
             </button>
             <input class="search-input" type="search" name="search" id="search" placeholder="Поиск по сайту"
-              autocomplete="off" tabindex="0">
+              autocomplete="off">
           </div>
         </div>
 
@@ -232,7 +233,7 @@
               Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт
               предпосылки<br class="hero__text-br">для новых предложений
             </p>
-            <a href="#form" class="hero__btn" tabindex="0">Подписаться&nbsp;на&nbsp;рассылку</a>
+            <a href="#form" class="hero__btn">Подписаться&nbsp;на&nbsp;рассылку</a>
           </div>
         </div>
       </div>
@@ -270,7 +271,7 @@
             <div class="select form-down">
               <div class="select__wrapper-js">
                 <div class="select__wrapper-btn choices">
-                  <button class="select__top" tabindex="0" aria-label="Выбрать исскуство">
+                  <button class="select__top" aria-label="Выбрать исскуство">
                     Живопись
                   </button>
                   <div class="select__icon select__icon--js--off">
@@ -278,38 +279,35 @@
                 </div>
 
                 <div class="select__list js--off">
-                  <button class="select__list-item" tabindex="0">Рисунок</button>
-                  <button class="select__list-item" tabindex="0">Скульптура</button>
-                  <button class="select__list-item" tabindex="0">Живопись</button>
+                  <button class="select__list-item help">Рисунок</button>
+                  <button class="select__list-item help-1">Скульптура</button>
+                  <button class="select__list-item help-2 js--off">Живопись</button>
                 </div>
 
                 <input type="text" class="select-input" disabled aria-hidden="true">
               </div>
             </div>
 
-            <div class="checkbox" tabindex="0" role="menubar" aria-label="Выбрать век">
-              <label for="checkbox-1" class="checkbox__elem" tabindex="0">
+            <div class="checkbox" role="menubar" aria-label="Выбрать век">
+              <label for="checkbox-1" class="checkbox__elem">
                 <input class="input-checkbox" type="radio" name="radio" id="checkbox-1" tabindex="0">
-                <span class="checkbox__elem-check"></span>
                 XIX век
               </label>
 
-              <label for="checkbox-2" class="checkbox__elem" tabindex="0">
+              <label for="checkbox-2" class="checkbox__elem">
                 <input class="input-checkbox" type="radio" name="radio" id="checkbox-2" tabindex="0">
-                <span class="checkbox__elem-check"></span>
                 XX век
               </label>
 
-              <label for="checkbox-3" class="checkbox__elem" tabindex="0">
+              <label for="checkbox-3" class="checkbox__elem">
                 <input class="input-checkbox" type="radio" name="radio" id="checkbox-3" tabindex="0">
-                <span class="checkbox__elem-check"></span>
                 Современность
               </label>
             </div>
           </div>
 
           <div class="gallery__slider swiper">
-            <nav class="gallery__slider-btn" tabindex="0">
+            <nav class="gallery__slider-btn">
               <button class="gallery__btn btn-left" tabindex="0">Назад
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -321,7 +319,7 @@
                   <path d="M16 20L11 15L16 10" stroke="white" />
                 </svg>
               </button>
-              <span class="swiper__namber swiper-pagination" tabindex="0"></span>
+              <span class="swiper__namber swiper-pagination"></span>
               <button class="gallery__btn btn-right" tabindex="0">Вперед
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -337,28 +335,28 @@
 
             <div class="gallery__slider-box swiper-container swiper">
               <div class="swiper__track swiper-wrapper">
-                <div class="swiper__box-item swiper-slide">
-                  <img src="./img/1920Rectangle70.jpg" alt="Малевич К. С. картина Торс" tabindex="0">
+                <div class="swiper__box-item swiper-slide" tabindex="0">
+                  <img src="./img/1920Rectangle70.jpg" alt="Малевич К. С. картина Торс">
                 </div>
 
                 <div class="swiper__box-item swiper-slide" tabindex="0">
-                  <img src="./img/1920Rectangle93.jpg" alt="Малевич К. С.картина  Женщина с граблями" tabindex="0">
+                  <img src="./img/1920Rectangle93.jpg" alt="Малевич К. С.картина  Женщина с граблями">
                 </div>
 
                 <div class="swiper__box-item swiper-slide" tabindex="0">
-                  <img src="./img/1920Rectangle68.jpg" alt="Малевич К. С. картина Уборка ржи" tabindex="0">
+                  <img src="./img/1920Rectangle68.jpg" alt="Малевич К. С. картина Уборка ржи">
                 </div>
 
                 <div class="swiper__box-item swiper-slide" tabindex="0">
-                  <img src="./img/1920Rectangle139.jpg" alt="Клюн И. картина Супрематизм" tabindex="0">
+                  <img src="./img/1920Rectangle139.jpg" alt="Клюн И. картина Супрематизм">
                 </div>
 
                 <div class="swiper__box-item swiper-slide" tabindex="0">
-                  <img src="./img/1920Rectangle73.jpg" alt="Малевич К. С. картина Женщина с вёдрами" tabindex="0">
+                  <img src="./img/1920Rectangle73.jpg" alt="Малевич К. С. картина Женщина с вёдрами">
                 </div>
 
                 <div class="swiper__box-item swiper-slide" tabindex="0">
-                  <img src="./img/1920Rectangle71.jpg" alt="Малевич К. С. картина Превосходматизм" tabindex="0">
+                  <img src="./img/1920Rectangle71.jpg" alt="Малевич К. С. картина Превосходматизм">
                 </div>
               </div>
             </div>
@@ -395,8 +393,8 @@
       <div class="container">
         <div class="catalog__container">
           <div class="catalog__preview">
-            <h2 class="section-title catalog-item" tabindex="0">Каталог</h2>
-            <p class="section-text catalog-text catalog-text-off" tabindex="0">
+            <h2 class="section-title catalog-item">Каталог</h2>
+            <p class="section-text catalog-text catalog-text-off">
               Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
               политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. Являясь
               всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии
@@ -408,7 +406,7 @@
           <div class="item">
             <div class="catalog__item-box">
               <div class="tabs" id="tab-1">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="фреска">
+                <div class="tabs__pct" role="img" aria-label="фреска">
                   <picture>
                     <source media="(min-width: 1024px)" srcset="img/Benedetto.jpg">
                     <img src="./img/Benedetto.jpg" alt="фреска">
@@ -416,9 +414,9 @@
                 </div>
 
                 <div class="tabs__preview-box">
-                  <h3 class="item-title tabs__title" tabindex="0">Бенедетто ди Биндо</h3>
-                  <span class="item__decr" tabindex="0">ок. 1380—85 19 сентября 1417</span>
-                  <p class="section-text catalog-text" tabindex="0">
+                  <h3 class="item-title tabs__title">Бенедетто ди Биндо</h3>
+                  <span class="item__decr">ок. 1380—85 19 сентября 1417</span>
+                  <p class="section-text catalog-text">
                     Первое документальное упоминание имени художника датируется 20&nbsp;ноября 1409&nbsp;года, когда
                     он&nbsp;получил заказ на&nbsp;роспись двух деревянных статуй святых покровителей Сиены&nbsp;&mdash;
                     св.
@@ -431,14 +429,14 @@
               </div>
 
               <div class="tabs" id="tab-2">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="картина Мадонна с младенцем">
-                  <img src="./img/Bergonone.jpg" alt="картина Мадонна с младенцем" tabindex="0">
+                <div class="tabs__pct" role="img" aria-label="картина Мадонна с младенцем">
+                  <img src="./img/Bergonone.jpg" alt="картина Мадонна с младенцем">
                 </div>
 
                 <div class="tabs__preview-box">
-                  <h3 class="item-title tabs__title" tabindex="0">Амброджо Бергоньоне</h3>
-                  <span class="item__decr" tabindex="0">1453&nbsp;&mdash; 1523</span>
-                  <p class="section-text catalog-text" tabindex="0">
+                  <h3 class="item-title tabs__title">Амброджо Бергоньоне</h3>
+                  <span class="item__decr">1453&nbsp;&mdash; 1523</span>
+                  <p class="section-text catalog-text">
                     Прозвище говорит о&nbsp;его тяготении к&nbsp;бургундской школе, по&nbsp;манере ему близок Винченцо
                     Фоппа. Испытал влияние Леонардо да&nbsp;Винчи. Наиболее известен работами 1486&ndash;1494&nbsp;в
                     монастырской обители картезианцев Чертоза ди&nbsp;Павия. Позднее работал в&nbsp;Милане
@@ -453,14 +451,14 @@
               </div>
 
               <div class="tabs" id="tab-3">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="картина Мистический брак Святой Екатерины">
-                  <img src="./img/Bissolo.jpg" alt="картина Мистический брак Святой Екатерины" tabindex="0">
+                <div class="tabs__pct" role="img" aria-label="картина Мистический брак Святой Екатерины">
+                  <img src="./img/Bissolo.jpg" alt="картина Мистический брак Святой Екатерины">
                 </div>
 
                 <div class="tabs__preview-box">
-                  <h3 class="item-title tabs__title" tabindex="0">Франческо Биссоло</h3>
-                  <span class="item__decr" tabindex="0">Тревизо&nbsp;&mdash; 20&nbsp;апреля 1554, Венеция</span>
-                  <p class="section-text catalog-text" tabindex="0">
+                  <h3 class="item-title tabs__title">Франческо Биссоло</h3>
+                  <span class="item__decr">Тревизо&nbsp;&mdash; 20&nbsp;апреля 1554, Венеция</span>
+                  <p class="section-text catalog-text">
                     Сын художника. Ученик Джованни Беллини. С&nbsp;1490 переехал в&nbsp;мастерскую Беллини. С&nbsp;1492
                     по&nbsp;1530 год работал в&nbsp;Венеции. Помогал учителю в&nbsp;работе над украшением Большого зала
                     Совета Дворца дожей (Венеция). Принимал участие в&nbsp;создании украшений Церкви Иль Реденторе
@@ -470,78 +468,78 @@
               </div>
 
               <div class="tabs" id="tab-4">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="художник">
+                <div class="tabs__pct" role="img" aria-label="художник">
                   <img src="./img/gag.png" alt="Художник">
                 </div>
 
-                <h3 class="item-title tabs__title" tabindex="0">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr" tabindex="0"></span>
-                <p class="section-text catalog-text" tabindex="0">
+                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
+                <span class="item__decr"></span>
+                <p class="section-text catalog-text">
                   Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                 </p>
                 <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
               </div>
 
               <div class="tabs" id="tab-5">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="художник">
+                <div class="tabs__pct" role="img" aria-label="художник">
                   <img src="./img/gag.png" alt="Художник">
                 </div>
 
-                <h3 class="item-title tabs__title" tabindex="0">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr" tabindex="0"></span>
-                <p class="section-text catalog-text" tabindex="0">
+                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
+                <span class="item__decr"></span>
+                <p class="section-text catalog-text">
                   Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                 </p>
                 <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
               </div>
 
               <div class="tabs" id="tab-6">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="художник">
+                <div class="tabs__pct" role="img" aria-label="художник">
                   <img src="./img/gag.png" alt="Художник">
                 </div>
 
-                <h3 class="item-title tabs__title" tabindex="0">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr" tabindex="0"></span>
-                <p class="section-text catalog-text" tabindex="0">
+                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
+                <span class="item__decr"></span>
+                <p class="section-text catalog-text">
                   Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                 </p>
                 <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
               </div>
 
               <div class="tabs" id="tab-7">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="художник">
+                <div class="tabs__pct" role="img" aria-label="художник">
                   <img src="./img/gag.png" alt="Художник">
                 </div>
 
-                <h3 class="item-title tabs__title" tabindex="0">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr" tabindex="0"></span>
-                <p class="section-text catalog-text" tabindex="0">
+                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
+                <span class="item__decr"></span>
+                <p class="section-text catalog-text">
                   Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                 </p>
                 <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
               </div>
 
               <div class="tabs" id="tab-8">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="художник">
+                <div class="tabs__pct" role="img" aria-label="художник">
                   <img src="./img/gag.png" alt="Художник">
                 </div>
 
-                <h3 class="item-title tabs__title" tabindex="0">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr" tabindex="0"></span>
-                <p class="section-text catalog-text" tabindex="0">
+                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
+                <span class="item__decr"></span>
+                <p class="section-text catalog-text">
                   Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                 </p>
                 <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
               </div>
 
               <div class="tabs" id="tab-9">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="картина, помолвка Ясона и Медеи">
+                <div class="tabs__pct" role="img" aria-label="картина, помолвка Ясона и Медеи">
                   <img src="./img/Biagio_d'Antonio.jpg" alt="картина, Помолвка Ясона и Медеи">
                 </div>
 
-                <h3 class="item-title tabs__title" tabindex="0">Бьяджо д&rsquo;Антонио Туччи</h3>
-                <span class="item__decr" tabindex="0">ок. 1445</span>
-                <p class="section-text catalog-text" tabindex="0">
+                <h3 class="item-title tabs__title">Бьяджо д&rsquo;Антонио Туччи</h3>
+                <span class="item__decr">ок. 1445</span>
+                <p class="section-text catalog-text">
                   Родился во&nbsp;Флоренции.
                   Последнюю четверть&nbsp;XV века работал в&nbsp;Фаэнце, но&nbsp;в&nbsp;его стиле мало элементов
                   флорентийского стиля&nbsp;&mdash; прослеживается влияние ранней нидерландской живописи.
@@ -549,33 +547,33 @@
               </div>
 
               <div class="tabs" id="tab-10">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="художник">
+                <div class="tabs__pct" role="img" aria-label="художник">
                   <img src="./img/gag.png" alt="Художник">
                 </div>
 
-                <h3 class="item-title tabs__title" tabindex="0">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr" tabindex="0"></span>
-                <p class="section-text catalog-text" tabindex="0">
+                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
+                <span class="item__decr"></span>
+                <p class="section-text catalog-text">
                   Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                 </p>
                 <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
               </div>
 
               <div class="tabs" id="tab-11">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="художник">
+                <div class="tabs__pct" 0 role="img" aria-label="художник">
                   <img src="./img/gag.png" alt="Художник">
                 </div>
 
-                <h3 class="item-title tabs__title" tabindex="0">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr" tabindex="0"></span>
-                <p class="section-text catalog-text" tabindex="0">
+                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
+                <span class="item__decr"></span>
+                <p class="section-text catalog-text">
                   Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                 </p>
                 <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
               </div>
 
               <div class="tabs" id="tab-12">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="фрагмент картины Поклонение вохвов">
+                <div class="tabs__pct"  role="img" aria-label="фрагмент картины Поклонение вохвов">
                   <picture>
                     <source media="(min-width: 320px)" srcset="img/320Ghirlandaio.jpg">
                     <source media="(min-width: 768px)" srcset="img/768Ghirlandaio.jpg">
@@ -585,9 +583,9 @@
                 </div>
 
                 <div class="tabs__preview-box">
-                  <h3 class="item-title tabs__title" tabindex="0">Доменико Гирландайо</h3>
-                  <span class="item__decr" tabindex="0">2 июня 1448–11 января 1494</span>
-                  <p class="section-text catalog-text" tabindex="0">
+                  <h3 class="item-title tabs__title">Доменико Гирландайо</h3>
+                  <span class="item__decr">2 июня 1448–11 января 1494</span>
+                  <p class="section-text catalog-text">
                     Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии,
                     которую
                     продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный
@@ -600,65 +598,65 @@
               </div>
 
               <div class="tabs" id="tab-13">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="художник">
+                <div class="tabs__pct"  role="img" aria-label="художник">
                   <img src="./img/gag.png" alt="Художник">
                 </div>
 
-                <h3 class="item-title tabs__title" tabindex="0">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr" tabindex="0"></span>
-                <p class="section-text catalog-text" tabindex="0">
+                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
+                <span class="item__decr"></span>
+                <p class="section-text catalog-text">
                   Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                 </p>
                 <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
               </div>
 
               <div class="tabs" id="tab-14">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="художник">
+                <div class="tabs__pct" role="img" aria-label="художник">
                   <img src="./img/gag.png" alt="Художник">
                 </div>
 
-                <h3 class="item-title tabs__title" tabindex="0">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr" tabindex="0"></span>
-                <p class="section-text catalog-text" tabindex="0">
+                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
+                <span class="item__decr"></span>
+                <p class="section-text catalog-text">
                   Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                 </p>
                 <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
               </div>
 
               <div class="tabs" id="tab-15">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="художник">
+                <div class="tabs__pct" role="img" aria-label="художник">
                   <img src="./img/gag.png" alt="Художник">
                 </div>
 
-                <h3 class="item-title tabs__title" tabindex="0">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr" tabindex="0"></span>
-                <p class="section-text catalog-text" tabindex="0">
+                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
+                <span class="item__decr"></span>
+                <p class="section-text catalog-text">
                   Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                 </p>
                 <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
               </div>
 
               <div class="tabs" id="tab-16">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="художник">
+                <div class="tabs__pct"  role="img" aria-label="художник">
                   <img src="./img/gag.png" alt="Художник">
                 </div>
 
-                <h3 class="item-title tabs__title" tabindex="0">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr" tabindex="0"></span>
-                <p class="section-text catalog-text" tabindex="0">
+                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
+                <span class="item__decr"></span>
+                <p class="section-text catalog-text">
                   Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                 </p>
                 <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
               </div>
 
               <div class="tabs" id="tab-17">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="картина Сотворение мира и Изгнание из рая">
+                <div class="tabs__pct" role="img" aria-label="картина Сотворение мира и Изгнание из рая">
                   <img src="./img/Giovanni_di_Paolo.jpg" alt="картина Сотворение мира и Изгнание из рая">
                 </div>
 
-                <h3 class="item-title tabs__title" tabindex="0">Джованни ди&nbsp;Паоло</h3>
-                <span class="item__decr" tabindex="0">ок. 1403&ndash;1482</span>
-                <p class="section-text catalog-text" tabindex="0">
+                <h3 class="item-title tabs__title">Джованни ди&nbsp;Паоло</h3>
+                <span class="item__decr">ок. 1403&ndash;1482</span>
+                <p class="section-text catalog-text">
                   По&nbsp;всей видимости, учителем Джованни ди&nbsp;Паоло был Таддео ди&nbsp;Бартоло. Свою творческую
                   карьеру ди&nbsp;Паоло начал как художник-миниатюрист[3]. Расцвет его деятельности пришёлся
                   на&nbsp;1440&ndash;1450-е годы: в&nbsp;это время художник создаёт самые известные свои произведения.
@@ -666,98 +664,98 @@
               </div>
 
               <div class="tabs" id="tab-18">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="художник">
+                <div class="tabs__pct" role="img" aria-label="художник">
                   <img src="./img/gag.png" alt="Художник">
                 </div>
 
-                <h3 class="item-title tabs__title" tabindex="0">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr" tabindex="0"></span>
-                <p class="section-text catalog-text" tabindex="0">
+                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
+                <span class="item__decr"></span>
+                <p class="section-text catalog-text">
                   Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                 </p>
                 <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
               </div>
 
               <div class="tabs" id="tab-19">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="художник">
+                <div class="tabs__pct"  role="img" aria-label="художник">
                   <img src="./img/gag.png" alt="Художник">
                 </div>
 
-                <h3 class="item-title tabs__title" tabindex="0">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr" tabindex="0"></span>
-                <p class="section-text catalog-text" tabindex="0">
+                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
+                <span class="item__decr"></span>
+                <p class="section-text catalog-text">
                   Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                 </p>
                 <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
               </div>
 
               <div class="tabs" id="tab-20">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="художник">
+                <div class="tabs__pct" role="img" aria-label="художник">
                   <img src="./img/gag.png" alt="Художник">
                 </div>
 
-                <h3 class="item-title tabs__title" tabindex="0">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr" tabindex="0"></span>
-                <p class="section-text catalog-text" tabindex="0">
+                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
+                <span class="item__decr"></span>
+                <p class="section-text catalog-text">
                   Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                 </p>
                 <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
               </div>
 
               <div class="tabs" id="tab-21">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="художник">
+                <div class="tabs__pct" role="img" aria-label="художник">
                   <img src="./img/gag.png" alt="Художник">
                 </div>
 
-                <h3 class="item-title tabs__title" tabindex="0">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr" tabindex="0"></span>
-                <p class="section-text catalog-text" tabindex="0">
+                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
+                <span class="item__decr"></span>
+                <p class="section-text catalog-text">
                   Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                 </p>
                 <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
               </div>
 
               <div class="tabs" id="tab-22">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="художник">
+                <div class="tabs__pct"  role="img" aria-label="художник">
                   <img src="./img/gag.png" alt="Художник">
                 </div>
 
-                <h3 class="item-title tabs__title" tabindex="0">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr" tabindex="0"></span>
-                <p class="section-text catalog-text" tabindex="0">
+                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
+                <span class="item__decr"></span>
+                <p class="section-text catalog-text">
                   Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                 </p>
                 <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
               </div>
 
               <div class="tabs" id="tab-23">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="художник">
+                <div class="tabs__pct" role="img" aria-label="художник">
                   <img src="./img/gag.png" alt="Художник">
                 </div>
 
-                <h3 class="item-title tabs__title" tabindex="0">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr" tabindex="0"></span>
-                <p class="section-text catalog-text" tabindex="0">
+                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
+                <span class="item__decr"></span>
+                <p class="section-text catalog-text">
                   Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                 </p>
                 <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
               </div>
 
               <div class="tabs" id="tab-24">
-                <div class="tabs__pct" tabindex="0" role="img" aria-label="художник">
+                <div class="tabs__pct" role="img" aria-label="художник">
                   <img src="./img/gag.png" alt="Художник">
                 </div>
 
-                <h3 class="item-title tabs__title" tabindex="0">Что мы&nbsp;о&nbsp;нём знаем?</h3>
+                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
                 <span class="item__decr" tabindex="-1"></span>
-                <p class="section-text catalog-text" tabindex="0">
+                <p class="section-text catalog-text">
                   Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                 </p>
                 <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
               </div>
 
               <div class="tabs-0 tabs" id="tab-0">
-                <div class="tabs__pct" tabindex="0" role="tabpanel" aria-label="фрагмент картины Поклонение вохвов">
+                <div class="tabs__pct"  role="tabpanel" aria-label="фрагмент картины Поклонение вохвов">
                   <picture>
                     <source media="(min-width: 320px)" srcset="img/320Ghirlandaio.jpg">
                     <source media="(min-width: 768px)" srcset="img/768Ghirlandaio.jpg">
@@ -767,9 +765,9 @@
                 </div>
 
                 <div class="tabs__preview-box">
-                  <h3 class="item-title tabs__title" tabindex="0">Доменико Гирландайо</h3>
-                  <span class="item__decr" tabindex="0">2 июня 1448–11 января 1494</span>
-                  <p class="section-text catalog-text" tabindex="0">
+                  <h3 class="item-title tabs__title">Доменико Гирландайо</h3>
+                  <span class="item__decr">2 июня 1448–11 января 1494</span>
+                  <p class="section-text catalog-text">
                     Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии,
                     которую
                     продолжили<br class="preview-br"> его брат Давид и&nbsp;сын Ридольфо. Глава художественной
@@ -784,9 +782,9 @@
             </div>
 
 
-            <div class="accordion" role="tabpanel" tabindex="0">
+            <div class="accordion" role="tabpanel">
               <div class="accordion__container">
-                <button class="accordion__panel" tabindex="0" aria-label="C 1400 по 1499 год">
+                <button class="accordion__panel" aria-label="C 1400 по 1499 год">
                   <span class="item-title acordion-title">C&nbsp;1400 по&nbsp;1499&nbsp;гг</span>
                   <span class="slider-btn accordion__btn">
                     <span class="slider-line line-left"></span><span class="slider-line line-right"></span>
@@ -794,42 +792,85 @@
                 </button>
 
                 <div class="accordion__item">
-                  <div class="accordion__item__box" tabindex="0" role="tablist">
-                    <a href="#tab-1" class="accordion__item-btn" tabindex="0"
-                      role="tab">Бенедетто&nbsp;ди&nbsp;Биндо</a>
-                    <a href="#tab-9" class="accordion__item-btn" tabindex="0"
-                      role="tab">Бьяджо&nbsp;д’Антонио&nbsp;Туччи</a>
-                    <a href="#tab-17" class="accordion__item-btn" tabindex="0"
-                      role="tab">Джованни&nbsp;ди&nbsp;Паоло</a>
-                    <a href="#tab-2" class="accordion__item-btn" tabindex="0" role="tab">Бергоньоне,&nbsp;Амброджо</a>
-                    <a href="#tab-10" class="accordion__item-btn" tabindex="0" role="tab">Веккьетта</a>
-                    <a href="#tab-18" class="accordion__item-btn" tabindex="0" role="tab">Джорджоне</a>
-                    <a href="#tab-3" class="accordion__item-btn" tabindex="0" role="tab">Биссоло,&nbsp;Франческо</a>
-                    <a href="#tab-11" class="accordion__item-btn" tabindex="0" role="tab">Андреа&nbsp;Верроккьо</a>
-                    <a href="#tab-19" class="accordion__item-btn" tabindex="0" role="tab">Парентино,&nbsp;Бернардо</a>
-                    <a href="#tab-4" class="accordion__item-btn" tabindex="0" role="tab">Больтраффио,&nbsp;Джованни</a>
-                    <a href="#tab-12" class="accordion__item-btn" tabindex="0" role="tab">Доменико&nbsp;Гирландайо</a>
-                    <a href="#tab-20" class="accordion__item-btn" tabindex="0" role="tab">Пезеллино</a>
-                    <a href="#tab-5" class="accordion__item-btn" tabindex="0" role="tab">Бонсиньори,&nbsp;Франческо</a>
-                    <a href="#tab-13" class="accordion__item-btn" tabindex="0" role="tab">Беноццо&nbsp;Гоццоли</a>
-                    <a href="#tab-21" class="accordion__item-btn" tabindex="0" role="tab">Пьетро&nbsp;Перуджино</a>
-                    <a href="#tab-6" class="accordion__item-btn" tabindex="0" role="tab">Боттичини,&nbsp;Рафаэлло</a>
-                    <a href="#tab-14" class="accordion__item-btn" tabindex="0" role="tab">Граначчи,&nbsp;Франческо</a>
-                    <a href="#tab-22" class="accordion__item-btn" tabindex="0" role="tab">Перуцци,&nbsp;Бальдассаре</a>
-                    <a href="#tab-7" class="accordion__item-btn" tabindex="0" role="tab">Брамантино</a>
-                    <a href="#tab-15" class="accordion__item-btn" tabindex="0"
-                      role="tab">Грегорио&nbsp;ди&nbsp;Чекко</a>
-                    <a href="#tab-23" class="accordion__item-btn" tabindex="0" role="tab">Пизанелло</a>
-                    <a href="#tab-8" class="accordion__item-btn" tabindex="0" role="tab">Бреа,&nbsp;Людовико</a>
-                    <a href="#tab-16" class="accordion__item-btn" tabindex="0"
-                      role="tab">Джованни&nbsp;да&nbsp;Удине</a>
-                    <a href="#tab-24" class="accordion__item-btn" tabindex="0" role="tab">Пинтуриккьо</a>
+                  <div class="accordion__item__box" role="tablist">
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-1" class="accordion__item-link">Бенедетто&nbsp;ди&nbsp;Биндо</a>
+                    </button>
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-9" class="accordion__item-link" role="tab">Бьяджо&nbsp;д’Антонио&nbsp;Туччи</a>
+                    </button>
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-17" class="accordion__item-link" role="tab">Джованни&nbsp;ди&nbsp;Паоло</a>
+                    </button>
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-2" class="accordion__item-link" role="tab">Бергоньоне,&nbsp;Амброджо</a>
+                    </button>
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-10" class="accordion__item-link" role="tab">Веккьетта</a>
+                    </button>
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-18" class="accordion__item-link" role="tab">Джорджоне</a>
+                    </button>
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-3" class="accordion__item-link" role="tab">Биссоло,&nbsp;Франческо</a>
+                    </button>
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-11" class="accordion__item-link" role="tab">Андреа&nbsp;Верроккьо</a>
+                    </button>
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-19" class="accordion__item-link" role="tab">Парентино,&nbsp;Бернардо</a>
+                    </button>
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-4" class="accordion__item-link" role="tab">Больтраффио,&nbsp;Джованни</a>
+                    </button>
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-12" class="accordion__item-link" role="tab">Доменико&nbsp;Гирландайо</a>
+                    </button>
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-20" class="accordion__item-link" role="tab">Пезеллино</a>
+                    </button>
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-5" class="accordion__item-link" role="tab">Бонсиньори,&nbsp;Франческо</a>
+                    </button>
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-13" class="accordion__item-link" role="tab">Беноццо&nbsp;Гоццоли</a>
+                    </button>
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-21" class="accordion__item-link" role="tab">Пьетро&nbsp;Перуджино</a>
+                    </button>
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-6" class="accordion__item-link" role="tab">Боттичини,&nbsp;Рафаэлло</a>
+                    </button>
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-14" class="accordion__item-link" role="tab">Граначчи,&nbsp;Франческо</a>
+                    </button>
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-22" class="accordion__item-link" role="tab">Перуцци,&nbsp;Бальдассаре</a>
+                    </button>
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-7" class="accordion__item-link" role="tab">Брамантино</a>
+                    </button>
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-15" class="accordion__item-link" role="tab">Грегорио&nbsp;ди&nbsp;Чекко</a>
+                    </button>
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-23" class="accordion__item-link" role="tab">Пизанелло</a>
+                    </button>
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-8" class="accordion__item-link" role="tab">Бреа,&nbsp;Людовико</a>
+                    </button>
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-16" class="accordion__item-link" role="tab">Джованни&nbsp;да&nbsp;Удине</a>
+                    </button>
+                    <button class="accordion__item-btn" tabindex="0">
+                      <a href="#tab-24" class="accordion__item-link" role="tab">Пинтуриккьо</a>
+                    </button>
                   </div>
                 </div>
               </div>
 
               <div class="accordion__container gag">
-                <button class="accordion__panel" tabindex="0" aria-label="C 1500 по 1599 год">
+                <button class="accordion__panel"  aria-label="C 1500 по 1599 год">
                   <span class="item-title acordion-title">C&nbsp;1500 по&nbsp;1599&nbsp;гг</span>
                   <span class="slider-btn accordion__btn">
                     <span class="slider-line line-left"></span><span class="slider-line line-right"></span>
@@ -837,11 +878,11 @@
                 </button>
 
                 <div class="accordion__item">
-                  <div class="gag__box" tabindex="0" role="tablist">
+                  <div class="gag__box"  role="tablist">
                     <div class="gag__img"></div>
-                    <div class="gag__box-text" tabindex="0">
-                      <h3 class="item-title gag__title" tabindex="0">Здесь пока пусто</h3>
-                      <p class="section-text gag__text" tabindex="0">
+                    <div class="gag__box-text">
+                      <h3 class="item-title gag__title">Здесь пока пусто</h3>
+                      <p class="section-text gag__text">
                         А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
                       </p>
                       <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
@@ -851,7 +892,7 @@
               </div>
 
               <div class="accordion__container gag">
-                <button class="accordion__panel" tabindex="0" aria-label="C 1600 по 1699 год">
+                <button class="accordion__panel"  aria-label="C 1600 по 1699 год">
                   <span class="item-title acordion-title">C&nbsp;1600 по&nbsp;1699&nbsp;гг</span>
                   <span class="slider-btn accordion__btn">
                     <span class="slider-line line-left"></span><span class="slider-line line-right"></span>
@@ -859,11 +900,11 @@
                 </button>
 
                 <div class="accordion__item">
-                  <div class="gag__box" tabindex="0" role="tablist">
+                  <div class="gag__box"  role="tablist">
                     <div class="gag__img"></div>
-                    <div class="gag__box-text" tabindex="0">
-                      <h3 class="item-title gag__title" tabindex="0">Здесь пока пусто</h3>
-                      <p class="section-text gag__text" tabindex="0">
+                    <div class="gag__box-text">
+                      <h3 class="item-title gag__title">Здесь пока пусто</h3>
+                      <p class="section-text gag__text">
                         А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
                       </p>
                       <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
@@ -873,7 +914,7 @@
               </div>
 
               <div class="accordion__container gag">
-                <button class="accordion__panel" tabindex="0" aria-label="C 1700 по 1799 год">
+                <button class="accordion__panel"  aria-label="C 1700 по 1799 год">
                   <span class="item-title acordion-title">C&nbsp;1700 по&nbsp;1799&nbsp;гг</span>
                   <span class="slider-btn accordion__btn">
                     <span class="slider-line line-left"></span><span class="slider-line line-right"></span>
@@ -881,11 +922,11 @@
                 </button>
 
                 <div class="accordion__item">
-                  <div class="gag__box" tabindex="0" role="tablist">
+                  <div class="gag__box" role="tablist">
                     <div class="gag__img"></div>
-                    <div class="gag__box-text" tabindex="0">
-                      <h3 class="item-title gag__title" tabindex="0">Здесь пока пусто</h3>
-                      <p class="section-text gag__text" tabindex="0">
+                    <div class="gag__box-text">
+                      <h3 class="item-title gag__title">Здесь пока пусто</h3>
+                      <p class="section-text gag__text">
                         А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
                       </p>
                       <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
@@ -895,7 +936,7 @@
               </div>
 
               <div class="accordion__container gag">
-                <button class="accordion__panel" tabindex="0" aria-label="C 1800 по 1899 год">
+                <button class="accordion__panel"  aria-label="C 1800 по 1899 год">
                   <span class="item-title acordion-title">C&nbsp;1800 по&nbsp;1899&nbsp;гг</span>
                   <span class="slider-btn accordion__btn">
                     <span class="slider-line line-left"></span><span class="slider-line line-right"></span>
@@ -905,9 +946,9 @@
                 <div class="accordion__item">
                   <div class="gag__box">
                     <div class="gag__img"></div>
-                    <div class="gag__box-text" tabindex="0">
-                      <h3 class="item-title gag__title" tabindex="0">Здесь пока пусто</h3>
-                      <p class="section-text gag__text" tabindex="0">
+                    <div class="gag__box-text">
+                      <h3 class="item-title gag__title">Здесь пока пусто</h3>
+                      <p class="section-text gag__text">
                         А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
                       </p>
                       <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
@@ -917,7 +958,7 @@
               </div>
 
               <div class="accordion__container gag">
-                <button class="accordion__panel" tabindex="0" aria-label="C 1900 по 1999 год">
+                <button class="accordion__panel"  aria-label="C 1900 по 1999 год">
                   <span class="item-title acordion-title">C&nbsp;1900 по&nbsp;1999&nbsp;гг</span>
                   <span class="slider-btn accordion__btn">
                     <span class="slider-line line-left"></span><span class="slider-line line-right"></span>
@@ -927,9 +968,9 @@
                 <div class="accordion__item">
                   <div class="gag__box">
                     <div class="gag__img"></div>
-                    <div class="gag__box-text" tabindex="0">
-                      <h3 class="item-title gag__title" tabindex="0">Здесь пока пусто</h3>
-                      <p class="section-text gag__text" tabindex="0">
+                    <div class="gag__box-text">
+                      <h3 class="item-title gag__title">Здесь пока пусто</h3>
+                      <p class="section-text gag__text">
                         А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
                       </p>
                       <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
@@ -939,7 +980,7 @@
               </div>
 
               <div class="accordion__container gag">
-                <button class="accordion__panel" tabindex="0" aria-label="C 2000 года">
+                <button class="accordion__panel"  aria-label="C 2000 года">
                   <span class="item-title acordion-title">C&nbsp;2000&nbsp;г</span>
                   <span class="slider-btn accordion__btn">
                     <span class="slider-line line-left"></span><span class="slider-line line-right"></span>
@@ -949,7 +990,7 @@
                 <div class="accordion__item">
                   <div class="gag__box">
                     <div class="gag__img"></div>
-                    <div class="gag__box-text" tabindex="0">
+                    <div class="gag__box-text">
                       <h3 class="item-title gag__title">Здесь пока пусто</h3>
                       <p class="section-text gag__text">
                         А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
@@ -967,122 +1008,107 @@
 
     <section id="news" class="news">
       <div class="container">
-        <h2 class="section-title news__title" tabindex="0">События</h2>
+        <h2 class="section-title news__title">События</h2>
 
         <div class="slider__box">
           <div class="news__slider swiper-container swiper-3">
             <div class="news__container swiper-wrapper">
-              <article class="news__box swiper-slide" tabindex="0">
-                <div class="news__box-img">
-                  <img src="./img/1920engraving.jpg" alt="#" aria-hidden="true">
-                </div>
+              <article class="news__box swiper-slide news__img-1">
 
                 <div class="news__box-item">
-                  <span class="news__box-decr" tabindex="0">Музей им. Щусева<br>20&nbsp;марта
+                  <span class="news__box-decr">Музей им. Щусева<br>20&nbsp;марта
                     по&nbsp;30&nbsp;апреля</span>
-                  <h3 class="item-title news__item-title" tabindex="0">Книжная гравюра<br class="news-br"> в&nbsp;живом
+                  <h3 class="item-title news__item-title">Книжная гравюра<br class="news-br"> в&nbsp;живом
                     восприятии</h3>
-                  <p class="section-text news__box-text" tabindex="0">
+                  <p class="section-text news__box-text">
                     Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии,
                     которую
                     продолжили <br class="news__box-text-br"> его брат Давид<br class="news__box-text-br"> и&nbsp;сын
                     Ридольфо
                   </p>
                   <div class="news__box-btn">
-                    <a class="news__btn" role="link" tabindex="0">Подробнее</a>
+                    <a class="news__btn" role="link">Подробнее</a>
                   </div>
                 </div>
               </article>
 
-              <article class="news__box swiper-slide" tabindex="0">
-                <div class="news__box-img">
-                  <img src="./img/1920photo.jpg" alt="#" aria-hidden="true">
-                </div>
+              <article class="news__box swiper-slide news__img-2">
 
                 <div class="news__box-item">
-                  <span class="news__box-decr" tabindex="0">ММОМА<br>24&nbsp;марта 19:00</span>
-                  <h3 class="item-title news__item-title" tabindex="0">&laquo;Открытая дискуссия&raquo;.<br
+                  <span class="news__box-decr">ММОМА<br>24&nbsp;марта 19:00</span>
+                  <h3 class="item-title news__item-title">&laquo;Открытая дискуссия&raquo;.<br
                       class="news-br"> Дмитрий
                     Петров
                     и&nbsp;Сергей
                     Ильин.</h3>
-                  <p class="section-text news__box-text" tabindex="0">
+                  <p class="section-text news__box-text">
                     Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого
                     факта
                   </p>
                   <div class="news__box-btn">
-                    <a class="news__btn" role="link" tabindex="0">Подробнее</a>
+                    <a class="news__btn" role="link">Подробнее</a>
                   </div>
                 </div>
               </article>
 
-              <article class="news__box swiper-slide" tabindex="0">
-                <div class="news__box-img">
-                  <img src="./img/1920gallery.jpg" alt="#" aria-hidden="true">
-                </div>
+              <article class="news__box swiper-slide news__img-3">
 
                 <div class="news__box-item">
-                  <span class="news__box-decr" tabindex="0">Еврейский музей<br>с 31 марта
+                  <span class="news__box-decr">Еврейский музей<br>с 31 марта
                     по 21 апреля</span>
-                  <h3 class="item-title news__item-title" tabindex="0">Выставка &laquo;Формация 2020&raquo;</h3>
-                  <p class="section-text news__box-text" tabindex="0">
+                  <h3 class="item-title news__item-title">Выставка &laquo;Формация 2020&raquo;</h3>
+                  <p class="section-text news__box-text">
                     Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную
                     роль
                     в&nbsp;формировании глубокомысленных рассуждений
                   </p>
                   <div class="news__box-btn">
-                    <a class="news__btn" role="link" tabindex="0">Подробнее</a>
+                    <a class="news__btn" role="link">Подробнее</a>
                   </div>
                 </div>
               </article>
 
-              <article class="news__box swiper-slide" tabindex="0">
-                <div class="news__box-img">
-                  <img src="./img/1920metamorph.jpg" alt="#" aria-hidden="true">
-                </div>
+              <article class="news__box swiper-slide news__img-4">
 
                 <div class="news__box-item">
-                  <span class="news__box-decr" tabindex="0">ММАМБ<br>с&nbsp;8&nbsp;апреля
+                  <span class="news__box-decr">ММАМБ<br>с&nbsp;8&nbsp;апреля
                     по&nbsp;20&nbsp;мая</span>
-                  <h3 class="item-title news__item-title" tabindex="0">Джон Винзор. Фотографии из&nbsp;серии
+                  <h3 class="item-title news__item-title">Джон Винзор. Фотографии из&nbsp;серии
                     &laquo;Метафора&raquo;</h3>
-                  <p class="section-text news__box-text" tabindex="0">
+                  <p class="section-text news__box-text">
                     Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии,
                     которую продолжили его брат Давид и&nbsp;сын Ридольфо
                   </p>
                   <div class="news__box-btn">
-                    <a class="news__btn" role="link" tabindex="0">Подробнее</a>
+                    <a class="news__btn" role="link">Подробнее</a>
                   </div>
                 </div>
               </article>
 
-              <article class="news__box swiper-slide" tabindex="0">
-                <div class="news__box-img">
-                  <img src="./img/1920biennale.jpg" alt="#" aria-hidden="true">
-                </div>
+              <article class="news__box swiper-slide news__img-5">
 
                 <div class="news__box-item">
-                  <span class="news__box-decr" tabindex="0">Третьяковка на&nbsp;Крымском валу<br>с&nbsp;30&nbsp;марта
+                  <span class="news__box-decr">Третьяковка на&nbsp;Крымском валу<br>с&nbsp;30&nbsp;марта
                     по&nbsp;30&nbsp;апреля</span>
-                  <h3 class="item-title news__item-title" tabindex="0">XXIV Международная биеннале молодого искусства
+                  <h3 class="item-title news__item-title">XXIV Международная биеннале молодого искусства
                   </h3>
-                  <p class="section-text news__box-text" tabindex="0">
+                  <p class="section-text news__box-text">
                     Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования
                   </p>
                   <div class="news__box-btn">
-                    <a class="news__btn" role="link" tabindex="0">Подробнее</a>
+                    <a class="news__btn" role="link">Подробнее</a>
                   </div>
                 </div>
               </article>
             </div>
           </div>
-          <div class="slider-btn news__btn-left" tabindex="0">
+          <div class="slider-btn news__btn-left">
             <span class="slider-line line-left"></span><span class="slider-line line-right"></span>
           </div>
-          <div class="slider-btn news__btn-right" tabindex="0">
+          <div class="slider-btn news__btn-right">
             <span class="slider-line line-left"></span><span class="slider-line line-right"></span>
           </div>
-          <div class="pagination" tabindex="0"></div>
+          <div class="pagination"></div>
         </div>
 
 
@@ -1092,8 +1118,8 @@
     <section id="partners" class="partners">
       <div class="container">
         <div class="partners__preview">
-          <h2 class="section-title partners-title" tabindex="0">Проекты</h2>
-          <div class="section-text partners-text" tabindex="0">
+          <h2 class="section-title partners-title">Проекты</h2>
+          <div class="section-text partners-text">
             Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности
             однозначно
             фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны<br
@@ -1103,8 +1129,8 @@
             их статус бесполезности. Прежде всего, постоянное информационно-<br
               class="partners-br-mobail">пропагандистское
             <button class="tooltip" id="button" data-tippy-content="Пример современных
-            тенденций&nbsp;&mdash;современная методология разработки" aria-label="Подсказка" tabindex="0">
-              <span class="icon" tabindex="0" aria-label="Пример современных
+            тенденций&nbsp;&mdash;современная методология разработки" aria-label="Подсказка">
+              <span class="icon"  aria-label="Пример современных
               тенденций&nbsp;&mdash;современная методология разработки">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -1121,8 +1147,8 @@
             рассмотрены
             <button class="tooltip tooltip-1" id="button-1"
               data-tippy-content="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции"
-              aria-label="Подсказка" tabindex="0">
-              <span class="icon" tabindex="0"
+              aria-label="Подсказка">
+              <span class="icon"
                 aria-label="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -1135,8 +1161,8 @@
             </button>
             исключительно<br class="partners-desctop-br"> в разрезе маркетинговых<br class="partners-br"> и финансовых
             <button class="tooltip tooltip-2" id="button-2" data-tippy-content="В стремлении повысить качество"
-              aria-label="Подсказка" tabindex="0">
-              <span class="icon" aria-label="В стремлении повысить качество" tabindex="0">
+              aria-label="Подсказка">
+              <span class="icon" aria-label="В стремлении повысить качество">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z"
@@ -1150,53 +1176,55 @@
               class="partners-br-mobail"> а также представители современных социальных
             резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны
             с не уникальными данными до степени совершённой неузнаваемости. Подробнее:
-            <a href="#" class="partners__link partners__link-desc" tabindex="0">blanchard-art.ru/projects</a>
+            <a href="#" class="partners__link partners__link-desc">blanchard-art.ru/projects</a>
             <a href="#" class="partners__link partners__link-768">blanchard-art.ru</a>
             <a href="#" class="partners__link partners__link-mobail">blanchard-art.ru/projects/about</a>
           </div>
 
-          <h3 class="item-title partners__preview-title" tabindex="0">Партнёры проектов:</h3>
+          <h3 class="item-title partners__preview-title">Партнёры проектов:</h3>
 
 
           <div class="partners__slider slider">
-            <div class="slider__btn-left">
-              <span class="slider-btn partners__btn rotat-left" tabindex="0">
-                <span class="partners__btn-line"></span>
-              </span>
-            </div>
+              <button class="partners__btn-style slider__btn-left" tabindex="0">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#ECECEC"/>
+                  <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" stroke="FFFFFF"/>
+                  <path class="hover" d="M16 20L11 15L16 10" stroke="black"/>
+                </svg>
+              </button>
 
             <div class="slider-track swiper-container swiper-2">
               <div class="partners__slider swiper-wrapper">
                 <a class="swiper-slider swiper-slide" tabindex="0">
-                  <img src="./img/logo-1.png" alt="ссылка Логотип партнера" class="partners__logo" tabindex="0">
+                  <img src="./img/logo-1.png" alt="ссылка Логотип партнера" class="partners__logo">
                 </a>
 
                 <a class="swiper-slider swiper-slide" tabindex="0">
-                  <img src="./img/logo-3.png" alt="ссылка Логотип партнера" class="partners__logo" tabindex="0">
+                  <img src="./img/logo-3.png" alt="ссылка Логотип партнера" class="partners__logo">
                 </a>
 
                 <a class="swiper-slider swiper-slide" tabindex="0">
-                  <img src="./img/logo-2.png" alt="ссылка Логотип партнера" class="partners__logo" tabindex="0">
+                  <img src="./img/logo-2.png" alt="ссылка Логотип партнера" class="partners__logo">
                 </a>
 
                 <a class="swiper-slider swiper-slide" tabindex="0">
-                  <img src="./img/logo-4.png" alt="ссылка Логотип партнера" class="partners__logo" tabindex="0">
+                  <img src="./img/logo-4.png" alt="ссылка Логотип партнера" class="partners__logo">
                 </a>
 
                 <a class="swiper-slider swiper-slide" tabindex="0">
-                  <img src="./img/logo-5.png" alt="ссылка Логотип партнера" class="partners__logo" tabindex="0">
+                  <img src="./img/logo-5.png" alt="ссылка Логотип партнера" class="partners__logo">
                 </a>
 
                 <a class="swiper-slider swiper-slide" tabindex="0">
-                  <img src="./img/logo-6.png" alt="ссылка Логотип партнера" class="partners__logo" tabindex="0">
+                  <img src="./img/logo-6.png" alt="ссылка Логотип партнера" class="partners__logo">
                 </a>
 
                 <a class="swiper-slider swiper-slide" tabindex="0">
-                  <img src="./img/logo-7.png" alt="ссылка Логотип партнера" class="partners__logo" tabindex="0">
+                  <img src="./img/logo-7.png" alt="ссылка Логотип партнера" class="partners__logo">
                 </a>
 
                 <a class="swiper-slider swiper-slide" tabindex="0">
-                  <img src="./img/logo-8.png" alt="ссылка Логотип партнера" class="partners__logo" tabindex="0">
+                  <img src="./img/logo-8.png" alt="ссылка Логотип партнера" class="partners__logo">
                 </a>
 
                 <a class="swiper-slider swiper-slide" tabindex="0">
@@ -1206,11 +1234,13 @@
               </div>
             </div>
 
-            <div class="slider__btn-right">
-              <button class="slider-btn partners__btn rotat-right" tabindex="0" aria-label="Вперед">
-                <span class="partners__btn-line"></span>
+              <button class="partners__btn-style slider__btn-right" tabindex="0">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" fill="#ECECEC"/>
+                  <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" stroke="FFFFFF"/>
+                  <path class="hover" d="M14 20L19 15L14 10" stroke="black"/>
+                </svg>
               </button>
-            </div>
 
           </div>
         </div>
@@ -1222,17 +1252,17 @@
         <h2 class="title-hidden">Контакты</h2>
         <div class="form__container">
           <div class="form__adress">
-            <h3 class="item-title form__adress-title" tabindex="0">Шоурум &#8470; 4</h3>
-            <address class="section-text form__desc" tabindex="0"
+            <h3 class="item-title form__adress-title">Шоурум &#8470; 4</h3>
+            <address class="section-text form__desc"
               aria-label="наш адрес: Леонтьевский переулок, дом 5/1">Леонтьевский переулок, дом 5/1</address>
           </div>
 
           <form action="#" id="form__input" class="form__input">
-            <label for="name" class="form__box" tabindex="0" aria-label="Введите имя">
+            <label for="name" class="form__box" aria-label="Введите имя">
               <input type="text" id="name" placeholder="Имя*" class="input-box" autocomplete="off">
             </label>
 
-            <label for="phone" class="form__box" tabindex="0" aria-label="Введите телефон">
+            <label for="phone" class="form__box" aria-label="Введите телефон">
               <input type="tel" placeholder="Телефон*" id="phone" class="input-box" data-validate-rules="tel"
                 autocomplete="off">
             </label>
@@ -1242,10 +1272,10 @@
           </form>
 
           <div class="form__social">
-            <h3 class="item-title form__adress-title title-mobile" tabindex="0">Связаться&nbsp;в&nbsp;один&nbsp;клик
+            <h3 class="item-title form__adress-title title-mobile">Связаться&nbsp;в&nbsp;один&nbsp;клик
             </h3>
             <div class="form__social__link">
-              <a href="#" target="_blank" class="whatsapp" tabindex="0" aria-label="Мы в вацапе">
+              <a href="#" target="_blank" class="whatsapp" aria-label="Мы в вацапе">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_191243_648)">
                     <path class="whatsapp-path"
@@ -1262,7 +1292,7 @@
                   </defs>
                 </svg>
               </a>
-              <a href="#" target="_blank" class="telegram" tabindex="0" aria-label="Мы в одноклассниках">
+              <a href="#" target="_blank" class="telegram" aria-label="Мы в одноклассниках">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_191243_651)">
                     <path class="telegram-path"
@@ -1292,13 +1322,13 @@
     <div class="container">
       <div class="footer__container">
         <div class="footer__container-box">
-          <a role="link" class="footer__logo" tabindex="0" aria-label="Наш логотип">
+          <a role="link" class="footer__logo" aria-label="Наш логотип">
             <img src="./svg/main-logotip.svg" alt="Логотип" aria-hidden="true">
           </a>
         </div>
 
         <div class="footer__social">
-          <a href="#" target="_blank" class="footer__link" tabindex="0" aria-label="Мы в контакте">
+          <a href="#" target="_blank" class="footer__link" aria-label="Мы в контакте">
             <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M22.5 0C10.074 0 0 10.0736 0 22.5C0 34.9264 10.074 45 22.5 45C34.926 45 45 34.9264 45 22.5C45 10.0736 34.926 0 22.5 0ZM33.9132 24.9335C34.9619 25.9577 36.0714 26.9217 37.0128 28.0519C37.4299 28.5519 37.823 29.0688 38.1222 29.6503C38.5495 30.4794 38.1637 31.3886 37.4216 31.4379L32.812 31.4369C31.6215 31.5354 30.6741 31.0553 29.8754 30.2414C29.2378 29.5927 28.6462 28.8999 28.0321 28.2292C27.7812 27.9539 27.517 27.6947 27.2021 27.4907C26.5737 27.0819 26.0277 27.2072 25.6677 27.8636C25.3008 28.5316 25.217 29.2719 25.182 30.0153C25.1319 31.1022 24.8041 31.3863 23.7135 31.4374C21.3832 31.5465 19.1721 31.1929 17.117 30.0181C15.3041 28.9818 13.901 27.5193 12.6783 25.8634C10.2973 22.6353 8.47381 19.0924 6.8354 15.4478C6.46665 14.627 6.73642 14.1878 7.64194 14.1707C9.14639 14.1417 10.6508 14.1454 12.1553 14.1694C12.7676 14.179 13.1727 14.5294 13.4079 15.1071C14.2209 17.1074 15.2176 19.0105 16.4665 20.7755C16.7994 21.2455 17.1391 21.7142 17.623 22.0461C18.157 22.4125 18.5639 22.2915 18.8158 21.6953C18.9769 21.3164 19.0464 20.9113 19.0814 20.5053C19.2011 19.1145 19.2153 17.7242 19.0082 16.339C18.8793 15.4722 18.3918 14.9124 17.5277 14.7485C17.0876 14.6652 17.152 14.5022 17.3661 14.2508C17.7376 13.8163 18.0856 13.5474 18.7812 13.5474L23.9893 13.5465C24.8101 13.7076 24.9942 14.0759 25.1056 14.9027L25.1102 20.6903C25.1006 21.0103 25.2709 21.9586 25.8454 22.1681C26.3058 22.32 26.6096 21.9508 26.8849 21.6594C28.1339 20.334 29.0237 18.7697 29.8206 17.1506C30.1723 16.4366 30.4757 15.6978 30.7703 14.9575C30.9895 14.4101 31.3301 14.1408 31.9479 14.15L36.9631 14.156C37.1108 14.156 37.2609 14.1574 37.4073 14.1827C38.2525 14.3273 38.4841 14.6909 38.2226 15.5154C37.811 16.8109 37.0114 17.89 36.2297 18.9718C35.3919 20.1301 34.4983 21.2478 33.6687 22.4111C32.9064 23.4746 32.9667 24.01 33.9132 24.9335Z"
@@ -1306,7 +1336,7 @@
             </svg>
           </a>
 
-          <a href="#" target="_blank" class="footer__link" aria-label="Мы в однокласниках" tabindex="0">
+          <a href="#" target="_blank" class="footer__link" aria-label="Мы в однокласниках">
             <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M19.279 14.9859C19.279 16.8409 20.7828 18.3449 22.6379 18.3449C24.4929 18.3449 25.9967 16.8409 25.9967 14.9859C25.9967 13.1309 24.4929 11.6271 22.6379 11.6271C20.7828 11.6271 19.279 13.1309 19.279 14.9859Z"
@@ -1324,6 +1354,7 @@
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="https://unpkg.com/tippy.js@6"></script>
   <script defer src="js/inputmask.min.js"></script>
+  <script src="js/simplebar.js"></script>
   <script defer src="js/script.js"></script>
 </body>
 
