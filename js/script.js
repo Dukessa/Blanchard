@@ -32,24 +32,55 @@ tippy('[data-tippy-content]');
 //Меню
 
 document.querySelectorAll('.menu__link').forEach(function (dropdawn) {
-  dropdawn.querySelector('.menu__link-item').addEventListener('click', function () {
-    dropdawn.querySelector('.menu__item').classList.toggle('js--off');
-    dropdawn.querySelector('.menu__item').classList.toggle('js--active--flex');
-    dropdawn.querySelector('.menu__link-item').classList.toggle('menu__link-item--active');
-    dropdawn.querySelector('.menu__icon-left').classList.toggle('menu__icon-left--active');
-    dropdawn.querySelector('.menu__icon-right').classList.toggle('menu__icon-right--active');
-  });
+  const dropdawnBtn = dropdawn.querySelector('.menu__link-item');
+const dropdawnList = dropdawn.querySelector('.menu__item');
+const dropdawnListItem = dropdawnList.querySelectorAll('.menu__item-style');
+const dropdawnIconLeft = dropdawn.querySelector('.menu__icon-left');
+const dropdawnIconRight = dropdawn.querySelector('.menu__icon-right');
 
-  dropdawn.querySelectorAll('.menu__item-style').forEach(function (e) {
-    e.addEventListener('click', function () {
-      dropdawn.querySelector('.menu__item').classList.remove('js--active--flex');
-      dropdawn.querySelector('.menu__item').classList.add('js--off');
-      dropdawn.querySelector('.menu__link-item').classList.remove('menu__link-item--active');
-      dropdawn.querySelector('.menu__icon-left').classList.remove('menu__icon-left--active');
-      dropdawn.querySelector('.menu__icon-right').classList.remove('menu__icon-right--active');
-    });
+dropdawnBtn.addEventListener('click', function() {
+  dropdawnList.classList.toggle('js--off');
+  dropdawnList.classList.toggle('js--active--flex');
+  dropdawnBtn.classList.toggle('menu__link-item--active');
+  dropdawnIconLeft.classList.toggle('menu__icon-left--active');
+  dropdawnIconRight.classList.toggle('menu__icon-right--active');
+});
+
+dropdawnListItem.forEach(function(listItem) {
+  listItem.addEventListener('click', function(e) {
+    e.stopPropagation ();
+    dropdawnList.classList.toggle('js--off');
+    dropdawnList.classList.toggle('js--active--flex');
+    dropdawnBtn.classList.toggle('menu__link-item--active');
+    dropdawnIconLeft.classList.remove('menu__icon-left--active');
+    dropdawnIconRight.classList.remove('menu__icon-right--active');
   });
 });
+
+document.addEventListener('click', function(e) {
+  if (e.target !== dropdawnBtn) {
+    dropdawnList.classList.add('js--off');
+    dropdawnList.classList.remove('js--active--flex');
+    dropdawnBtn.classList.remove('menu__link-item--active');
+    dropdawnIconLeft.classList.remove('menu__icon-left--active');
+    dropdawnIconRight.classList.remove('menu__icon-right--active');
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Tab' || e.key === 'Escape') {
+    dropdawnList.classList.add('js--off');
+    dropdawnList.classList.remove('js--active--flex');
+    dropdawnBtn.classList.remove('menu__link-item--active');
+    dropdawnIconLeft.classList.remove('menu__icon-left--active');
+    dropdawnIconRight.classList.remove('menu__icon-right--active');
+  }
+});
+});
+
+
+
+// SimpleBar(плагин)
 
 document.querySelectorAll(".menu__item").forEach(dropdown => {
   new SimpleBar(dropdown, {
@@ -81,6 +112,10 @@ document.querySelector('.select__wrapper-btn').addEventListener('click', functio
 document.querySelectorAll('.select__list-item').forEach(function (element) {
   element.addEventListener('click', function () {
     document.querySelector('.select__top').innerText = this.innerText;
+    document.querySelector('.help').classList.remove('js--off');
+    document.querySelector('.help-1').classList.remove('js--off');
+    document.querySelector('.help-2').classList.remove('js--off');
+    this.classList.add('js--off');
     document.querySelector('.select__list').classList.toggle('js--active--flex');
     document.querySelector('.select__list').classList.toggle('js--off');
     document.querySelector('.select__icon').classList.toggle('select__icon--js--active');
@@ -97,7 +132,7 @@ document.querySelectorAll('.accordion__container').forEach(function (element) {
     element.querySelector('.acordion-title').classList.toggle('item-title--js');
     element.querySelector('.accordion__btn').classList.toggle('slider-btn--js');
   });
-  
+
   document.querySelectorAll('.tabs-link').forEach(function (link) {
     link.addEventListener('click', function () {
       element.closest('.accordion__container').classList.remove('accordion__container-js');
