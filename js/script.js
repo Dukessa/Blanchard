@@ -309,8 +309,6 @@ const validation = new JustValidate('.form__input', {
   errorFieldStyle: {
     border: '1px solid #D11616',
   },
-
-
 })
 
 validation
