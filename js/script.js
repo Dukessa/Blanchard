@@ -79,7 +79,6 @@ document.addEventListener('keydown', function(e) {
 });
 
 
-
 // SimpleBar(плагин)
 
 document.querySelectorAll(".menu__item").forEach(dropdown => {
