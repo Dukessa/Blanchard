@@ -86,11 +86,11 @@ document.querySelectorAll(".menu__item-box").forEach(dropdown => {
 //Поиск
 
 document.querySelector('.search__btn').addEventListener('click', function (e) {
-  document.querySelector('.search').classList.toggle('search--js');
+  document.querySelector('.search').classList.add('search--js');
 });
 
 document.querySelector('.search-close').addEventListener('click', function () {
-  document.querySelector('.search').classList.toggle('search--js');
+  document.querySelector('.search').classList.remove('search--js');
 });
 
 
