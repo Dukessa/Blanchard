@@ -33,47 +33,42 @@ tippy('[data-tippy-content]');
 
 document.querySelectorAll('.menu__link').forEach(function (dropdawn) {
   const dropdawnBtn = dropdawn.querySelector('.menu__link-item');
-const dropdawnList = dropdawn.querySelector('.menu__item');
-const dropdawnListItem = dropdawnList.querySelectorAll('.menu__item-style');
-const dropdawnIconLeft = dropdawn.querySelector('.menu__icon-left');
-const dropdawnIconRight = dropdawn.querySelector('.menu__icon-right');
+  const dropdawnList = dropdawn.querySelector('.menu__item');
+  const dropdawnListItem = dropdawnList.querySelectorAll('.menu__item-style');
+  const dropdawnIcon = dropdawn.querySelector('.menu__icon');
 
 dropdawnBtn.addEventListener('click', function() {
-  dropdawnList.classList.toggle('js--off');
+  dropdawnList.classList.toggle('js-off');
   dropdawnList.classList.toggle('js--active--flex');
   dropdawnBtn.classList.toggle('menu__link-item--active');
-  dropdawnIconLeft.classList.toggle('menu__icon-left--active');
-  dropdawnIconRight.classList.toggle('menu__icon-right--active');
+  dropdawnIcon.classList.toggle('menu__icon--js');
 });
 
 dropdawnListItem.forEach(function(listItem) {
   listItem.addEventListener('click', function(e) {
     e.stopPropagation ();
-    dropdawnList.classList.toggle('js--off');
+    dropdawnList.classList.toggle('js-off');
     dropdawnList.classList.toggle('js--active--flex');
     dropdawnBtn.classList.toggle('menu__link-item--active');
-    dropdawnIconLeft.classList.remove('menu__icon-left--active');
-    dropdawnIconRight.classList.remove('menu__icon-right--active');
+    dropdawnIcon.classList.toggle('menu__icon--js');
   });
 });
 
 document.addEventListener('click', function(e) {
   if (e.target !== dropdawnBtn) {
-    dropdawnList.classList.add('js--off');
+    dropdawnList.classList.add('js-off');
     dropdawnList.classList.remove('js--active--flex');
     dropdawnBtn.classList.remove('menu__link-item--active');
-    dropdawnIconLeft.classList.remove('menu__icon-left--active');
-    dropdawnIconRight.classList.remove('menu__icon-right--active');
+    dropdawnIcon.classList.remove('menu__icon--js');
   }
 });
 
 document.addEventListener('keydown', function(e) {
-  if (e.key === 'Tab' || e.key === 'Escape') {
-    dropdawnList.classList.add('js--off');
+  if (e.key === 'Escape') {
+    dropdawnList.classList.add('js-off');
     dropdawnList.classList.remove('js--active--flex');
     dropdawnBtn.classList.remove('menu__link-item--active');
-    dropdawnIconLeft.classList.remove('menu__icon-left--active');
-    dropdawnIconRight.classList.remove('menu__icon-right--active');
+    dropdawnIcon.classList.remove('menu__icon--js');
   }
 });
 });
@@ -81,7 +76,7 @@ document.addEventListener('keydown', function(e) {
 
 // SimpleBar(плагин)
 
-document.querySelectorAll(".menu__item").forEach(dropdown => {
+document.querySelectorAll(".menu__item-box").forEach(dropdown => {
   new SimpleBar(dropdown, {
     autoHide: false,
     scrollbarMaxSize: 28,
@@ -94,7 +89,7 @@ document.querySelector('.search__btn').addEventListener('click', function (e) {
   document.querySelector('.search').classList.toggle('search--js');
 });
 
-document.querySelector('.search__close').addEventListener('click', function () {
+document.querySelector('.search-close').addEventListener('click', function () {
   document.querySelector('.search').classList.toggle('search--js');
 });
 
@@ -103,7 +98,7 @@ document.querySelector('.search__close').addEventListener('click', function () {
 
 document.querySelector('.select__wrapper-btn').addEventListener('click', function () {
   document.querySelector('.select__list').classList.toggle('js--active--flex');
-  document.querySelector('.select__list').classList.toggle('js--off');
+  document.querySelector('.select__list').classList.toggle('js-off');
   document.querySelector('.select__icon').classList.toggle('select__icon--js--active');
   document.querySelector('.select__icon').classList.toggle('select__icon--js--off');
 });
@@ -111,14 +106,14 @@ document.querySelector('.select__wrapper-btn').addEventListener('click', functio
 document.querySelectorAll('.select__list-item').forEach(function (element) {
   element.addEventListener('click', function () {
     document.querySelector('.select__top').innerText = this.innerText;
-    document.querySelector('.help').classList.remove('js--off');
-    document.querySelector('.help-1').classList.remove('js--off');
-    document.querySelector('.help-2').classList.remove('js--off');
-    this.classList.add('js--off');
+    document.querySelector('.help').classList.remove('js-off');
+    document.querySelector('.help-1').classList.remove('js-off');
+    document.querySelector('.help-2').classList.remove('js-off');
+    this.classList.add('js-off');
     document.querySelector('.select__list').classList.toggle('js--active--flex');
-    document.querySelector('.select__list').classList.toggle('js--off');
+    document.querySelector('.select__list').classList.toggle('js-off');
     document.querySelector('.select__icon').classList.toggle('select__icon--js--active');
-    document.querySelector('.select__icon').classList.toggle('select__icon--js--off');
+    document.querySelector('.select__icon').classList.toggle('select__icon--js-off');
   });
 });
 
@@ -359,13 +354,13 @@ document.querySelectorAll('.header__container').forEach(function (element) {
 
 document.querySelectorAll('.swiper__box-item').forEach(function (element) {
   element.addEventListener('click', function () {
-    document.querySelector('.popup').classList.remove('js--off');
+    document.querySelector('.popup').classList.remove('popup--js-off');
     document.querySelector('.popup').classList.add('popup--js');
   });
 
   document.querySelector('.popup__close').addEventListener('click', function () {
     document.querySelector('.popup').classList.remove('popup--js');
-    document.querySelector('.popup').classList.add('js--off');
+    document.querySelector('.popup').classList.add('popup--js-off');
   });
 });
 
