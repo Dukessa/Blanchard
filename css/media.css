@@ -332,7 +332,6 @@
 
   .header__container-nav {
     position: absolute;
-    display: none;
     flex-direction: column;
     align-items: normal;
     top: 0;
@@ -343,15 +342,17 @@
     min-height: 768px;
     height: 100vh;
     background: rgba(0, 0, 0, 0.9);
-    transition: all 1s;
+    transform: translate(-100%);
+    transition: all 0.3s;
     z-index: 3000;
   }
 
   .open .header__container-nav {
-    display: flex;
     flex-direction: column;
     padding-bottom: 27px;
     min-height: 100vh;
+    transform: translate(0);
+    transition: all 0.3s;
   }
 
   .header__nav {
