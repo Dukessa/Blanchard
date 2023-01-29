@@ -1258,6 +1258,7 @@ section,
   margin: 0 auto;
   width: 47%;
   vertical-align: middle;
+  overflow-y: auto;
   transform: scale(0);
   transition: transform 0.5s ease-in-out;
 }
@@ -1315,9 +1316,9 @@ section,
 
 .popup__close {
   position: absolute;
-  top: 4%;
+  top: 3%;
   right: 5%;
-  font-size: 20px;
+  font-size: 36px;
   color: var(--black);
   cursor: pointer;
 }
@@ -2478,6 +2479,7 @@ section,
   visibility: visible;
   z-index: 3000;
 }
+
 
 .item-title--js {
   color: var(--royal-purple);
