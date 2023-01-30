@@ -203,6 +203,10 @@ section,
   background-color: var(--black);
 }
 
+.header__container-box {
+  margin-right: auto;
+}
+
 .nav {
   -ms-grid-row-align: center;
   align-self: center;
@@ -212,14 +216,13 @@ section,
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: auto;
-  width: 78%;
+  width: 78.3%;
 }
 
 .header__nav {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 61%;
 }
 
 .nav__box {
@@ -347,6 +350,10 @@ section,
   position: relative;
 }
 
+.hero__track {
+  max-height: 698px;
+}
+
 .hero__slider {
   position: relative;
   width: 100%;
@@ -357,7 +364,6 @@ section,
 
 .hero__container img {
   display: block;
-  min-height: 698px;
   cursor: auto;
 }
 
@@ -374,8 +380,8 @@ section,
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 21px;
-  padding-bottom: 19px;
+  padding-top: 16px;
+  padding-bottom: 14px;
   padding-left: var(--pleft);
   padding-right: var(--pright);
   background-color: var(--gradient);
@@ -681,7 +687,7 @@ section,
 .hero__text {
   margin: 0;
   margin-bottom: 10px;
-  width: 38%;
+  width: 37%;
   font-weight: 700;
   font-size: 18px;
   line-height: 29px;
@@ -1068,7 +1074,7 @@ section,
 
 .gallery__slider {
   padding-top: 25px;
-  width: 71%;
+  width: 72%;
   height: 100%;
   overflow: hidden;
 }
@@ -1173,7 +1179,7 @@ section,
   bottom: 0;
   left: 50%;
   width: 87%;
-  height: 90%;
+  height: 87%;
   background-image: url("../img/hover.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -1348,7 +1354,7 @@ section,
 }
 
 .catalog__preview {
-  width: 69%;
+  width: 100%;
 }
 
 .catalog-item {
@@ -1407,6 +1413,10 @@ section,
   display: flex;
 }
 
+.catalog-text-off {
+  width: 69%;
+}
+
 .catalog-text {
   line-height: 32px;
   margin-bottom: 40px;
@@ -1454,8 +1464,8 @@ section,
   display: inline-block;
   outline: none;
   width: max-content;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   border-bottom: 1px solid transparent;
   transition-property: background-color, border-bottom;
   transition-duration: 0.3s;
@@ -1503,6 +1513,7 @@ section,
   padding: 30px 0 25px 0;
   width: 100%;
   min-height: 307px;
+  height: 339px;
   font-weight: 400;
   font-size: 16px;
   z-index: 1000;
@@ -1663,7 +1674,7 @@ section,
 /*news*/
 
 .news {
-  padding-top: 74px;
+  padding-top: 87px;
   padding-left: 160px;
   padding-right: 159px;
 }
@@ -1894,7 +1905,7 @@ section,
 .partners-text {
   display: inline-block;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 21px;
   width: 66%;
   line-height: 32px;
 }
@@ -2386,7 +2397,7 @@ section,
 
 .map {
   width: 100%;
-  height: 700px;
+  height: 708px;
 }
 
 .ymaps-2-1-79-map .ymaps {
