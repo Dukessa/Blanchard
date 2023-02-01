@@ -95,25 +95,30 @@ document.querySelector('.search-close').addEventListener('click', function () {
 
 
 //Селектор галереи
+const hiderBtn = document.querySelector('.select__wrapper-btn');
+const list = document.querySelector('.select__list');
+const icon = document.querySelector('.select__icon');
+const elementItem = document.querySelector('.select__top');
+const item = document.querySelectorAll('.select__list-item');
 
-document.querySelector('.select__wrapper-btn').addEventListener('click', function () {
-  document.querySelector('.select__list').classList.toggle('js--active--flex');
-  document.querySelector('.select__list').classList.toggle('js-off');
-  document.querySelector('.select__icon').classList.toggle('select__icon--js--active');
-  document.querySelector('.select__icon').classList.toggle('select__icon--js--off');
+hiderBtn.addEventListener('click', function () {
+  list.classList.toggle('js--active--flex');
+  list.classList.toggle('js-off');
+  icon.classList.toggle('select__icon--js--active');
+  icon.classList.toggle('select__icon--js--off');
 });
 
-document.querySelectorAll('.select__list-item').forEach(function (element) {
+item.forEach(function (element) {
   element.addEventListener('click', function () {
-    document.querySelector('.select__top').innerText = this.innerText;
+    elementItem.innerText = this.innerText;
     document.querySelector('.help').classList.remove('js-off');
     document.querySelector('.help-1').classList.remove('js-off');
     document.querySelector('.help-2').classList.remove('js-off');
     this.classList.add('js-off');
-    document.querySelector('.select__list').classList.toggle('js--active--flex');
-    document.querySelector('.select__list').classList.toggle('js-off');
-    document.querySelector('.select__icon').classList.toggle('select__icon--js--active');
-    document.querySelector('.select__icon').classList.toggle('select__icon--js-off');
+    list.classList.remove('js--active--flex');
+    list.classList.add('js-off');
+    icon.classList.toggle('select__icon--js--active');
+    icon.classList.toggle('select__icon--js--off');
   });
 });
 
@@ -143,6 +148,9 @@ const swiper = new Swiper('.swiper-hero', {
   direction: 'horizontal',
   loop: true,
   effect: "fade",
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 0,
 
   autoplay: {
     delay: 3000,
