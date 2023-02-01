@@ -377,24 +377,33 @@
 
   /*hero*/
 
+  .hero__container img {
+    min-height: 768px;
+  }
+
+  .hero__text {
+    width: 81%;
+  }
+
   .hero__text-br {
     display: none;
   }
 
-  .hero__container img {
-    min-height: 668px;
-  }
-
   .hero__box {
-    padding-top: 10%;
+    padding-top: 20%;
     padding-left: var(--pleft);
     padding-right: var(--pright);
-    padding-bottom: 11.6%;
+    padding-bottom: 11%;
+  }
+
+  .hero__btn {
+    padding: 22px 30px 22px 35px;
   }
 
   .title {
     width: 78%;
     line-height: 96px;
+    margin-bottom: -5px;
   }
 
   /*previeew*/
@@ -457,6 +466,11 @@
     width: 100%;
   }
 
+  .catalog-text-off {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+
   .catalog__item-box {
     width: 50%;
   }
@@ -471,11 +485,6 @@
 
   .accordion__panel {
     padding: 30px 2px 29px 0;
-  }
-
-  .accordion__item__box {
-    padding: 31px 0 14px 0;
-    min-height: 434px;
   }
 
   .accordion__item-btn {
@@ -521,6 +530,26 @@
 
   .news__box-decr {
     margin-bottom: 5px;
+  }
+
+  .news__img-1::before {
+    min-height: 198px;
+  }
+
+  .news__img-2::before {
+    min-height: 198px;
+  }
+
+  .news__img-3::before {
+    min-height: 198px;
+  }
+
+  .news__img-4::before {
+    min-height: 198px;
+  }
+
+  .news__img-5::before {
+    min-height: 198px;
   }
 
   .news-br {
@@ -649,13 +678,13 @@
   }
 
   .map {
-    height: 701px;
+    height: 707px;
   }
 
   /*footer*/
 
   .footer__container {
-    padding-top: 41px;
+    padding-top: 43px;
     padding-bottom: 41px;
     padding-left: var(--pleft);
     padding-right: 130px;
@@ -735,18 +764,28 @@
   /*hero*/
 
   .hero__box {
-    padding-top: 14%;
-    padding-bottom: 15.6%;
+    padding-top: 27%;
+    padding-bottom: 15%;
   }
 
   .title {
     line-height: 93px;
   }
 
+  .hero__text {
+    width: 100%;
+  }
+
+  /*preview*/
+
+  .preview {
+    padding: 80px 0 73px 0;;
+  }
+
   /*galery*/
 
   .gallery {
-    padding-bottom: 75px;
+    padding-bottom: 77px;
   }
 
   .gallery__container {
@@ -758,6 +797,10 @@
     margin-bottom: 0;
     padding-bottom: 23px;
     width: 100%;
+  }
+
+  .gallery__slider-btn {
+    margin-bottom: 24px;
   }
 
   .form-down {
@@ -792,16 +835,15 @@
 
   .accordion {
     width: 100%;
-    margin-bottom: 46px;
+    margin-bottom: 50px;
+  }
+
+  .accordion__panel {
+    padding: 32px 1px 28px 0;
   }
 
   .catalog__item-box {
     width: 100%;
-  }
-
-  .accordion__item__box {
-    padding: 1px 0px 6px 0px;
-    min-height: 307px;
   }
 
   .accordion__item-btn {
@@ -809,7 +851,7 @@
   }
 
   .tabs__pct {
-    margin-bottom: 21px;
+    margin-bottom: 24px;
     max-height: 100%;
   }
 
@@ -851,7 +893,7 @@
   }
 
   .pagination {
-    margin-top: 28px;
+    margin-top: 35px;
   }
 
   /*partner*/
@@ -878,11 +920,15 @@
 
   .partners-text {
     padding-right: 6px;
-    margin-bottom: 23px;
+    margin-bottom: 27px;
   }
 
   .partners-br {
     display: none;
+  }
+
+  .slider__btn-right {
+    margin-left: 20px;
   }
 
   /*form*/
@@ -893,8 +939,8 @@
   }
 
   .form__container {
-    padding-top: 47px;
-    padding-bottom: 37px;
+    padding-top: 49px;
+    padding-bottom: 33px;
   }
 
   .form__adress-title {
@@ -944,7 +990,7 @@
   }
 
   .news__box-item {
-    padding: 11px 18px 36px 33px;
+    padding: 17px 18px 31px 33px;
   }
 
   .form__btn {
@@ -961,8 +1007,8 @@
 
   :root {
     --swiper-theme-color: #666666;
-    --pleft: 15px;
-    --pright: 15px;
+    --pleft: 13px;
+    --pright: 13px;
     --black: #000000;
     --grey-umber: #333333;
     --dim-gray: #666666;
@@ -1103,20 +1149,16 @@
     height: auto;
   }
 
-  .hero__container img {
-    min-height: 310px;
-  }
-
   .hero__box {
-    padding-top: 9%;
+    padding-top: 23%;
     padding-left: var(--pleft);
-    padding-bottom: 15%;
+    padding-bottom: 14%;
   }
 
   .title {
     margin: 0 auto;
     margin-bottom: 4px;
-    width: 79%;
+    width: 86%;
     text-align: center;
     font-size: 32px;
     line-height: 43.58px;
@@ -1134,9 +1176,14 @@
 
   .hero__btn {
     margin: 0 auto;
-    padding: 6px 16px 9px 19px;
+    margin-top: auto;
+    padding: 4px 16px 6px 19px;
     min-width: 200px;
     font-size: 12px;
+  }
+
+  .hero__container img {
+    min-height: 355px;
   }
 
   .section-title {
@@ -1159,10 +1206,6 @@
   .slider-btn {
     width: 30px;
     height: 30px;
-  }
-
-  .slider-line {
-    width: 7.07px;
   }
 
   .form__btn {
@@ -1201,7 +1244,7 @@
   /*preview*/
 
   .preview {
-    padding: 50px 0 41px 0;
+    padding: 53px 0 41px 0;
   }
 
   .preview-title {
@@ -1253,7 +1296,19 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
-    padding-top: 15px;
+    padding-top: 13px;
+  }
+
+  .slider-line {
+    width: 7px;
+  }
+
+  .line-left {
+    left: 27%;
+  }
+
+  .line-right {
+    right: 27%;
   }
 
   .swiper__box-item img {
@@ -1302,7 +1357,6 @@
     padding-right: 4px;
   }
 
-
   .catalog-item {
     margin-bottom: 0;
   }
@@ -1312,13 +1366,15 @@
   }
 
   .accordion__panel {
-    padding: 18px 1px 18px 0;
+    padding: 12px 1px 15px 0;
+    height: 71px;
   }
 
   .accordion__item__box {
     align-content: normal;
     justify-content: space-between;
-    padding: 26px 0 0 0;
+    height: 100%;
+    padding: 23px 0 20px 0;
   }
 
   .accordion__item-btn {
@@ -1373,7 +1429,11 @@
   }
 
   .news__box-item {
-    padding: 11px 15px 38px 26px;
+    padding: 17px 14px 35px 25px;
+  }
+
+  .news__btn {
+    margin-left: 4px;
   }
 
   .news__item-title {
@@ -1387,16 +1447,17 @@
 
   .news__box-text {
     font-size: 16px;
+    line-height: 38px;
   }
 
   .pagination {
-    margin-top: 15px;
+    margin-top: 0px;
   }
 
   /*partners*/
 
   .partners {
-    padding-top: 39px;
+    padding-top: 30px;
     padding-right: var(--pright);
     padding-bottom: 8px;
   }
@@ -1446,7 +1507,7 @@
   }
 
   .form__box {
-    margin-bottom: 19px;
+    margin-bottom: 21px;
     margin-right: 0;
     padding: 7px 43px 9px 22px;
     min-width: 290px;
@@ -1503,8 +1564,8 @@
   .form__container {
     flex-direction: column;
     align-items: flex-start;
-    padding-bottom: 21px;
-    padding-top: 34px;
+    padding-bottom: 33px;
+    padding-top: 36px;
   }
 
   .map {
