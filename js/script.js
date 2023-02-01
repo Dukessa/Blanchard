@@ -157,6 +157,7 @@ const swiper = new Swiper('.swiper-hero', {
   },
 });
 
+
 //Слайдер галереи
 
 const swiper1 = new Swiper('.swiper', {
