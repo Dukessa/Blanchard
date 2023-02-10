@@ -713,9 +713,6 @@
 
   .form__input {
     margin-right: 0;
-  }
-
-  .form__input {
     margin-bottom: 24px;
   }
 }
@@ -934,7 +931,6 @@
   /*form*/
 
   .form__input {
-    flex-wrap: wrap;
     margin-bottom: 33px;
   }
 
@@ -953,7 +949,7 @@
     padding: 13px 43px 12px 22px;
     min-width: 324px;
   }
-
+  
   .form__box:nth-child(2n) {
     margin-right: 0;
   }
@@ -998,12 +994,12 @@
   }
 
   .popup__box {
-    height: 100v;
+    height: 100vh;
     overflow-y: auto;
   }
 }
 
-@media (max-width: 722px) {
+@media (max-width: 730px) {
 
   :root {
     --swiper-theme-color: #666666;
@@ -1301,6 +1297,7 @@
 
   .slider-line {
     width: 7px;
+    height: 7px;
   }
 
   .line-left {
@@ -1432,10 +1429,6 @@
     padding: 17px 14px 35px 25px;
   }
 
-  .news__btn {
-    margin-left: 4px;
-  }
-
   .news__item-title {
     width: 100%;
     font-size: 24px;
@@ -1451,13 +1444,13 @@
   }
 
   .pagination {
-    margin-top: 0px;
+    margin-top: 20px;
   }
 
   /*partners*/
 
   .partners {
-    padding-top: 30px;
+    padding-top: 40px;
     padding-right: var(--pright);
     padding-bottom: 8px;
   }
@@ -1475,7 +1468,7 @@
   }
 
   .partners__link {
-    width: 100%;
+    width: max-content;
   }
 
   .partners__preview-title {
@@ -1495,7 +1488,7 @@
   }
 
   .slider__btn-right {
-    margin-left: 15px;
+    margin-left: 13px;
   }
 
   .partners__preview {
@@ -1508,9 +1501,12 @@
 
   .form__box {
     margin-bottom: 21px;
-    margin-right: 0;
     padding: 7px 43px 9px 22px;
     min-width: 290px;
+  }
+  
+  .form__input-box {
+    flex-wrap: wrap;
   }
 
   .form__adress {
@@ -1529,12 +1525,6 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 32px;
-  }
-
-  .form__input {
-    margin-bottom: 17px;
-    flex-direction: column;
-    align-items: flex-start;
   }
 
   .just-validate-error-label {
@@ -1610,7 +1600,7 @@
   }
 }
 
-@media (max-width: 321px) {
+@media (max-width: 330px) {
 
   .hero__box {
     overflow: scroll;
@@ -1625,9 +1615,27 @@
     padding-right: calc(var(--pright) + 1px);
   }
 
+  .news__btn {
+    margin-left: -4px;
+  }
+
   .form__desc {
     margin-bottom: 21px;
     font-size: 14px;
+  }
+  
+  .form__input {
+    margin-bottom: 17px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .form__box {
+    margin-right: 0;
+  }
+
+  .pagination {
+    margin: -7px;
   }
 }
 
