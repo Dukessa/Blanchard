@@ -133,13 +133,12 @@ section,
   background-color: var(--isabelline);
   cursor: pointer;
   z-index: 3000;
-  transition-property: background-color, border, transform;
-  transition-duration: 0.3s;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
 }
 
 .slider-btn:focus-visible {
   outline: none;
-  border: 2px solid var(--amethyst);
+  border-color: var(--amethyst);
 }
 
 .slider-btn:hover {
@@ -148,7 +147,7 @@ section,
 
 
 .slider-btn:active {
-  outline: 2px solid var(--amethyst);
+  border-color: var(--amethyst);
   background-color: var(--bright-ube);
 }
 
