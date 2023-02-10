@@ -157,7 +157,6 @@ const swiper = new Swiper('.swiper-hero', {
   },
 });
 
-
 //Слайдер галереи
 
 const swiper1 = new Swiper('.swiper', {
@@ -365,12 +364,15 @@ document.querySelectorAll('.swiper__box-item').forEach(function (element) {
   element.addEventListener('click', function () {
     document.querySelector('.popup').classList.remove('popup--js-off');
     document.querySelector('.popup').classList.add('popup--js');
+    document.body.style.overflow = "hidden";
   });
 
   document.querySelector('.popup__close').addEventListener('click', function () {
     document.querySelector('.popup').classList.remove('popup--js');
     document.querySelector('.popup').classList.add('popup--js-off');
+    document.body.style.overflow = "";
   });
+  
 });
 
 
