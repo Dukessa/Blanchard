@@ -372,7 +372,6 @@ document.querySelectorAll('.swiper__box-item').forEach(function (element) {
     document.querySelector('.popup').classList.add('popup--js-off');
     document.body.style.overflow = "";
   });
-  
 });
 
 
