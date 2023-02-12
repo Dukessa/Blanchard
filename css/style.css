@@ -154,6 +154,7 @@ section,
 /*header*/
 
 .header {
+  position: relative;
   margin: 0;
   padding: 0;
   z-index: 2000;
@@ -356,21 +357,24 @@ section,
 
 /*hero*/
 
-.hero__container {
-  position: relative;
-}
-
 .hero__slider {
   position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   cursor: auto;
 }
 
-.hero__container img {
-  display: block;
-  min-height: 355px;
+.hero__track {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+}
+
+.hero__track img {
+  height: 100%;
   cursor: auto;
 }
 
@@ -672,18 +676,13 @@ section,
 }
 
 .hero__box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   display: flex;
   flex-direction: column;
   padding-top: 12%;
   padding-left: var(--pleft);
   padding-bottom: 6.5%;
+  min-height: 800px;
   z-index: 2000;
-  overflow: auto;
 }
 
 .title {
@@ -692,6 +691,7 @@ section,
   font-size: 72px;
   line-height: 97px;
   color: var(--white);
+  z-index: 4000;
 }
 
 .hero__text {
@@ -701,6 +701,7 @@ section,
   font-size: 18px;
   line-height: 29px;
   color: var(--white);
+  z-index: 4000;
 }
 
 .hero__btn {
@@ -716,6 +717,7 @@ section,
   font-size: 18px;
   line-height: 24.51px;
   color: var(--white);
+  z-index: 4000;
   transition: outline 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
@@ -1552,6 +1554,7 @@ section,
   min-height: 338px;
   font-weight: 400;
   font-size: 16px;
+  line-height: 30.5px;
   z-index: 1000;
 }
 
@@ -1881,10 +1884,10 @@ section,
 .news__btn::before {
   content: "Подробнее";
   position: absolute;
-  top: 4px;
+  top: 13px;
   right: 0px;
   bottom: 0px;
-  left: 8px;
+  left: 13px;
   border-bottom: 1px solid var(--amethyst);
   width: max-content;
   height: 22px;
@@ -1942,7 +1945,7 @@ section,
 
 .partners__link {
   display: inline;
-  padding: 2px 5px 2px 0;
+  padding: 2px 5px 2px 2px;
   border-bottom: 1px solid transparent;
   color: var(--amethyst);
   transition: all 0.3s ease-in-out;
@@ -1970,7 +1973,7 @@ section,
 
 .partners__link:focus-visible {
   outline: none;
-  padding: 2px 5px 2px 0;
+  padding: 2px 5px 2px 2px;
   background-color: var(--amethyst);
   color: var(--white);
 }
@@ -2007,68 +2010,49 @@ section,
 
 .slider__btn-right {
   margin-left: 50px;
-  outline: none;
-  display: flex;
-}
-
-.partners__btn-style {
-  align-self: center;
-  border: solid 2px transparent;
-  border-radius: 100%;
-  cursor: pointer;
-  transition: stroke 0.3s, fill 0.3s, border-color 0.3s;
-}
-
-.partners__btn-style svg {
-  transition: border-color 0.3s;
-}
-
-.partners__btn-style svg path {
-  transition: fill 0.3s;
-}
-
-
-.partners__btn-style .hover {
-  transition: stroke 0.3s;
 }
 
 .slider__btn-left {
   margin-right: 43px;
+}
+
+.partners__btn-style {
+  box-sizing: border-box;
   display: flex;
+  align-self: center;
+  align-items: center;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  background-color: var(--isabelline);
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, stroke 0.3s;
+}
+
+.partners__btn-style:disabled path {
+  stroke: var(--silver);
+  transition: stroke 0.3s;
 }
 
 .partners__btn-style:disabled {
+  background-color: var(--isabelline);
+  border-color: var(--isabelline);
   cursor: not-allowed;
 }
 
-.partners__btn-style:disabled .hover {
-  stroke: var(--silver);
-  cursor: not-allowed;
+.partners__btn-style:hover:not(:disabled) {
+  background-color: var(--bright-ube);
 }
-
-.partners__btn-style:hover:not(:disabled) svg path {
- fill: var(--bright-ube);
-}
-
-.partners__btn-style:hover:not(:disabled) .hover {
-  stroke: var(--black);
- }
 
 .partners__btn-style:active:not(:disabled) {
+  background-color: var(--bright-ube);
   border-color: var(--amethyst);
-}
-
-.partners__btn-style:active:not(:disabled) svg path {
-  fill: var(--bright-ube);
-}
-
-.partners__btn-style:active:not(:disabled) .hover {
-  stroke: var(--black);
 }
 
 .partners__btn-style:focus-visible:not(:disabled) {
   border-color: var(--amethyst);
-  outline: none;
 }
 
 .swiper-slider {
@@ -2338,7 +2322,6 @@ section,
 
 .form__social__link {
   display: flex;
-  height: 40px;
 }
 
 .whatsapp {
@@ -2356,7 +2339,7 @@ section,
 
 .whatsapp:focus-visible {
   outline: none;
-  border: 2px solid var(--amethyst);
+  border-color: var(--amethyst);
 }
 
 .whatsapp:focus-visible .whatsapp-path {
@@ -2371,7 +2354,7 @@ section,
 
 .whatsapp:active {
   outline: none;
-  border: 2px solid var(--amethyst);
+  border-color: var(--amethyst);
 }
 
 .telegram {
@@ -2388,7 +2371,7 @@ section,
 
 .telegram:focus-visible {
   outline: none;
-  border: 2px solid var(--amethyst);
+  border-color: var(--amethyst);
 }
 
 .telegram:focus-visible .telegram-path {
@@ -2402,7 +2385,7 @@ section,
 }
 
 .telegram:active {
-  border: 2px solid var(--amethyst);
+  border-color: var(--amethyst);
 }
 
 .telegram:active .telegram-path {
