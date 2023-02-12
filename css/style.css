@@ -1868,7 +1868,7 @@ section,
   margin-top: auto;
   margin-right: auto;
   padding: 0 0 7px 3px;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid var(--amethyst);
   width: max-content;
   width: -webkit-max-content;
   width: -moz-max-content;
