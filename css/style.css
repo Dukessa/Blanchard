@@ -708,7 +708,7 @@ section,
   margin-right: auto;
   margin-top: auto;
   padding: 22px 36px 22px 35px;
-  outline: 3px solid transparent;
+  outline: 2px solid transparent;
   outline-offset: 3px;
   border: 3px solid transparent;
   border-radius: 35px;
@@ -721,6 +721,11 @@ section,
   transition: outline 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
+.hero__btn:focus-visible {
+  outline-color: var(--bright-lavender);
+  background-color: var(--amethyst);
+}
+
 .hero__btn:hover {
   background-color: var(--amethyst);
   border-color: var(--bright-ube);
@@ -728,11 +733,6 @@ section,
 
 .hero__btn:active {
   background-color: var(--royal-purple);
-}
-
-.hero__btn:focus-visible {
-  outline: 2px solid var(--bright-lavender);
-  background-color: var(--amethyst);
 }
 
 .hero-search {
@@ -1889,6 +1889,8 @@ section,
   bottom: 0px;
   left: 13px;
   border-bottom: 1px solid var(--amethyst);
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   height: 22px;
   
