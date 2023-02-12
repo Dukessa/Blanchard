@@ -1,1408 +1,2499 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blanchard</title>
-  <link rel="shortcut icon" href="Blanchard.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=4db16a7b-dc57-4ff7-87a1-797f69b335a5&lang=ru_RU"></script>
-  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" type="text/css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" type="text/css">
-  <link rel="stylesheet" href="css/normalize.css" type="text/css">
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
-  <link rel="stylesheet" href="css/style.css" type="text/css">
-  <link rel="stylesheet" href="css/media.css" type="text/css">
-</head>
-
-<body>
-  <header class="header hero">
-      <div class="container">
-        <div class="hero__slider swiper-container swiper-hero">
-          <div class="hero__box">
-            <h1 class="title">Прикоснитесь<br class="hero__text-br"> к&nbsp;прекрасному</h1>
-            <p class="hero__text">
-              Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация<br class="hero__text-br"> намеченных плановых заданий создаёт
-              предпосылки<br class="hero__text-br"> для новых предложений
-            </p>
-            <a href="#form" class="hero__btn">Подписаться&nbsp;на&nbsp;рассылку</a>
-          </div>
-
-          <div class="hero__track swiper-wrapper">
-            <div class="hero__slide swiper-slide">
-              <img src="./img/1920main-banner.jpg" alt="#" aria-hidden="true">
-            </div>
-
-            <div class="hero__slide swiper-slide">
-              <img src="./img/1920second-banner.jpg" alt="#" aria-hidden="true">
-            </div>
-
-            <div class="hero__slide swiper-slide">
-              <img src="./img/1920third-banner.jpg" alt="#" aria-hidden="true">
-            </div>
-          </div>
-          
-        </div>
-        <div class="header__container">
-          <div class="box-absolut">
-            <button class="burger" aria-label="Открыть/закрыть меню">
-              <span class="burger__line line-top"></span>
-              <span class="burger__line line-center"></span>
-              <span class="burger__line line-bottom"></span>
-            </button>
-          </div>
-
-          <div class="header__container-box">
-            <a class="header__logo" role="link" aria-label="Логотип">
-              <img src="./svg/main-logotip.svg" alt="Логотип" aria-hidden="true">
-            </a>
-          </div>
-
-          <nav class="nav header__container-nav">
-            <ul class="header__nav scrollto">
-              <li class="nav__box">
-                <a href="#preview" class="nav__link">О&nbsp;нас</a>
-              </li>
-              <li class="nav__box">
-                <a href="#gallery" class="nav__link">Галерея</a>
-              </li>
-              <li class="nav__box">
-                <a href="#catalog" class="nav__link">Каталог</a>
-              </li>
-              <li class="nav__box">
-                <a href="#news" class="nav__link">События</a>
-              </li>
-              <li class="nav__box">
-                <a href="#partners" class="nav__link">Проекты</a>
-              </li>
-              <li class="nav__box">
-                <a href="#form" class="nav__link">Контакты</a>
-              </li>
-            </ul>
-
-            <a href="#" class="user">
-              <div class="user__btn">
-                <span class="user__pct" aria-hidden="true">
-                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
-                      fill="white" />
-                  </svg>
-                </span>
-                <span class="user__pct-text">Войти</span>
-              </div>
-            </a>
-          </nav>
-
-          <div class="header__menu menu">
-            <nav class="nav menu__nav">
-              <ul class="nav__container">
-                <li class="menu__link">
-                  <button class="menu__link-item">
-                    Реализм
-                    <svg class="menu__icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11 1L6 6L1 1" stroke="white"/>
-                    </svg>
-                  </button>
-
-                  <div class="menu__item js-off">
-                    <ul class="menu__item-box">
-                      <li class="menu__item-style tintoretto">
-                        <a href="#" class="menu__item-link">Тинторетто</a>
-                      </li>
-                      <li class="menu__item-style friedrich">
-                        <a href="#" class="menu__item-link">Фридрих</a>
-                      </li>
-                      <li class="menu__item-style leonardo">
-                        <a href="#" class="menu__item-link">Леонардо</a>
-                      </li>
-                      <li class="menu__item-style verrocchio">
-                        <a href="#" class="menu__item-link">Верроккьо</a>
-                      </li>
-                      <li class="menu__item-style leonardo">
-                        <a href="#" class="menu__item-link">Леонардо</a>
-                      </li>
-                      <li class="menu__item-style verrocchio">
-                        <a href="#" class="menu__item-link">Верроккьо</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-
-                <li class="menu__link">
-                  <button class="menu__link-item">
-                    Импрессионизм
-                    <svg class="menu__icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11 1L6 6L1 1" stroke="white"/>
-                    </svg>
-                  </button>
-
-                  <div class="menu__item js-off">
-                    <ul class="menu__item-box">
-                      <li class="menu__item-style monet">
-                        <a href="#" class="menu__item-link">Моне</a>
-                      </li>
-                      <li class="menu__item-style sisley">
-                        <a href="#" class="menu__item-link">Сислей</a>
-                      </li>
-                      <li class="menu__item-style manet">
-                        <a href="#" class="menu__item-link">Мане</a>
-                      </li>
-                      <li class="menu__item-style renoir">
-                        <a href="#" class="menu__item-link">Ренуар</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-
-                <li class="menu__link">
-                  <button class="menu__link-item">
-                    Постимпрессионизм
-                    <svg class="menu__icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11 1L6 6L1 1" stroke="white"/>
-                    </svg>
-                  </button>
-
-                  <div class="menu__item js-off">
-                    <ul class="menu__item-box">
-                      <li class="menu__item-style gofh">
-                        <a href="#" class="menu__item-link">Ван Гог</a>
-                      </li>
-                      <li class="menu__item-style cezanne">
-                        <a href="#" class="menu__item-link">Сезанн</a>
-                      </li>
-                      <li class="menu__item-style gauguin">
-                        <a href="#" class="menu__item-link">Гоген</a>
-                      </li>
-                      <li class="menu__item-style seurat">
-                        <a href="#" class="menu__item-link">Сёра</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-
-                <li class="menu__link">
-                  <button class="menu__link-item">
-                    Авангард
-                    <svg class="menu__icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11 1L6 6L1 1" stroke="white"/>
-                    </svg>
-                  </button>
-
-                  <div class="menu__item js-off">
-                    <ul class="menu__item-box">
-                      <li class="menu__item-style kandinsky">
-                        <a href="#" class="menu__item-link">Кандинский</a>
-                      </li>
-                      <li class="menu__item-style marinetti">
-                        <a href="#" class="menu__item-link">Маринетти</a>
-                      </li>
-                      <li class="menu__item-style malevich">
-                        <a href="#" class="menu__item-link">Малевич</a>
-                      </li>
-                      <li class="menu__item-style picasso">
-                        <a href="#" class="menu__item-link">Пикассо</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-
-                <li class="menu__link">
-                  <button class="menu__link-item">
-                    Футуризм
-                    <svg class="menu__icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11 1L6 6L1 1" stroke="white"/>
-                    </svg>
-                  </button>
-
-                  <div class="menu__item js-off">
-                    <ul class="menu__item-box">
-                      <li class="menu__item-style carra">
-                        <a href="#" class="menu__item-link">Карра</a>
-                      </li>
-                      <li class="menu__item-style pratella">
-                        <a href="#" class="menu__item-link">Прателла</a>
-                      </li>
-                      <li class="menu__item-style severini">
-                        <a href="#" class="menu__item-link">Северини</a>
-                      </li>
-                      <li class="menu__item-style balla">
-                        <a href="#" class="menu__item-link">Балла</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-
-            <div class="hero-search" role="search">
-              <button type="submit" class="search-svg" aria-label="Кнопка поиска">
-                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="6.8678" height="1.71695"
-                    transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M12.0967 18C7.53016 18 3.99668 14.3229 3.99668 10C3.99668 5.67715 7.53016 2 12.0967 2C16.6632 2 20.1967 5.67715 20.1967 10C20.1967 14.3229 16.6632 18 12.0967 18ZM12.0967 20C6.57383 20 2.09668 15.5228 2.09668 10C2.09668 4.47715 6.57383 0 12.0967 0C17.6195 0 22.0967 4.47715 22.0967 10C22.0967 15.5228 17.6195 20 12.0967 20Z"
-                    fill="white" />
-                </svg>
-              </button>
-              <input class="search-input" type="search" name="search" id="search" placeholder="Поиск по сайту"
-                autocomplete="off">
-            </div>
-          </div>
-
-          <div class="search">
-            <div class="search__box">
-              <button class="search-svg search__btn" type="submit" aria-label="Кнопка поиска">
-                <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="9.15446" height="2.28862"
-                    transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
-                    fill="white" />
-                </svg>
-              </button>
-              <label for="search-text" class="search__text">
-                <input id="search-text" type="text" aria-label="Введите запрос" autocomplete="off">
-              </label>
-            </div>
-          </div>
-          <button class="search-close" type="reset" aria-label="Закрыть">
-            <span class="search-close__line close-left"></span>
-            <span class="search-close__line close-right"></span>
-          </button>
-        </div>
-        
-      </div>
-  </header>
-
-  <main class="main">
-    <section id="preview" class="preview">
-      <div class="container">
-        <div class="preview__box">
-          <h2 class="section-title preview-title">
-            О&nbsp;нас
-          </h2>
-          <p class="section-text preview-text">
-            Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого
-            участника как&nbsp;способного принимать собственные решения касаемо распределения внутренних резервов
-            и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, <br class="preview-br">что высококачественный прототип
-            будущего проекта влечёт
-            за&nbsp;собой процесс внедрения и модернизации модели развития. Повседневная <br class="preview-br">практика
-            показывает, что
-            высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план
-            целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов
-            и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции
-            набирают популярность среди определённых слоёв населения, а&nbsp;значит, должны быть разоблачены.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="gallery" class="gallery">
-      <div class="container">
-        <div class="gallery__container">
-          <div class="gallery__preview">
-            <h2 class="section-title gallery__title">Галерея</h2>
-            <span class="gallery__span">Фильтр:</span>
-
-            <div class="select form-down">
-              <div class="select__wrapper-js">
-                <div class="select__wrapper-btn choices">
-                  <button class="select__top" aria-label="Выбрать исскуство">
-                    Живопись
-                  </button>
-                  <div class="select__icon select__icon--js--off">
-                  </div>
-                </div>
-
-                <div class="select__list js-off">
-                  <button class="select__list-item help">Рисунок</button>
-                  <button class="select__list-item help-1">Скульптура</button>
-                  <button class="select__list-item help-2 js-off">Живопись</button>
-                </div>
-
-                <input type="text" class="select-input" disabled aria-hidden="true">
-              </div>
-            </div>
-
-            <div class="checkbox">
-              <label for="checkbox-1" class="checkbox__elem">
-                <input class="input-checkbox" type="checkbox" name="century" id="checkbox-1" tabindex="0">
-                <span class="checkbox__text">XIX век</span>
-              </label>
-
-              <label for="checkbox-2" class="checkbox__elem">
-                <input class="input-checkbox" type="checkbox" name="century" id="checkbox-2">
-                <span class="checkbox__text">XX век</span>
-              </label>
-
-              <label for="checkbox-3" class="checkbox__elem">
-                <input class="input-checkbox" type="checkbox" name="century" id="checkbox-3">
-                <span class="checkbox__text">Современность</span>
-              </label>
-            </div>
-          </div>
-
-          <div class="gallery__slider swiper">
-            <nav class="gallery__slider-btn">
-              <button class="gallery__btn btn-left">Назад
-                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
-                    fill="#666666" />
-                  <path
-                    d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
-                    stroke="black" />
-                  <path d="M16 20L11 15L16 10" stroke="white" />
-                </svg>
-              </button>
-              <span class="swiper__namber swiper-pagination"></span>
-              <button class="gallery__btn btn-right">Вперед
-                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
-                    fill="#666666" />
-                  <path
-                    d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
-                    stroke="black" />
-                  <path d="M14 20L19 15L14 10" stroke="white" />
-                </svg>
-              </button>
-            </nav>
-
-            <div class="gallery__slider-box swiper-container swiper">
-              <div class="swiper__track swiper-wrapper">
-                <div class="swiper__box-item swiper-slide" tabindex="0">
-                  <img src="./img/1920Rectangle70.jpg" alt="Малевич К. С. картина Торс">
-                </div>
-
-                <div class="swiper__box-item swiper-slide" tabindex="0">
-                  <img src="./img/1920Rectangle93.jpg" alt="Малевич К. С.картина  Женщина с граблями">
-                </div>
-
-                <div class="swiper__box-item swiper-slide" tabindex="0">
-                  <img src="./img/1920Rectangle68.jpg" alt="Малевич К. С. картина Уборка ржи">
-                </div>
-
-                <div class="swiper__box-item swiper-slide" tabindex="0">
-                  <img src="./img/1920Rectangle139.jpg" alt="Клюн И. картина Супрематизм">
-                </div>
-
-                <div class="swiper__box-item swiper-slide" tabindex="0">
-                  <img src="./img/1920Rectangle73.jpg" alt="Малевич К. С. картина Женщина с вёдрами">
-                </div>
-
-                <div class="swiper__box-item swiper-slide" tabindex="0">
-                  <img src="./img/1920Rectangle71.jpg" alt="Малевич К. С. картина Превосходматизм">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="popup popup--js-off">
-            <div class="popup__box">
-              <span class="popup__close">&times;</span>
-              <div class="popup__img">
-                <picture>
-                  <source media="(max-width: 320px)" srcset="img/320Rectangle93.jpg">
-                  <source media="(max-width: 768px)" srcset="img/768Rectangle93.jpg">
-                  <source media="(max-width: 1024px)" srcset="img/1024Rectangle93.jpg">
-                  <img src="./img/1920Rectangle93.jpg" alt="&laquo;Женщина с&nbsp;граблями&raquo;">
-                </picture>
-              </div>
-
-              <div class="popup__item">
-                <h3 class="item-title popup__title">Казимир Малевич</h3>
-                <span class="popup__sub">&laquo;Женщина с&nbsp;граблями&raquo;</span>
-                <span class="popup__span">1931&ndash;1932</span>
-                <p class="section-text popup__text">Картина из&nbsp;второй серии крестьянского цикла работ Казимира
-                  Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930&ndash;1931&nbsp;годах, после того,
-                  как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="catalog" class="catalog">
-      <div class="container">
-        <div class="catalog__container">
-          <div class="catalog__preview">
-            <h2 class="section-title catalog-item">Каталог</h2>
-            <p class="section-text catalog-text catalog-text-off">
-              Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа&nbsp;политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. Являясь
-              всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии
-              и&nbsp;по&nbsp;сей день остаются уделом либералов, которые жаждут быть функционально разнесены
-              на&nbsp;независимые элементы.
-            </p>
-          </div>
-
-          <div class="item">
-            <div class="catalog__item-box">
-              <div class="tabs" id="tab-1">
-                <div class="tabs__pct">
-                  <picture>
-                    <source media="(min-width: 1024px)" srcset="img/Benedetto.jpg">
-                    <img src="./img/Benedetto.jpg" alt="фреска">
-                  </picture>
-                </div>
-
-                <div class="tabs__preview-box">
-                  <h3 class="item-title tabs__title">Бенедетто ди Биндо</h3>
-                  <span class="item__decr">ок. 1380—85 19 сентября 1417</span>
-                  <p class="section-text catalog-text">
-                    Первое документальное упоминание имени художника датируется 20&nbsp;ноября 1409&nbsp;года, когда
-                    он&nbsp;получил заказ на&nbsp;роспись двух деревянных статуй святых покровителей Сиены&nbsp;&mdash;
-                    св.
-                    Виктора и&nbsp;св. Савиния, выполненных скульптором Франческо ди&nbsp;Вальдамбрино для Сиенского
-                    собора.
-                    В&nbsp;1411&ndash;1412 годах Бенедетто работал над циклом фресок, посвящённых житию Марии
-                    в&nbsp;сакристии этого&nbsp;же собора.
-                  </p>
-                </div>
-              </div>
-
-              <div class="tabs" id="tab-2">
-                <div class="tabs__pct">
-                  <img src="./img/Bergonone.jpg" alt="картина Мадонна с младенцем">
-                </div>
-
-                <div class="tabs__preview-box">
-                  <h3 class="item-title tabs__title">Амброджо Бергоньоне</h3>
-                  <span class="item__decr">1453&nbsp;&mdash; 1523</span>
-                  <p class="section-text catalog-text">
-                    Прозвище говорит о&nbsp;его тяготении к&nbsp;бургундской школе, по&nbsp;манере ему близок Винченцо
-                    Фоппа. Испытал влияние Леонардо да&nbsp;Винчи. Наиболее известен работами 1486&ndash;1494&nbsp;в
-                    монастырской обители картезианцев Чертоза ди&nbsp;Павия. Позднее работал в&nbsp;Милане
-                    в&nbsp;базилике
-                    Сант-Эусторджо и&nbsp;церкви Сан-Сатиро, после 1497&nbsp;&mdash; в&nbsp;Лоди,
-                    в&nbsp;1512&nbsp;&mdash;
-                    в&nbsp;Бергамо, незадолго до&nbsp;смерти&nbsp;&mdash; снова в&nbsp;Милане, в&nbsp;базилике
-                    Сан-Симпличано.
-                  </p>
-                </div>
-
-              </div>
-
-              <div class="tabs" id="tab-3">
-                <div class="tabs__pct">
-                  <img src="./img/Bissolo.jpg" alt="картина Мистический брак Святой Екатерины">
-                </div>
-
-                <div class="tabs__preview-box">
-                  <h3 class="item-title tabs__title">Франческо Биссоло</h3>
-                  <span class="item__decr">Тревизо&nbsp;&mdash; 20&nbsp;апреля 1554, Венеция</span>
-                  <p class="section-text catalog-text">
-                    Сын художника. Ученик Джованни Беллини. С&nbsp;1490 переехал в&nbsp;мастерскую Беллини. С&nbsp;1492
-                    по&nbsp;1530 год работал в&nbsp;Венеции. Помогал учителю в&nbsp;работе над украшением Большого зала
-                    Совета Дворца дожей (Венеция). Принимал участие в&nbsp;создании украшений Церкви Иль Реденторе
-                    в&nbsp;Венеции. Художник эпохи Возрождения.
-                  </p>
-                </div>
-              </div>
-
-              <div class="tabs" id="tab-4">
-                <div class="tabs__pct">
-                  <img src="./img/gag.png" alt="Художник">
-                </div>
-
-                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr"></span>
-                <p class="section-text catalog-text">
-                  Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
-                </p>
-                <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-              </div>
-
-              <div class="tabs" id="tab-5">
-                <div class="tabs__pct">
-                  <img src="./img/gag.png" alt="Художник">
-                </div>
-
-                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr"></span>
-                <p class="section-text catalog-text">
-                  Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
-                </p>
-                <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-              </div>
-
-              <div class="tabs" id="tab-6">
-                <div class="tabs__pct">
-                  <img src="./img/gag.png" alt="Художник">
-                </div>
-
-                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr"></span>
-                <p class="section-text catalog-text">
-                  Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
-                </p>
-                <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-              </div>
-
-              <div class="tabs" id="tab-7">
-                <div class="tabs__pct">
-                  <img src="./img/gag.png" alt="Художник">
-                </div>
-
-                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr"></span>
-                <p class="section-text catalog-text">
-                  Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
-                </p>
-                <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-              </div>
-
-              <div class="tabs" id="tab-8">
-                <div class="tabs__pct">
-                  <img src="./img/gag.png" alt="Художник">
-                </div>
-
-                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr"></span>
-                <p class="section-text catalog-text">
-                  Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
-                </p>
-                <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-              </div>
-
-              <div class="tabs" id="tab-9">
-                <div class="tabs__pct">
-                  <img src="./img/Biagio_d'Antonio.jpg" alt="картина, Помолвка Ясона и Медеи">
-                </div>
-
-                <h3 class="item-title tabs__title">Бьяджо д&rsquo;Антонио Туччи</h3>
-                <span class="item__decr">ок. 1445</span>
-                <p class="section-text catalog-text">
-                  Родился во&nbsp;Флоренции.
-                  Последнюю четверть&nbsp;XV века работал в&nbsp;Фаэнце, но&nbsp;в&nbsp;его стиле мало элементов
-                  флорентийского стиля&nbsp;&mdash; прослеживается влияние ранней нидерландской живописи.
-                </p>
-              </div>
-
-              <div class="tabs" id="tab-10">
-                <div class="tabs__pct">
-                  <img src="./img/gag.png" alt="Художник">
-                </div>
-
-                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr"></span>
-                <p class="section-text catalog-text">
-                  Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
-                </p>
-                <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-              </div>
-
-              <div class="tabs" id="tab-11">
-                <div class="tabs__pct">
-                  <img src="./img/gag.png" alt="Художник">
-                </div>
-
-                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr"></span>
-                <p class="section-text catalog-text">
-                  Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
-                </p>
-                <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-              </div>
-
-              <div class="tabs" id="tab-12">
-                <div class="tabs__pct">
-                  <picture>
-                    <source media="(min-width: 320px)" srcset="img/320Ghirlandaio.jpg">
-                    <source media="(min-width: 768px)" srcset="img/768Ghirlandaio.jpg">
-                    <source media="(min-width: 1024px)" srcset="img/1024Ghirlandaio.jpg">
-                    <img src="./img/1920Ghirlandaio.jpg" alt="фрагмент картины Поклонение вохвов">
-                  </picture>
-                </div>
-
-                <div class="tabs__preview-box">
-                  <h3 class="item-title tabs__title">Доменико Гирландайо</h3>
-                  <span class="item__decr">2 июня 1448–11 января 1494</span>
-                  <p class="section-text catalog-text">
-                    Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии,
-                    которую
-                    продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный
-                    Микеланджело
-                    в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых
-                    выпукло, со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей
-                    (в&nbsp;их&nbsp;роли выступают знатные граждане Флоренции в&nbsp;костюмах того времени).
-                  </p>
-                </div>
-              </div>
-
-              <div class="tabs" id="tab-13">
-                <div class="tabs__pct">
-                  <img src="./img/gag.png" alt="Художник">
-                </div>
-
-                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr"></span>
-                <p class="section-text catalog-text">
-                  Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
-                </p>
-                <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-              </div>
-
-              <div class="tabs" id="tab-14">
-                <div class="tabs__pct">
-                  <img src="./img/gag.png" alt="Художник">
-                </div>
-
-                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr"></span>
-                <p class="section-text catalog-text">
-                  Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
-                </p>
-                <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-              </div>
-
-              <div class="tabs" id="tab-15">
-                <div class="tabs__pct">
-                  <img src="./img/gag.png" alt="Художник">
-                </div>
-
-                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr"></span>
-                <p class="section-text catalog-text">
-                  Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
-                </p>
-                <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-              </div>
-
-              <div class="tabs" id="tab-16">
-                <div class="tabs__pct">
-                  <img src="./img/gag.png" alt="Художник">
-                </div>
-
-                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr"></span>
-                <p class="section-text catalog-text">
-                  Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
-                </p>
-                <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-              </div>
-
-              <div class="tabs" id="tab-17">
-                <div class="tabs__pct">
-                  <img src="./img/Giovanni_di_Paolo.jpg" alt="картина Сотворение мира и Изгнание из рая">
-                </div>
-
-                <h3 class="item-title tabs__title">Джованни ди&nbsp;Паоло</h3>
-                <span class="item__decr">ок. 1403&ndash;1482</span>
-                <p class="section-text catalog-text">
-                  По&nbsp;всей видимости, учителем Джованни ди&nbsp;Паоло был Таддео ди&nbsp;Бартоло. Свою творческую
-                  карьеру ди&nbsp;Паоло начал как художник-миниатюрист[3]. Расцвет его деятельности пришёлся
-                  на&nbsp;1440&ndash;1450-е годы: в&nbsp;это время художник создаёт самые известные свои произведения.
-                </p>
-              </div>
-
-              <div class="tabs" id="tab-18">
-                <div class="tabs__pct">
-                  <img src="./img/gag.png" alt="Художник">
-                </div>
-
-                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr"></span>
-                <p class="section-text catalog-text">
-                  Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
-                </p>
-                <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-              </div>
-
-              <div class="tabs" id="tab-19">
-                <div class="tabs__pct">
-                  <img src="./img/gag.png" alt="Художник">
-                </div>
-
-                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr"></span>
-                <p class="section-text catalog-text">
-                  Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
-                </p>
-                <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-              </div>
-
-              <div class="tabs" id="tab-20">
-                <div class="tabs__pct">
-                  <img src="./img/gag.png" alt="Художник">
-                </div>
-
-                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr"></span>
-                <p class="section-text catalog-text">
-                  Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
-                </p>
-                <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-              </div>
-
-              <div class="tabs" id="tab-21">
-                <div class="tabs__pct">
-                  <img src="./img/gag.png" alt="Художник">
-                </div>
-
-                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr"></span>
-                <p class="section-text catalog-text">
-                  Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
-                </p>
-                <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-              </div>
-
-              <div class="tabs" id="tab-22">
-                <div class="tabs__pct">
-                  <img src="./img/gag.png" alt="Художник">
-                </div>
-
-                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr"></span>
-                <p class="section-text catalog-text">
-                  Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
-                </p>
-                <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-              </div>
-
-              <div class="tabs" id="tab-23">
-                <div class="tabs__pct">
-                  <img src="./img/gag.png" alt="Художник">
-                </div>
-
-                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr"></span>
-                <p class="section-text catalog-text">
-                  Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
-                </p>
-                <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-              </div>
-
-              <div class="tabs" id="tab-24">
-                <div class="tabs__pct">
-                  <img src="./img/gag.png" alt="Художник">
-                </div>
-
-                <h3 class="item-title tabs__title">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-                <span class="item__decr" tabindex="-1"></span>
-                <p class="section-text catalog-text">
-                  Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
-                </p>
-                <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-              </div>
-
-              <div class="tabs-0 tabs" id="tab-0">
-                <div class="tabs__pct" role="tabpanel">
-                  <picture>
-                    <source media="(min-width: 320px)" srcset="img/320Ghirlandaio.jpg">
-                    <source media="(min-width: 768px)" srcset="img/768Ghirlandaio.jpg">
-                    <source media="(min-width: 1024px)" srcset="img/1024Ghirlandaio.jpg">
-                    <img src="./img/1920Ghirlandaio.jpg" alt="фрагмент картины Поклонение вохвов">
-                  </picture>
-                </div>
-
-                <div class="tabs__preview-box">
-                  <h3 class="item-title tabs__title">Доменико Гирландайо</h3>
-                  <span class="item__decr">2 июня 1448–11 января 1494</span>
-                  <p class="section-text catalog-text">
-                    Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии,
-                    которую
-                    продолжили<br class="preview-br"> его брат Давид и&nbsp;сын Ридольфо. Глава художественной
-                    мастерской, где юный
-                    Микеланджело
-                    в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых
-                    выпукло, со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей
-                    (в&nbsp;их&nbsp;роли выступают знатные граждане Флоренции в&nbsp;костюмах того времени).
-                  </p>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="accordion" role="tabpanel">
-              <div class="accordion__container">
-                <button class="accordion__panel" aria-label="C 1400 по 1499 год">
-                  <span class="item-title acordion-title">C&nbsp;1400 по&nbsp;1499&nbsp;гг</span>
-                  <span class="slider-btn accordion__btn">
-                    <span class="slider-line"></span>
-                  </span>
-                </button>
-
-                <div class="accordion__item">
-                  <div class="accordion__item__box" role="tablist">
-                    <div class="accordion__item-btn">
-                      <a href="#tab-1" class="accordion__item-link">Бенедетто&nbsp;ди&nbsp;Биндо</a>
-                    </div>
-                      <div class="accordion__item-btn">
-                        <a href="#tab-9" class="accordion__item-link" role="tab">Бьяджо&nbsp;д’Антонио&nbsp;Туччи</a>
-                      </div>
-                      <div class="accordion__item-btn">
-                        <a href="#tab-17" class="accordion__item-link" role="tab">Джованни&nbsp;ди&nbsp;Паоло</a>
-                      </div>
-                      <div class="accordion__item-btn">
-                        <a href="#tab-2" class="accordion__item-link" role="tab">Бергоньоне,&nbsp;Амброджо</a>
-                      </div>
-                      <div class="accordion__item-btn">
-                        <a href="#tab-10" class="accordion__item-link" role="tab">Веккьетта</a>
-                      </div>
-                      <div class="accordion__item-btn">
-                        <a href="#tab-18" class="accordion__item-link" role="tab">Джорджоне</a>
-                      </div>
-                      <div class="accordion__item-btn">
-                        <a href="#tab-3" class="accordion__item-link" role="tab">Биссоло,&nbsp;Франческо</a>
-                      </div>
-                      <div class="accordion__item-btn">
-                        <a href="#tab-11" class="accordion__item-link" role="tab">Андреа&nbsp;Верроккьо</a>
-                      </div>
-                      <div class="accordion__item-btn">
-                        <a href="#tab-19" class="accordion__item-link" role="tab">Парентино,&nbsp;Бернардо</a>
-                      </div>
-                      <div class="accordion__item-btn">
-                        <a href="#tab-4" class="accordion__item-link" role="tab">Больтраффио,&nbsp;Джованни</a>
-                      </div>
-                      <div class="accordion__item-btn">
-                        <a href="#tab-12" class="accordion__item-link" role="tab">Доменико&nbsp;Гирландайо</a>
-                      </div>
-                      <div class="accordion__item-btn">
-                        <a href="#tab-20" class="accordion__item-link" role="tab">Пезеллино</a>
-                      </div>
-                      <div class="accordion__item-btn">
-                        <a href="#tab-5" class="accordion__item-link" role="tab">Бонсиньори,&nbsp;Франческо</a>
-                      </div>
-                      <div class="accordion__item-btn">
-                        <a href="#tab-13" class="accordion__item-link" role="tab">Беноццо&nbsp;Гоццоли</a>
-                      </div>
-                      <div class="accordion__item-btn">
-                        <a href="#tab-21" class="accordion__item-link" role="tab">Пьетро&nbsp;Перуджино</a>
-                      </div>
-                      <div class="accordion__item-btn">
-                        <a href="#tab-6" class="accordion__item-link" role="tab">Боттичини,&nbsp;Рафаэлло</a>
-                      </div>
-                      <div class="accordion__item-btn">
-                        <a href="#tab-14" class="accordion__item-link" role="tab">Граначчи,&nbsp;Франческо</a>
-                      </div>
-                      <div class="accordion__item-btn">
-                        <a href="#tab-22" class="accordion__item-link" role="tab">Перуцци,&nbsp;Бальдассаре</a>
-                      </div>
-                      <div class="accordion__item-btn">
-                        <a href="#tab-7" class="accordion__item-link" role="tab">Брамантино</a>
-                      </div>
-                      <div class="accordion__item-btn">
-                        <a href="#tab-15" class="accordion__item-link" role="tab">Грегорио&nbsp;ди&nbsp;Чекко</a>
-                      </div>
-                      <div class="accordion__item-btn">
-                        <a href="#tab-23" class="accordion__item-link" role="tab">Пизанелло</a>
-                      </div>
-                      <div class="accordion__item-btn">
-                        <a href="#tab-8" class="accordion__item-link" role="tab">Бреа,&nbsp;Людовико</a>
-                      </div>
-                      <div class="accordion__item-btn">
-                        <a href="#tab-16" class="accordion__item-link" role="tab">Джованни&nbsp;да&nbsp;Удине</a>
-                      </div>
-                      <div class="accordion__item-btn">
-                        <a href="#tab-24" class="accordion__item-link" role="tab">Пинтуриккьо</a>
-                      </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion__container gag">
-                <button class="accordion__panel"  aria-label="C 1500 по 1599 год">
-                  <span class="item-title acordion-title">C&nbsp;1500 по&nbsp;1599&nbsp;гг</span>
-                  <span class="slider-btn accordion__btn">
-                    <span class="slider-line"></span>
-                  </span>
-                </button>
-
-                <div class="accordion__item">
-                  <div class="gag__box"  role="tablist">
-                    <div class="gag__img"></div>
-                    <div class="gag__box-text">
-                      <h3 class="item-title gag__title">Здесь пока пусто</h3>
-                      <p class="section-text gag__text">
-                        А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
-                      </p>
-                      <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion__container gag">
-                <button class="accordion__panel"  aria-label="C 1600 по 1699 год">
-                  <span class="item-title acordion-title">C&nbsp;1600 по&nbsp;1699&nbsp;гг</span>
-                  <span class="slider-btn accordion__btn">
-                    <span class="slider-line"></span>
-                  </span>
-                </button>
-
-                <div class="accordion__item">
-                  <div class="gag__box"  role="tablist">
-                    <div class="gag__img"></div>
-                    <div class="gag__box-text">
-                      <h3 class="item-title gag__title">Здесь пока пусто</h3>
-                      <p class="section-text gag__text">
-                        А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
-                      </p>
-                      <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion__container gag">
-                <button class="accordion__panel"  aria-label="C 1700 по 1799 год">
-                  <span class="item-title acordion-title">C&nbsp;1700 по&nbsp;1799&nbsp;гг</span>
-                  <span class="slider-btn accordion__btn">
-                    <span class="slider-line"></span>
-                  </span>
-                </button>
-
-                <div class="accordion__item">
-                  <div class="gag__box" role="tablist">
-                    <div class="gag__img"></div>
-                    <div class="gag__box-text">
-                      <h3 class="item-title gag__title">Здесь пока пусто</h3>
-                      <p class="section-text gag__text">
-                        А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
-                      </p>
-                      <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion__container gag">
-                <button class="accordion__panel"  aria-label="C 1800 по 1899 год">
-                  <span class="item-title acordion-title">C&nbsp;1800 по&nbsp;1899&nbsp;гг</span>
-                  <span class="slider-btn accordion__btn">
-                    <span class="slider-line"></span>
-                  </span>
-                </button>
-
-                <div class="accordion__item">
-                  <div class="gag__box">
-                    <div class="gag__img"></div>
-                    <div class="gag__box-text">
-                      <h3 class="item-title gag__title">Здесь пока пусто</h3>
-                      <p class="section-text gag__text">
-                        А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
-                      </p>
-                      <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion__container gag">
-                <button class="accordion__panel"  aria-label="C 1900 по 1999 год">
-                  <span class="item-title acordion-title">C&nbsp;1900 по&nbsp;1999&nbsp;гг</span>
-                  <span class="slider-btn accordion__btn">
-                    <span class="slider-line"></span>
-                  </span>
-                </button>
-
-                <div class="accordion__item">
-                  <div class="gag__box">
-                    <div class="gag__img"></div>
-                    <div class="gag__box-text">
-                      <h3 class="item-title gag__title">Здесь пока пусто</h3>
-                      <p class="section-text gag__text">
-                        А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
-                      </p>
-                      <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion__container gag">
-                <button class="accordion__panel"  aria-label="C 2000 года">
-                  <span class="item-title acordion-title">C&nbsp;2000&nbsp;г</span>
-                  <span class="slider-btn accordion__btn">
-                    <span class="slider-line"></span>
-                  </span>
-                </button>
-
-                <div class="accordion__item">
-                  <div class="gag__box">
-                    <div class="gag__img"></div>
-                    <div class="gag__box-text">
-                      <h3 class="item-title gag__title">Здесь пока пусто</h3>
-                      <p class="section-text gag__text">
-                        А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
-                      </p>
-                      <a href="#gallery" class="tabs-link">В&nbsp;галерею</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="news" class="news">
-      <div class="container">
-        <h2 class="section-title news__title">События</h2>
-
-        <div class="slider-box">
-          <div class="news__slider swiper-container swiper-3">
-            <div class="news__container swiper-wrapper">
-              <article class="news__box swiper-slide news__img-1">
-
-                <div class="news__box-item">
-                  <span class="news__box-decr">Музей им. Щусева<br>20&nbsp;марта
-                    по&nbsp;30&nbsp;апреля</span>
-                  <h3 class="item-title news__item-title">Книжная гравюра<br class="news-br"> в&nbsp;живом
-                    восприятии</h3>
-                  <p class="section-text news__box-text">
-                    Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии,
-                    которую
-                    продолжили <br class="news__box-text-br"> его брат Давид<br class="news__box-text-br"> и&nbsp;сын
-                    Ридольфо
-                  </p>
-                    <a href="#" class="news__btn">Подробнее</a>
-                </div>
-              </article>
-
-              <article class="news__box swiper-slide news__img-2">
-
-                <div class="news__box-item">
-                  <span class="news__box-decr">ММОМА<br>24&nbsp;марта 19:00</span>
-                  <h3 class="item-title news__item-title">&laquo;Открытая дискуссия&raquo;.<br
-                      class="news-br"> Дмитрий
-                    Петров
-                    и&nbsp;Сергей
-                    Ильин.</h3>
-                  <p class="section-text news__box-text">
-                    Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого
-                    факта
-                  </p>
-                    <a href="#" class="news__btn">Подробнее</a>
-                </div>
-              </article>
-
-              <article class="news__box swiper-slide news__img-3">
-
-                <div class="news__box-item">
-                  <span class="news__box-decr">Еврейский музей<br>с 31 марта
-                    по 21 апреля</span>
-                  <h3 class="item-title news__item-title">Выставка &laquo;Формация 2020&raquo;</h3>
-                  <p class="section-text news__box-text">
-                    Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную
-                    роль
-                    в&nbsp;формировании глубокомысленных рассуждений
-                  </p>
-                    <a href="#" class="news__btn">Подробнее</a>
-                </div>
-              </article>
-
-              <article class="news__box swiper-slide news__img-4">
-
-                <div class="news__box-item">
-                  <span class="news__box-decr">ММАМБ<br>с&nbsp;8&nbsp;апреля
-                    по&nbsp;20&nbsp;мая</span>
-                  <h3 class="item-title news__item-title">Джон Винзор. Фотографии из&nbsp;серии
-                    &laquo;Метафора&raquo;</h3>
-                  <p class="section-text news__box-text">
-                    Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии,
-                    которую продолжили его брат Давид и&nbsp;сын Ридольфо
-                  </p>
-                    <a href="#" class="news__btn">Подробнее</a>
-                </div>
-              </article>
-
-              <article class="news__box swiper-slide news__img-5">
-
-                <div class="news__box-item">
-                  <span class="news__box-decr">Третьяковка на&nbsp;Крымском валу<br>с&nbsp;30&nbsp;марта
-                    по&nbsp;30&nbsp;апреля</span>
-                  <h3 class="item-title news__item-title">XXIV Международная биеннале молодого искусства
-                  </h3>
-                  <p class="section-text news__box-text">
-                    Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования
-                  </p>
-                    <a href="#" class="news__btn">Подробнее</a>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="slider-btn news__btn-left">
-            <span class="slider-line line-left"></span><span class="slider-line line-right"></span>
-          </div>
-          <div class="slider-btn news__btn-right">
-            <span class="slider-line line-left"></span><span class="slider-line line-right"></span>
-          </div>
-          <div class="pagination"></div>
-        </div>
-
-
-      </div>
-    </section>
-
-    <section id="partners" class="partners">
-      <div class="container">
-        <div class="partners__preview">
-          <h2 class="section-title partners-title">Проекты</h2>
-          <div class="section-text partners-text">
-            Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности
-            однозначно
-            фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны<br
-              class="partners-br-mobail">
-            с не уникальными данными<br class="partners-desctop-br"><br class="partners-br-mobail"> до степени
-            совершённой неузнаваемости, из-за чего возрастает
-            их статус бесполезности. Прежде всего, постоянное информационно-<br
-              class="partners-br-mobail">пропагандистское
-            <button class="tooltip" id="button" data-tippy-content="Пример современных
-            тенденций&nbsp;&mdash;современная методология разработки" aria-label="Подсказка">
-              <span class="icon"  aria-label="Пример современных
-              тенденций&nbsp;&mdash;современная методология разработки">
-                <span class="icon-i">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z" stroke="#9D5CD0"/>
-                    <path d="M7.26154 6.4551H8.73846V13H7.26154V6.4551ZM8 4.90259C7.71282 4.90259 7.4718 4.81126 7.27692 4.62861C7.09231 4.44597 7 4.22273 7 3.9589C7 3.69508 7.09231 3.47184 7.27692 3.28919C7.4718 3.0964 7.71282 3 8 3C8.28718 3 8.52308 3.09132 8.70769 3.27397C8.90256 3.44647 9 3.66464 9 3.92846C9 4.20243 8.90256 4.43582 8.70769 4.62861C8.52308 4.81126 8.28718 4.90259 8 4.90259Z" fill="black"/>
-                  </svg>
-                </span>
-                <span class="icon__hover">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16.001C12.4183 16.001 16 12.4193 16 8.00098C16 3.5827 12.4183 0.000976562 8 0.000976562C3.58172 0.000976562 0 3.5827 0 8.00098C0 12.4193 3.58172 16.001 8 16.001Z" fill="#9D5CD0"/>
-                    <path d="M10.9102 4.49268L11.9545 5.53702L5.20523 12.2863L4.16089 11.2419L10.9102 4.49268Z" fill="white"/>
-                    <path d="M11.793 11.0811L10.7486 12.1254L3.99936 5.37613L5.04371 4.33179L11.793 11.0811Z" fill="white"/>
-                    </svg>
-                </span>
-              </span>
-            </button>
-            обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности
-            принимаемых
-            решений. <br class="partners-br-mobail">И нет сомнений, что действия представителей оппозиции могут быть
-            рассмотрены
-            <button class="tooltip tooltip-1" id="button-1"
-              data-tippy-content="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции"
-              aria-label="Подсказка">
-              <span class="icon"
-                aria-label="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции">
-                <span class="icon-i">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z" stroke="#9D5CD0"/>
-                    <path d="M7.26154 6.4551H8.73846V13H7.26154V6.4551ZM8 4.90259C7.71282 4.90259 7.4718 4.81126 7.27692 4.62861C7.09231 4.44597 7 4.22273 7 3.9589C7 3.69508 7.09231 3.47184 7.27692 3.28919C7.4718 3.0964 7.71282 3 8 3C8.28718 3 8.52308 3.09132 8.70769 3.27397C8.90256 3.44647 9 3.66464 9 3.92846C9 4.20243 8.90256 4.43582 8.70769 4.62861C8.52308 4.81126 8.28718 4.90259 8 4.90259Z" fill="black"/>
-                  </svg>
-                </span>
-                <span class="icon__hover">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16.001C12.4183 16.001 16 12.4193 16 8.00098C16 3.5827 12.4183 0.000976562 8 0.000976562C3.58172 0.000976562 0 3.5827 0 8.00098C0 12.4193 3.58172 16.001 8 16.001Z" fill="#9D5CD0"/>
-                    <path d="M10.9102 4.49268L11.9545 5.53702L5.20523 12.2863L4.16089 11.2419L10.9102 4.49268Z" fill="white"/>
-                    <path d="M11.793 11.0811L10.7486 12.1254L3.99936 5.37613L5.04371 4.33179L11.793 11.0811Z" fill="white"/>
-                    </svg>
-                </span>
-              </span>
-            </button>
-            исключительно<br class="partners-desctop-br"> в разрезе маркетинговых<br class="partners-br"> и финансовых
-            <button class="tooltip tooltip-2" id="button-2" data-tippy-content="В стремлении повысить качество"
-              aria-label="Подсказка">
-              <span class="icon" aria-label="В стремлении повысить качество">
-                <span class="icon-i">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z" stroke="#9D5CD0"/>
-                    <path d="M7.26154 6.4551H8.73846V13H7.26154V6.4551ZM8 4.90259C7.71282 4.90259 7.4718 4.81126 7.27692 4.62861C7.09231 4.44597 7 4.22273 7 3.9589C7 3.69508 7.09231 3.47184 7.27692 3.28919C7.4718 3.0964 7.71282 3 8 3C8.28718 3 8.52308 3.09132 8.70769 3.27397C8.90256 3.44647 9 3.66464 9 3.92846C9 4.20243 8.90256 4.43582 8.70769 4.62861C8.52308 4.81126 8.28718 4.90259 8 4.90259Z" fill="black"/>
-                  </svg>
-                </span>
-                <span class="icon__hover">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16.001C12.4183 16.001 16 12.4193 16 8.00098C16 3.5827 12.4183 0.000976562 8 0.000976562C3.58172 0.000976562 0 3.5827 0 8.00098C0 12.4193 3.58172 16.001 8 16.001Z" fill="#9D5CD0"/>
-                    <path d="M10.9102 4.49268L11.9545 5.53702L5.20523 12.2863L4.16089 11.2419L10.9102 4.49268Z" fill="white"/>
-                    <path d="M11.793 11.0811L10.7486 12.1254L3.99936 5.37613L5.04371 4.33179L11.793 11.0811Z" fill="white"/>
-                    </svg>
-                </span>
-              </span>
-            </button>
-            предпосылок. Банальные, <br class="partners-br-mobail">но неопровержимые выводы,<br
-              class="partners-br-mobail"> а&nbsp;также&nbsp;представители&nbsp;современных социальных
-            резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны
-            с не уникальными данными до степени совершённой неузнаваемости. Подробнее:
-            <a href="#" class="partners__link partners__link-desc">blanchard-art.ru/projects</a>
-            <a href="#" class="partners__link partners__link-768">blanchard-art.ru</a>
-            <a href="#" class="partners__link partners__link-mobail">blanchard-art.ru/projects/about</a>
-          </div>
-
-          <h3 class="item-title partners__preview-title">Партнёры проектов:</h3>
-
-
-          <div class="partners__slider slider">
-              <button class="partners__btn-style slider__btn-left">
-                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16.4881 20L11.4918 15L16.4881 10" stroke="black"/>
-                </svg>
-              </button>
-
-            <div class="slider-track swiper-container swiper-2">
-              <div class="partners__slider swiper-wrapper">
-                <a class="swiper-slider swiper-slide">
-                  <img src="./img/logo-1.png" alt="ссылка Логотип партнера" class="partners__logo">
-                </a>
-
-                <a class="swiper-slider swiper-slide" tabindex="0">
-                  <img src="./img/logo-3.png" alt="ссылка Логотип партнера" class="partners__logo">
-                </a>
-
-                <a class="swiper-slider swiper-slide" tabindex="0">
-                  <img src="./img/logo-2.png" alt="ссылка Логотип партнера" class="partners__logo">
-                </a>
-
-                <a class="swiper-slider swiper-slide" tabindex="0">
-                  <img src="./img/logo-4.png" alt="ссылка Логотип партнера" class="partners__logo">
-                </a>
-
-                <a class="swiper-slider swiper-slide" tabindex="0">
-                  <img src="./img/logo-5.png" alt="ссылка Логотип партнера" class="partners__logo">
-                </a>
-
-                <a class="swiper-slider swiper-slide" tabindex="0">
-                  <img src="./img/logo-6.png" alt="ссылка Логотип партнера" class="partners__logo">
-                </a>
-
-                <a class="swiper-slider swiper-slide" tabindex="0">
-                  <img src="./img/logo-7.png" alt="ссылка Логотип партнера" class="partners__logo">
-                </a>
-
-                <a class="swiper-slider swiper-slide" tabindex="0">
-                  <img src="./img/logo-8.png" alt="ссылка Логотип партнера" class="partners__logo">
-                </a>
-
-                <a class="swiper-slider swiper-slide" tabindex="0">
-                  <img src="./img/logo-9.png" alt="ссылка Логотип партнера" class="partners__logo">
-                </a>
-
-              </div>
-            </div>
-
-              <button class="partners__btn-style slider__btn-right">
-                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14.0119 20L19.0082 15L14.0119 10" stroke="black"/>
-                </svg>
-              </button>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="form" class="form">
-      <div class="container">
-        <h2 class="title-hidden">Контакты</h2>
-        <div class="form__container">
-          <div class="form__adress">
-            <h3 class="item-title form__adress-title">Шоурум &#8470; 4</h3>
-            <address class="section-text form__desc"
-              aria-label="наш адрес: Леонтьевский переулок, дом 5/1">Леонтьевский переулок, дом 5/1</address>
-          </div>
-
-          <form action="#" id="form__input" class="form__input">
-            <div class="form__input-box">
-              <label for="name" class="form__box" aria-label="Введите имя">
-                <input type="text" id="name" placeholder="Имя*" class="input-box" autocomplete="off">
-              </label>
-  
-              <label for="phone" class="form__box" aria-label="Введите телефон">
-                <input type="tel" placeholder="Телефон*" id="phone" class="input-box" data-validate-rules="tel"
-                  autocomplete="off">
-              </label>
-            </div>
-
-            <button type="submit" class="form__btn">Заказать&nbsp;обратный&nbsp;звонок</button>
-            <button type="submit" class="form__btn-mobail">Заказать</button>
-          </form>
-
-          <div class="form__social">
-            <h3 class="item-title form__adress-title title-mobile">Связаться&nbsp;в&nbsp;один&nbsp;клик
-            </h3>
-            <div class="form__social__link">
-              <a href="#" target="_blank" class="whatsapp" aria-label="Мы в вацапе">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_191243_648)">
-                    <path class="whatsapp-path"
-                      d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z"
-                      fill="#30BF39"/>
-                    <path
-                      d="M25.875 21.751C25.625 21.626 24.3125 20.876 24.0625 20.8135C23.8125 20.6885 23.625 20.6885 23.4375 20.9385C23.25 21.1885 22.6875 21.8135 22.5625 21.9385C22.375 22.126 22.25 22.126 22 22.001C21.75 21.876 20.875 21.5635 19.875 20.5635C19.125 19.8135 18.5625 18.9385 18.4375 18.626C18.3125 18.376 18.4375 18.1885 18.5625 18.0635C18.6875 17.9385 18.8125 17.751 19 17.626C19.1875 17.501 19.1875 17.376 19.3125 17.1885C19.4375 17.001 19.375 16.876 19.3125 16.6885C19.25 16.501 18.75 15.1885 18.5625 14.626C18.375 14.0635 18.125 14.1885 18 14.126C17.8125 14.126 17.6875 14.0635 17.5 14.0635C17.25 14.0635 16.9375 14.1885 16.75 14.376C16.5 14.626 15.75 15.251 15.75 16.5635C15.75 17.876 16.625 19.251 16.75 19.376C16.875 19.5635 18.5 22.4385 21.1875 23.626C23.875 24.8135 23.875 24.4385 24.375 24.4385C24.875 24.4385 26 23.8135 26.25 23.251C26.5 22.626 26.5 22.0635 26.4375 22.001C26.3125 22.001 26.125 21.9385 25.875 21.751ZM20.875 28.1885C19.125 28.1885 17.5 27.6885 16.0625 26.751L12.6875 27.8135L13.8125 24.5635C12.75 23.0635 12.125 21.251 12.125 19.376C12.125 14.501 16.0625 10.5635 20.9375 10.5635C25.8125 10.5635 29.6875 14.501 29.6875 19.376C29.6875 24.251 25.75 28.1885 20.875 28.1885ZM20.875 8.81348C15.0625 8.81348 10.3125 13.5635 10.3125 19.376C10.3125 21.3135 10.8125 23.1885 11.8125 24.8135L9.875 30.501L15.75 28.626C17.3125 29.501 19.0625 29.9385 20.875 29.9385C26.6875 29.9385 31.4375 25.1885 31.4375 19.376C31.4375 13.5635 26.75 8.81348 20.875 8.81348Z"
-                      fill="white"/>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_191243_648">
-                      <rect width="40" height="40" fill="#30BF39"/>
-                    </clipPath>
-                  </defs>
-                </svg>
-              </a>
-              <a href="#" target="_blank" class="telegram" aria-label="Мы в одноклассниках">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_191243_651)">
-                    <path class="telegram-path"
-                      d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z"
-                      fill="#26A5E4"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M9.05321 19.7889L20.7168 14.7649C26.2711 12.4547 27.4251 12.0534 28.1774 12.0402C28.3429 12.0373 28.7128 12.0783 28.9524 12.2727C29.1548 12.4369 29.2104 12.6587 29.2371 12.8143C29.2637 12.9699 29.2969 13.3246 29.2705 13.6017C28.9695 16.7641 27.6671 24.4386 27.0046 27.9806C26.7242 29.4794 26.1726 29.9819 25.6378 30.0311C24.4763 30.138 23.5944 29.2635 22.4694 28.5261L18.0061 25.528C16.0314 24.2268 17.3115 23.5116 18.4369 22.3428C18.7314 22.0368 23.8487 17.3823 23.9477 16.96C23.9597 16.9072 23.9716 16.7104 23.8547 16.6064C23.7377 16.5024 23.565 16.5384 23.4405 16.5663C23.264 16.6064 20.452 18.465 15.0044 22.1423C14.2062 22.6904 13.4832 22.9575 12.8355 22.9435C12.1214 22.9281 10.7478 22.5397 9.72661 22.2078C8.47408 21.8007 7.4786 21.5854 7.56532 20.8939C7.61044 20.5338 8.1064 20.1655 9.05317 19.789L9.05321 19.7889Z"
-                      fill="white"/>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_191243_651">
-                      <rect width="40" height="40" fill="white"/>
-                    </clipPath>
-                  </defs>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="map" id="myMap"></div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__container">
-        <div class="footer__container-box">
-          <a role="link" class="footer__logo" aria-label="Наш логотип">
-            <img src="./svg/main-logotip.svg" alt="Логотип" aria-hidden="true">
-          </a>
-        </div>
-
-        <div class="footer__social">
-          <a href="#" target="_blank" class="footer__link" aria-label="Мы в контакте">
-            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M22.5 0C10.074 0 0 10.0736 0 22.5C0 34.9264 10.074 45 22.5 45C34.926 45 45 34.9264 45 22.5C45 10.0736 34.926 0 22.5 0ZM33.9132 24.9335C34.9619 25.9577 36.0714 26.9217 37.0128 28.0519C37.4299 28.5519 37.823 29.0688 38.1222 29.6503C38.5495 30.4794 38.1637 31.3886 37.4216 31.4379L32.812 31.4369C31.6215 31.5354 30.6741 31.0553 29.8754 30.2414C29.2378 29.5927 28.6462 28.8999 28.0321 28.2292C27.7812 27.9539 27.517 27.6947 27.2021 27.4907C26.5737 27.0819 26.0277 27.2072 25.6677 27.8636C25.3008 28.5316 25.217 29.2719 25.182 30.0153C25.1319 31.1022 24.8041 31.3863 23.7135 31.4374C21.3832 31.5465 19.1721 31.1929 17.117 30.0181C15.3041 28.9818 13.901 27.5193 12.6783 25.8634C10.2973 22.6353 8.47381 19.0924 6.8354 15.4478C6.46665 14.627 6.73642 14.1878 7.64194 14.1707C9.14639 14.1417 10.6508 14.1454 12.1553 14.1694C12.7676 14.179 13.1727 14.5294 13.4079 15.1071C14.2209 17.1074 15.2176 19.0105 16.4665 20.7755C16.7994 21.2455 17.1391 21.7142 17.623 22.0461C18.157 22.4125 18.5639 22.2915 18.8158 21.6953C18.9769 21.3164 19.0464 20.9113 19.0814 20.5053C19.2011 19.1145 19.2153 17.7242 19.0082 16.339C18.8793 15.4722 18.3918 14.9124 17.5277 14.7485C17.0876 14.6652 17.152 14.5022 17.3661 14.2508C17.7376 13.8163 18.0856 13.5474 18.7812 13.5474L23.9893 13.5465C24.8101 13.7076 24.9942 14.0759 25.1056 14.9027L25.1102 20.6903C25.1006 21.0103 25.2709 21.9586 25.8454 22.1681C26.3058 22.32 26.6096 21.9508 26.8849 21.6594C28.1339 20.334 29.0237 18.7697 29.8206 17.1506C30.1723 16.4366 30.4757 15.6978 30.7703 14.9575C30.9895 14.4101 31.3301 14.1408 31.9479 14.15L36.9631 14.156C37.1108 14.156 37.2609 14.1574 37.4073 14.1827C38.2525 14.3273 38.4841 14.6909 38.2226 15.5154C37.811 16.8109 37.0114 17.89 36.2297 18.9718C35.3919 20.1301 34.4983 21.2478 33.6687 22.4111C32.9064 23.4746 32.9667 24.01 33.9132 24.9335Z"
-                fill="#CACACA" />
-            </svg>
-          </a>
-
-          <a href="#" target="_blank" class="footer__link" aria-label="Мы в однокласниках">
-            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M19.279 14.9859C19.279 16.8409 20.7828 18.3449 22.6379 18.3449C24.4929 18.3449 25.9967 16.8409 25.9967 14.9859C25.9967 13.1309 24.4929 11.6271 22.6379 11.6271C20.7828 11.6271 19.279 13.1309 19.279 14.9859Z"
-                fill="#CACACA" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45ZM14.5125 14.9858C14.5125 10.4984 18.1503 6.86047 22.6379 6.86047C27.1254 6.86047 30.7632 10.4984 30.7632 14.9858C30.7632 19.4734 27.1254 23.1115 22.6379 23.1115C18.1503 23.1115 14.5125 19.4734 14.5125 14.9858ZM30.8117 27.291C30.7086 27.3737 28.7593 28.9142 25.5064 29.5769L30.4165 34.4432C31.28 35.3053 31.2811 36.7042 30.419 37.5677C29.5569 38.431 28.1583 38.4324 27.2945 37.5701L22.5276 32.928L18.1979 37.5402C17.7644 37.9899 17.1862 38.216 16.6074 38.216C16.0553 38.216 15.5027 38.0106 15.074 37.5972C14.1956 36.7502 14.1701 35.3516 15.0171 34.4733L19.6777 29.6025C16.3336 28.9555 14.3039 27.3749 14.1993 27.291C13.2475 26.5277 13.0946 25.1372 13.8579 24.1852C14.6212 23.2334 16.0115 23.0805 16.9636 23.8437C16.9837 23.86 19.1067 25.4549 22.5275 25.4572C25.9483 25.4549 28.0273 23.86 28.0474 23.8437C28.9995 23.0805 30.3899 23.2334 31.1531 24.1852C31.9165 25.1372 31.7636 26.5277 30.8117 27.291Z"
-                fill="#CACACA" />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://unpkg.com/@popperjs/core@2"></script>
-  <script src="https://unpkg.com/tippy.js@6"></script>
-  <script defer src="js/inputmask.min.js"></script>
-  <script src="js/simplebar.js"></script>
-  <script defer src="js/script.js"></script>
-</body>
-
-</html>
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+  --pleft: 8.3%;
+  --pright: 8%;
+  --black: #000000;
+  --grey-umber: #333333;
+  --dim-gray: #666666;
+  --silver: #CACACA;
+  --signal-grey: #999999;
+  --bright-ube: #D1A9F0;
+  --bright-lavender: #C283F3;
+  --amethyst: #9D5CD0;
+  --royal-purple: #7943A4;
+  --isabelline: #ECECEC;
+  --white: #FFFFFF;
+  --carnelian: #D11616;
+  --gradient: rgba(0, 0, 0, 0.5);
+  --gradient-purple: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
+}
+
+*,
+*::before,
+*::after {
+  FONT-VARIANT: JIS78;
+  box-sizing: inherit;
+}
+
+a,
+ul,
+li,
+button,
+input {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-color: transparent;
+  list-style: none;
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
+/*global*/
+
+header,
+footer,
+main,
+section,
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100vw;
+}
+
+.main {
+  margin: 0;
+  width: 100%;
+}
+
+.section-title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.tabs__preview-box {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.item-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.title-hidden {
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.section-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.slider-line {
+  position: absolute;
+  top: 35%;
+  left: 38%;
+  border-bottom: 1px solid var(--black);
+  border-left: 1px solid var(--black);
+  width: 11.79px;
+  height: 11.79px;
+  background-color: transparent;
+  transform: rotate(-45deg);
+}
+
+.slider-btn {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 2px solid transparent;
+  border-radius: 100%;
+  background-color: var(--isabelline);
+  cursor: pointer;
+  z-index: 3000;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.slider-btn:focus-visible {
+  outline: none;
+  border-color: var(--amethyst);
+}
+
+.slider-btn:hover {
+  background-color: var(--bright-ube);
+}
+
+
+.slider-btn:active {
+  border-color: var(--amethyst);
+  background-color: var(--bright-ube);
+}
+
+/*header*/
+
+.header {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  z-index: 2000;
+}
+
+.burger {
+  position: relative;
+  display: none;
+  margin: 0;
+  min-width: 36px;
+  height: 28px;
+  background-color: transparent;
+}
+
+.burger__line {
+  position: absolute;
+  height: 3px;
+  background-color: var(--white);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.line-top {
+  top: 0;
+  left: 0;
+  width: 36px;
+  text-align: left;
+}
+
+.line-center {
+  top: 50%;
+  left: 0;
+  width: 28.2px;
+  text-align: left;
+  transform: translateY(-50%);
+}
+
+.line-bottom {
+  bottom: 0;
+  left: 0;
+  width: 24px;
+  text-align: left;
+}
+
+.header__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-top: 29px;
+  padding-bottom: 29px;
+  padding-right: 149px;
+  padding-left: var(--pleft);
+  background-color: var(--black);
+  z-index: 4000;
+}
+
+.header__container-box {
+  margin-right: auto;
+}
+
+.nav {
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.header__container-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 78.3%;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 61%;
+}
+
+.nav__box {
+  margin-right: 4px;
+}
+
+.nav__link {
+  padding: 6px;
+  outline: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white);
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.nav__link:focus-visible {
+  background-color: var(--royal-purple);
+  color: var(--isabelline);
+}
+
+.nav__link:hover {
+  color: var(--bright-lavender);
+  background-color: transparent;
+}
+
+.nav__link:active {
+  color: var(--royal-purple);
+  background-color: transparent;
+}
+
+.user {
+  -ms-grid-row-align: center;
+  align-self: center;
+  outline: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.51px;
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+
+.user__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 89px;
+  height: 29px;
+  color: var(--isabelline);
+  transition: all 0.3s ease-in-out;
+}
+
+.user:focus-visible .user__btn {
+  outline: none;
+  background-color: var(--royal-purple);
+  color: var(--isabelline);
+}
+
+.user:focus-visible .user__btn path {
+  outline: none;
+  background-color: var(--royal-purple);
+  fill: var(--isabelline);
+}
+
+.user:hover .user__btn {
+  background-color: transparent;
+  color: var(--bright-lavender);
+}
+
+.user:hover .user__btn path {
+  background-color: transparent;
+  fill: var(--bright-lavender);
+}
+
+.user:hover .user__btn .user__pct::before {
+  opacity: 1;
+  background-color: var(--bright-lavender);
+}
+
+.user:active .user__btn {
+  background-color: transparent;
+  color: var(--amethyst);
+}
+
+.user:active .user__btn path {
+  background-color: transparent;
+  fill: var(--amethyst);
+}
+
+.user:active .user__btn .user__pct::before {
+  opacity: 1;
+  background-color: var(--amethyst);
+}
+
+.user__pct-text {
+  display: inline-block;
+}
+
+.user__pct {
+  position: relative;
+  display: inline-block;
+  outline: none;
+  margin-right: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.user__pct::before {
+  content: "";
+  position: absolute;
+  outline: none;
+  top: 50%;
+  right: 10px;
+  width: 5px;
+  height: 1.5px;
+  background-color: var(--white);
+  transform: translateY(-50%) scaleX(2);
+  opacity: 0;
+  z-index: 2000;
+  transition: all 0.3s;
+}
+
+/*hero*/
+
+.hero__slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: auto;
+}
+
+.hero__track {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+}
+
+.hero__track img {
+  height: 100%;
+  cursor: auto;
+}
+
+.hero__slide {
+  width: 100%;
+  cursor: default;
+}
+
+.header__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 14px;
+  padding-left: var(--pleft);
+  padding-right: var(--pright);
+  background-color: var(--gradient);
+  z-index: 3000;
+}
+
+.menu__link {
+  position: relative;
+}
+
+.menu__link-item {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding: 5px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.5px;
+  color: var(--white);
+  transition-property: background-color, color, stroke;
+  transition-duration: 0.3s;
+}
+
+.menu__link-item:focus-visible {
+  outline: none;
+  background-color: var(--amethyst);
+  color: var(--white);
+}
+
+.menu__link-item:hover {
+  background-color: transparent;
+  color: var(--amethyst);
+}
+
+.menu__link-item:hover path {
+  stroke: var(--amethyst);
+}
+
+.menu__link-item:active {
+  color: var(--royal-purple);
+  background-color: transparent;
+}
+
+.menu__link-item:active path {
+  stroke: var(--royal-purple);
+}
+
+.menu__link-item--active {
+  background-color: transparent;
+  color: var(--royal-purple);
+}
+
+.menu__icon {
+  margin-top: 2px;
+  margin-left: 4px;
+  width: 12px;
+  height: 7px;
+  transition: transform 0.3s;
+}
+
+.menu__icon--js {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+  stroke: var(--royal-purple);
+}
+
+.menu__icon--js path {
+  stroke: var(--royal-purple);
+}
+
+.nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  outline: none;
+}
+
+.menu__nav {
+  width: 64.7%;
+}
+
+.menu__item {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 300px;
+  background-color: var(--gradient);
+  transition-property: opacity, visibility;
+  transition-duration: 0.3s;
+}
+
+.menu__item-box {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+  max-height: 220px;
+  overflow: auto;
+}
+
+.simplebar-scrollbar::before {
+  background-color: var(--white);
+}
+
+.simplebar-track.simplebar-vertical {
+  top: 0;
+  bottom: 0;
+  right: 19px;
+  width: 2px;
+  background-color: #000000;
+}
+
+.simplebar-track.simplebar-horizontal {
+  display: none;
+}
+
+.simplebar-scrollbar {
+  background-color: var(--white);
+  overflow: visible;
+}
+
+.simplebar-placeholder {
+  transition: height 0.3s linear 30ms;
+}
+
+.menu__item-style {
+  position: relative;
+  padding-top: 9px;
+  padding-left: 12px;
+  padding-bottom: 14px;
+  outline: none;
+  border: 2px solid transparent;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white);
+  transition: border 0.3s ease-in-out, visibility 0.2s;
+}
+
+.menu__item-style:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.menu__item-link {
+  outline: none;
+  transition: border 0.3s, opacity 0.3s, visibility 0.3s, background-color 0.3s ease-in-out;
+}
+
+.menu__item-link::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(194, 131, 243, 0.4);
+  visibility: hidden;
+  transition: border 0.3s, opacity 0.3s, visibility 0.3s, background-color 0.3s ease-in-out;
+}
+
+.menu__item-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  opacity: 0;
+  transition: border 0.3s, opacity 0.3s, visibility 0.3s, background-color 0.3s ease-in-out;
+}
+
+.menu__item-link:focus-visible::after {
+  border: 2px solid var(--amethyst);
+  outline: none;
+  opacity: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.menu__item-link:hover::after {
+  opacity: 1;
+  border: 2px solid var(--amethyst);
+}
+
+.menu__item-link:active::before {
+  outline: none;
+  visibility: visible;
+}
+
+.tintoretto {
+  background-image: url("../img/Tintoretto.png");
+}
+
+.friedrich {
+  background-image: url("../img/Friedrich.png");
+}
+
+.leonardo {
+  background-image: url("../img/Leonardo.png");
+}
+
+.verrocchio {
+  background-image: url("../img/Verrocchio.png");
+}
+
+.monet {
+  background-image: url("../img/Monet.png");
+}
+
+.sisley {
+  background-image: url("../img/Sisley.png");
+}
+
+.manet {
+  background-image: url("../img/Manet.png");
+}
+
+.renoir {
+  background-image: url("../img/Renoir.png");
+}
+
+.gofh {
+  background-image: url("../img/Gogh.png");
+}
+
+.cezanne {
+  background-image: url("../img/Cezanne.png");
+}
+
+.gauguin {
+  background-image: url("../img/Gauguin.png");
+}
+
+.seurat {
+  background-image: url("../img/Seurat.png");
+}
+
+.kandinsky {
+  background-image: url("../img/Kandinsky.png");
+}
+
+.marinetti {
+  background-image: url("../img/Marinetti.png");
+}
+
+.malevich {
+  background-image: url("../img/malevich.png");
+}
+
+.picasso {
+  background-image: url("../img/Picasso.png");
+}
+
+.carra {
+  background-image: url("../img/Carra.png");
+}
+
+.pratella {
+  background-image: url("../img/Pratella.png");
+}
+
+.severini {
+  background-image: url("../img/Severini.png");
+}
+
+.balla {
+  background-image: url("../img/Balla.png");
+}
+
+.hero__box {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12%;
+  padding-left: var(--pleft);
+  padding-bottom: 6.5%;
+  min-height: 800px;
+  z-index: 2000;
+}
+
+.title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 97px;
+  color: var(--white);
+  z-index: 4000;
+}
+
+.hero__text {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 29px;
+  color: var(--white);
+  z-index: 4000;
+}
+
+.hero__btn {
+  margin-right: auto;
+  margin-top: auto;
+  padding: 22px 36px 22px 35px;
+  outline: 2px solid transparent;
+  outline-offset: 3px;
+  border: 3px solid transparent;
+  border-radius: 35px;
+  background-color: var(--amethyst);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24.51px;
+  color: var(--white);
+  z-index: 4000;
+  transition: outline 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.hero__btn:focus-visible {
+  outline-color: var(--bright-lavender);
+  background-color: var(--amethyst);
+}
+
+.hero__btn:hover {
+  background-color: var(--amethyst);
+  border-color: var(--bright-ube);
+}
+
+.hero__btn:active {
+  background-color: var(--royal-purple);
+}
+
+.hero-search {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-left: auto;
+}
+
+.search-svg {
+  margin-right: 5px;
+}
+
+.search-input {
+  outline: none;
+  padding-bottom: 6px;
+  width: 228px;
+  min-height: 26px;
+  border-bottom: 1.5px solid var(--white);
+  color: var(--isabelline);
+  transition: border-color 0.3s ease-in-out;
+}
+
+.search-input:focus-visible {
+  border-bottom: 1.5px solid var(--bright-lavender);
+}
+
+.search-input:focus-visible::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.search-input:focus-visible::-moz-placeholder {
+  color: transparent;
+}
+
+.search-input:focus-visible:-ms-input-placeholder {
+  color: transparent;
+}
+
+.search-input:focus-visible::-ms-input-placeholder {
+  color: transparent;
+}
+
+.search-input:focus-visible::placeholder {
+  color: transparent;
+}
+
+.search-input:hover {
+  border-bottom: 1.5px solid var(--bright-lavender);
+}
+
+.search-input:active {
+  border-bottom: 1.5px solid var(--amethyst);
+}
+
+.search-input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.51px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.search-input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.51px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.search-input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.51px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.search-input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.51px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.search-input::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.51px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.search {
+  display: none;
+}
+
+.search-close {
+  display: none;
+}
+
+/*preview*/
+
+.preview {
+  padding: 80px 0 70px 0;
+}
+
+.preview__box {
+  margin: 0 auto;
+  padding-left: var(--pleft);
+  padding-right: var(--pright);
+}
+
+.preview-title {
+  margin-bottom: 25px;
+}
+
+.preview-text {
+  width: 67%;
+  line-height: 32px;
+}
+
+.preview-br {
+  display: none;
+}
+
+/*gallery*/
+
+.gallery {
+  padding-top: 80px;
+  padding-bottom: 76px;
+  background-image: url("../img/galery-bacground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery__container {
+  display: flex;
+  padding-left: var(--pleft);
+  padding-right: var(--pright);
+}
+
+.gallery__preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 50px;
+  padding-bottom: 10px;
+}
+
+.gallery__title {
+  margin-bottom: 15px;
+  line-height: 65.37px;
+  color: var(--white);
+}
+
+.gallery__span {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--white);
+}
+
+.select__wrapper-js {
+  position: relative;
+}
+
+.select__wrapper-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--white);
+  border-radius: 6px;
+  width: 400px;
+  height: 40px;
+  transition: background-color 0.3s ease-in-out, rotate 0.3s;
+}
+
+.select__top {
+  text-align: left;
+  outline: none;
+  padding-left: 13px;
+  padding-right: 2rem;
+  width: 100%;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--white);
+  transition: background-color 0.3s ease-in-out, rotate 0.3s;
+}
+
+.select__top:focus-visible {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.select__top:hover {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.select__icon {
+  position: absolute;
+  top: 45%;
+  right: 15px;
+  width: 7px;
+  height: 7px;
+  transition: rotate 0.3s;
+}
+
+.select__icon--js--off {
+  border-top: 2px solid transparent;
+  border-right: 2px solid var(--white);
+  border-bottom: 2px solid var(--white);
+  border-left: 2px solid transparent;
+  transform: rotate(45deg);
+  transition: rotate 0.3s ease-in-out;
+}
+
+.select__icon--js--active {
+  border-top: 2px solid var(--white);
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid var(--white);
+  transform: rotate(45deg);
+  transition: rotate 0.3s ease-in-out;
+}
+
+.select__list {
+  position: absolute;
+  flex-direction: column;
+  align-items: flex-start;
+  top: 40px;
+  left: 0;
+  text-align: left;
+  border-right: 1px solid var(--signal-grey);
+  border-left: 1px solid var(--signal-grey);
+  border-bottom: 1px solid var(--signal-grey);
+  border-radius: 6px;
+  width: 400px;
+  background-color: var(--black);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--signal-grey);
+  transition: all 0.3s ease-in-out;
+}
+
+.select__list-item {
+  outline: none;
+  padding: 0 0 0 15px;
+  border: 1px solid transparent;
+  width: 100%;
+  height: 41px;
+  text-align: left;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+.select__list-item:not(:last-child):not(:first-child):focus-visible {
+  border-bottom: 1px solid var(--signal-grey);
+  border-top: 1px solid var(--signal-grey);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--white);
+}
+
+.select__list-item:first-child:focus-visible {
+  border-bottom: 1px solid var(--signal-grey);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--white);
+}
+
+.select__list-item:last-child:focus-visible {
+  border-top: 1px solid var(--signal-grey);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--white);
+}
+
+.select__list-item:not(:last-child):not(:first-child):hover {
+  border-top: 1px solid var(--signal-grey);
+  border-bottom: 1px solid var(--signal-grey);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--white);
+}
+
+.select__list-item:first-child:hover {
+  border-bottom: 1px solid var(--signal-grey);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--white);
+}
+
+.select__list-item:last-child:hover {
+  border-top: 1px solid var(--signal-grey);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--white);
+}
+
+.select-input {
+  display: none;
+}
+
+.checkbox {
+  margin-top: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.checkbox__elem {
+  display: flex;
+  align-items: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  outline: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.checkbox__elem:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.input-checkbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  margin-right: 12px;
+  border: 1px solid var(--white);
+  outline: none;
+  width: 12px;
+  height: 12px;
+  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.input-checkbox::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 100%;
+  width: 4px;
+  height: 4px;
+  background-color: var(--bright-lavender);
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.checkbox__text {
+  color: var(--white);
+}
+
+.checkbox__elem .input-checkbox:checked::before {
+  opacity: 1;
+}
+
+.checkbox__elem .input-checkbox:checked {
+  border-color: var(--bright-lavender);
+}
+
+.input-checkbox:focus-visible:not(:hover) {
+  border: 1px solid var(--bright-lavender);
+}
+
+.input-checkbox:focus-visible:not(:hover)+ .checkbox__text {
+  color: var(--bright-lavender);
+}
+
+.input-checkbox:hover:not(:focus-visible) {
+  border: 1px solid var(--bright-lavender);
+}
+
+.gallery__slider {
+  padding-top: 25px;
+  width: 72%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery__slider-box {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  cursor: pointer;
+  transition: all 2s;
+}
+
+.gallery__slider-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 29px;
+}
+
+.gallery__btn {
+  box-sizing: content-box;
+  display: block;
+  outline: none;
+  color: transparent;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.gallery__btn svg {
+  transition-property: fill, stroke, border;
+  transition-duration: 0.3s;
+}
+
+.btn-left {
+  margin-right: 66px;
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery__btn:disabled {
+  cursor: not-allowed;
+}
+
+.gallery__btn:disabled svg {
+  fill: var(--isabelline);
+  stroke: var(--silver);
+  cursor: not-allowed;
+}
+
+.gallery__btn:focus-visible {
+  border: 2px solid var(--black);
+  border-radius: 100%;
+}
+
+.gallery__btn:hover:not(:disabled) svg {
+  fill: var(--amethyst);
+}
+
+.gallery__btn:active:not(:disabled) svg {
+  fill: var(--royal-purple);
+}
+
+.swiper__namber {
+  margin-right: 18px;
+  color: var(--white);
+}
+
+.swiper-pagination {
+  top: 6px;
+  left: 44px;
+  margin: 0;
+  width: 34px;
+  text-align: left;
+  pointer-events: none;
+}
+
+.swiper__track {
+  display: flex;
+  transition: transform 2s;
+}
+
+.swiper__box-item {
+  position: relative;
+  box-sizing: border-box;
+  outline: none;
+  border: 3px solid transparent;
+  transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.swiper__box-item img {
+  display: block;
+  outline: none;
+  min-width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper__box-item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  width: 87%;
+  height: 87%;
+  background-image: url("../img/hover.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transform: translate(-50%, -50%);
+  z-index: 2000;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s;
+}
+
+.swiper__box-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  z-index: 2000;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s;
+}
+
+.swiper__box-item:focus-visible {
+  border: 3px solid var(--royal-purple);
+}
+
+.swiper__box-item:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.swiper__box-item:active::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+.swiper-pagination-lock {
+  display: block;
+}
+
+.popup {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--gradient);
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, z-index 0.3s;
+}
+
+.popup--js-off {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.popup--js {
+  visibility: visible;
+  opacity: 1;
+  z-index: 10000;
+}
+
+.popup__box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  width: 47%;
+  vertical-align: middle;
+  overflow-y: auto;
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.popup.popup--js .popup__box {
+  transform: scale(1);
+}
+
+.popup__img {
+  width: 45%;
+  height: 500px;
+}
+
+.popup__img img {
+  display: block;
+  height: 100%;
+}
+
+.popup__item {
+  padding: 8% 5%;
+  width: 50%;
+  min-height: 500px;
+  background-color: var(--white);
+}
+
+.popup__title {
+  margin-bottom: 5px;
+  line-height: 32.68px;
+  color: var(--grey-umber);
+}
+
+.popup__sub {
+  display: block;
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21.79px;
+  color: var(--grey-umber);
+}
+
+.popup__span {
+  display: block;
+  margin: 0;
+  margin-bottom: 39px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16.34px;
+  color: var(--signal-grey);
+}
+
+.popup__text {
+  line-height: 21.79px;
+  color: var(--grey-umber);
+}
+
+.popup__close {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  font-size: 36px;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.popup__close:focus-visible {
+  outline: none;
+  color: var(--amethyst);
+}
+
+.popup__close:hover {
+  color: var(--amethyst);
+}
+
+.popup__close:active {
+  color: var(--royal-purple);
+}
+
+/*catalog*/
+
+.catalog {
+  padding-top: 80px;
+}
+
+.catalog__container {
+  padding-left: var(--pleft);
+  padding-right: var(--pright);
+}
+
+.catalog__preview {
+  width: 100%;
+}
+
+.catalog-item {
+  margin-bottom: 15px;
+  line-height: 65.37px;
+}
+
+.block-fon {
+  outline: 2px solid var(--signal-grey);
+  outline-offset: 10px;
+  width: 275px;
+  height: 189px;
+  background-color: var(--signal-grey);
+}
+
+.tabs-link {
+  padding: 2px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--amethyst);
+  transition: all 0.3s ease-in-out;
+}
+
+.tabs-link:hover {
+  background-color: transparent;
+  color: var(--amethyst);
+  border-bottom: 1px solid var(--amethyst);
+}
+
+.tabs-link:active {
+  background-color: transparent;
+  color: var(--royal-purple);
+  border-bottom: 1px solid var(--royal-purple);
+}
+
+.tabs-link:focus-visible {
+  outline: none;
+  background-color: var(--amethyst);
+  color: var(--white);
+}
+
+.tabs__title {
+  margin-bottom: 13px;
+}
+
+.item__decr {
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--signal-grey);
+}
+
+.item {
+  display: flex;
+}
+
+.catalog-text-off {
+  width: 69%;
+}
+
+.catalog-text {
+  line-height: 32px;
+  margin-bottom: 40px;
+  color: var(--grey-umber);
+}
+
+.catalog__item-box {
+  margin-right: 45px;
+  width: 46.9%;
+}
+
+.tabs {
+  display: none;
+  width: 99%;
+}
+
+.tabs-0 {
+  display: block;
+}
+
+.accordion {
+  width: 50%;
+}
+
+.tabs__pct {
+  margin-bottom: 33px;
+  background-color: var(--grey-umber);
+}
+
+.tabs__pct img {
+  display: block;
+  max-height: 466px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.accordion__item-btn {
+  margin-right: 10px;
+  width: 30%;
+  border-bottom: 1px solid transparent;
+}
+
+.accordion__item-link {
+  position: relative;
+  display: inline-block;
+  outline: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid transparent;
+  transition-property: background-color, border-bottom;
+  transition-duration: 0.3s;
+}
+
+.accordion__item-btn .accordion__item-link:focus-visible {
+  background-color: var(--amethyst);
+}
+
+.accordion__item-btn .accordion__item-link:hover {
+  border-bottom: 1px solid var(--amethyst);
+}
+
+.accordion__item {
+  border-top: 1px solid transparent;
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: border-top 0.3s, max-height 0.8s, height 0.8s, visibility 0.8s, opacity 0.8s;
+}
+
+.accordion__item-js {
+  border-top: 1px solid var(--silver);
+  max-height: 900px;
+  height: 100%;
+  visibility: visible;
+  opacity: 1;
+  transition: border-top 0.3s, max-height 0.8s, height 0.8s, visibility 0.8s, opacity 0.8s;
+}
+
+.tabs:target {
+  display: block;
+}
+
+.tabs:target~.tabs-0 {
+  display: none;
+}
+
+.accordion__item__box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px 0 25px 0;
+  width: 100%;
+  min-height: 338px;
+  font-weight: 400;
+  font-size: 16px;
+  z-index: 1000;
+}
+
+.accordion__item__box:not(:last-child) {
+  margin-right: 58px;
+}
+
+.accordion__container {
+  margin: 0;
+  border-top: 1px solid var(--silver);
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.accordion__container:last-child {
+  border-bottom: 1px solid var(--silver);
+}
+
+.accordion__panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 29px 3px 30px 3px;
+  width: 100%;
+  max-height: 115px;
+  background-color: var(--white);
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  z-index: 2000;
+}
+
+.gag__box {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0 25px 0;
+
+}
+
+.gag__img {
+  box-sizing: content-box;
+  position: relative;
+  border: 2px solid var(--signal-grey);
+  outline-offset: 10px;
+  width: 275px;
+  height: 189px;
+  background-color: var(--white);
+  z-index: 2000;
+}
+
+.gag__img::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 87%;
+  background-color: var(--signal-grey);
+  transform: translate(-50%, -50%);
+}
+
+.gag__title {
+  margin-bottom: 5px;
+  color: var(--grey-umber);
+}
+
+.gag__text {
+  margin-bottom: 5px;
+  width: 54%;
+  line-height: 21.79px;
+  color: var(--grey-umber);
+}
+
+.acordion-title {
+  padding-top: 4px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+  padding-left: 2px;
+  line-height: 32px;
+  color: var(--grey-umber);
+}
+
+.accordion__container:hover {
+  border-top: 1px solid var(--amethyst);
+}
+
+.accordion__container:last-child:hover {
+  border-bottom: 1px solid var(--amethyst);
+}
+
+.accordion__container:hover+.accordion__container {
+  border-top: 1px solid var(--amethyst);
+}
+
+.accordion__container:hover .acordion-title {
+  color: var(--amethyst);
+}
+
+.accordion__panel:focus-visible .acordion-title {
+  background-color: var(--amethyst);
+  color: var(--white);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.accordion__panel:focus-visible .slider-btn {
+  background-color: var(--bright-ube);
+}
+
+.accordion__container:hover .slider-btn {
+  background-color: var(--bright-ube);
+  outline: none;
+}
+
+.accordion__container-js,
+.accordion__container-js .accordion__item,
+.accordion__container:active+.accordion__container {
+  border-top: 1px solid var(--royal-purple);
+}
+
+.accordion__container.accordion__container-js .slider-btn {
+  border-color: var(--royal-purple);
+}
+
+.accordion__container:last-child:active {
+  border-bottom: 1px solid var(--royal-purple);
+  transition: border-top 0.3s;
+}
+
+.accordion__container:active .acordion-title {
+  color: var(--royal-purple);
+}
+
+.accordion__container:active .slider-btn {
+  box-sizing: border-box;
+  border-color: var(--amethyst);
+}
+
+.gag .accordion__item {
+  visibility: hidden;
+  opacity: 0;
+  transition: max-height 0.8s, height 0.8s, visibility 0.8s, opacity 0.8s;
+}
+
+.gag .accordion__item-js {
+  visibility: visible;
+  opacity: 1;
+  transition: max-height 0.8s, height 0.8s, visibility 0.8s, opacity 0.8s;
+}
+
+.gag__box-text {
+  margin-left: 25px;
+  width: 60%;
+}
+
+/*news*/
+
+.news {
+  padding-top: 87px;
+  padding-left: 160px;
+  padding-right: 159px;
+}
+
+.slider-box {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.news__slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.news__container {
+  display: flex;
+}
+
+.news__btn-right {
+  position: absolute;
+  top: 46%;
+  right: -25px;
+  transform: rotate(-90deg);
+}
+
+.news__btn-left {
+  position: absolute;
+  top: 46%;
+  left: -25px;
+  transform: rotate(90deg);
+}
+
+.slider-box .swiper-button-disabled,
+.slider-box .swiper-button-disabled {
+  opacity: 0;
+}
+
+.pagination {
+  display: none;
+}
+
+.news__title {
+  margin-bottom: 16px;
+  line-height: 65.37px;
+}
+
+.news__box {
+  position: relative;
+  transition: all 2s;
+}
+
+.news__box-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 9px 44px 40px 45px;
+  min-height: 400px;
+  border-right: 1px solid var(--signal-grey);
+  border-bottom: 1px solid var(--signal-grey);
+  border-left: 1px solid var(--signal-grey);
+}
+
+.news__img-1::before {
+  content: "";
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  background-image: url("../img/1920engraving.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.news__img-2::before {
+  content: "";
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  background-image: url("../img/1920photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.news__img-3::before {
+  content: "";
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  background-image: url("../img/1920gallery.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.news__img-4::before {
+  content: "";
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  background-image: url("../img/1920metamorph.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.news__img-5::before {
+  content: "";
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  background-image: url("../img/1920biennale.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.news__box-decr {
+  margin-bottom: 15px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16.34px;
+  color: var(--signal-grey);
+}
+
+.news__item-title {
+  margin-bottom: 11px;
+  width: 100%;
+  line-height: 32.68px;
+  color: var(--grey-umber);
+}
+
+.news__box-text {
+  margin-bottom: 10px;
+  width: 100%;
+  line-height: 32px;
+  color: var(--grey-umber);
+}
+
+.news__box-text-br {
+  display: none;
+}
+
+.news__btn {
+  position: relative;
+  align-self: flex-start;
+  outline: none;
+  margin-top: auto;
+  margin-right: auto;
+  padding: 0 0 4px 3px;
+  border-bottom: 1px solid var(--amethyst);
+  width: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--amethyst);
+  z-index: 4000;
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+}
+
+.news__btn::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  bottom: -5px;
+  left: -8px;
+  border-top: 5px solid var(--amethyst);
+  border-right: 9px solid var(--amethyst);
+  border-bottom: 5px solid var(--amethyst);
+  border-left: 9px solid var(--amethyst);
+  background-color: transparent;
+  opacity: 0;
+  z-index: 1000;
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s, opacity 0.3s;
+}
+
+.news__btn:hover {
+  color: var(--royal-purple);
+  border-color: var(--royal-purple);
+}
+
+.news__btn:active {
+  color: var(--grey-umber);
+  border-color: var(--grey-umber);
+}
+
+.news__btn:focus-visible {
+  background-color: var(--amethyst);
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.news__btn:focus-visible::after {
+  opacity: 1;
+}
+
+
+/*partners*/
+
+.partners {
+  padding-top: 77px;
+  padding-bottom: 61px;
+  padding-left: var(--pleft);
+  padding-right: var(--pright);
+}
+
+.partners__preview {
+  margin-bottom: 18px;
+}
+
+.partners-title {
+  line-height: 65.37px;
+  margin-bottom: 15px;
+}
+
+.partners-text {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 21px;
+  width: 66%;
+  line-height: 32px;
+}
+
+.partners__link {
+  display: inline;
+  padding: 2px 5px 2px 2px;
+  border-bottom: 1px solid transparent;
+  color: var(--amethyst);
+  transition: all 0.3s ease-in-out;
+}
+
+.partners__link-desc {
+  display: none;
+}
+
+.partners__link-768 {
+  display: inline;
+}
+
+.partners__link-mobail {
+  display: none;
+}
+
+.partners-br {
+  display: none;
+}
+
+.partners-br-mobail {
+  display: none;
+}
+
+.partners__link:focus-visible {
+  outline: none;
+  padding: 2px 5px 2px 2px;
+  background-color: var(--amethyst);
+  color: var(--white);
+}
+
+.partners__link:hover {
+  border-bottom: 1px solid var(--amethyst);
+  background-color: transparent;
+  color: var(--amethyst);
+}
+
+.partners__link:active {
+  border-bottom: 1px solid var(--royal-purple);
+  background-color: transparent;
+  color: var(--royal-purple);
+}
+
+.partners__preview-title {
+  margin-bottom: 23px;
+  line-height: 32px;
+}
+
+.slider-track {
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  cursor: pointer;
+  transition: all 2s;
+}
+
+.partners__slider {
+  display: flex;
+  transition: all 2s;
+}
+
+.slider__btn-right {
+  margin-left: 50px;
+}
+
+.slider__btn-left {
+  margin-right: 43px;
+}
+
+.partners__btn-style {
+  box-sizing: border-box;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  background-color: var(--isabelline);
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, stroke 0.3s;
+}
+
+.partners__btn-style:disabled path {
+  stroke: var(--silver);
+  transition: stroke 0.3s;
+}
+
+.partners__btn-style:disabled {
+  background-color: var(--isabelline);
+  border-color: var(--isabelline);
+  cursor: not-allowed;
+}
+
+.partners__btn-style:hover:not(:disabled) {
+  background-color: var(--bright-ube);
+}
+
+.partners__btn-style:active:not(:disabled) {
+  background-color: var(--bright-ube);
+  border-color: var(--amethyst);
+}
+
+.partners__btn-style:focus-visible:not(:disabled) {
+  border-color: var(--amethyst);
+}
+
+.swiper-slider {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border: 1px solid var(--silver);
+  transition-property: border-color, opacity, -webkit-filter;
+  transition-property: border-color, filter, opacity;
+  transition-property: border-color, filter, opacity, -webkit-filter;
+  transition-duration: 0.3s;
+}
+
+.swiper-slider img {
+  display: block;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  -o-object-fit: contain;
+  object-fit: contain;
+  opacity: 0.4;
+  transition-property: border-color, opacity, -webkit-filter;
+  transition-property: border-color, filter, opacity;
+  transition-property: border-color, filter, opacity, -webkit-filter;
+  transition-duration: 0.3s;
+}
+
+.swiper-slider:focus-visible {
+  outline: none;
+  border-color: var(--amethyst);
+}
+
+.swiper-slider:hover img {
+  -webkit-filter: none;
+  filter: none;
+  opacity: 1;
+}
+
+.swiper-slider:active {
+  border-color: var(--amethyst);
+}
+
+.swiper-slider:active img {
+  outline: none;
+  -webkit-filter: none;
+          filter: none;
+  border-color: var(--amethyst);
+  opacity: 1;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  width: 19px;
+  height: 20px;
+  text-align: left;
+  vertical-align: middle;
+  transition: all 0.3s ease-in-out;
+}
+
+.tippy-box {
+  padding: 8px 11px;
+  width: 264px;
+  background-color: var(--amethyst);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16.34px;
+  text-align: center;
+  color: var(--white);
+}
+
+.tippy-box[data-placement^='top']>.tippy-arrow::before {
+  border-top-color: var(--amethyst);
+}
+
+.tippy-box[data-placement^='bottom']>.tippy-arrow::before {
+  border-bottom-color: transparent;
+}
+
+.tippy-box[data-placement^='left']>.tippy-arrow::before {
+  border-bottom-color: transparent;
+}
+
+.tippy-box[data-placement^='right']>.tippy-arrow::before {
+  border-bottom-color: transparent;
+}
+
+.icon {
+  position: relative;
+  display: inline-block;
+  outline: none;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-i {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: var(--black);
+  opacity: 1;
+}
+
+.icon__hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  background-color: var(--white);
+  opacity: 0;
+}
+
+.icon:hover .icon-i {
+  opacity: 0;
+}
+
+.icon:hover .icon__hover {
+  opacity: 1;
+}
+
+.icon:hover+.tooltip-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip:focus-visible .icon-i {
+  outline: none;
+  opacity: 0;
+}
+
+.tooltip:focus-visible .icon__hover {
+  outline: none;
+  opacity: 1;
+}
+
+.tooltip:focus-visible .tooltip-text {
+  outline: none;
+  opacity: 1;
+  visibility: visible;
+}
+
+/*form*/
+
+.form__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  padding-left: var(--pleft);
+  padding-right: 4%;
+  padding-top: 41px;
+  padding-bottom: 36px;
+  border-top: 1px solid var(--silver);
+}
+
+.form__adress {
+  margin-right: 77px;
+}
+
+.form__adress-title {
+  margin-bottom: 2px;
+}
+
+.form__desc {
+  line-height: 32px;
+  font-style: normal;
+  color: var(--grey-umber);
+}
+
+.form__input {
+  display: flex;
+  align-items: center;
+  margin-right: 76px;
+}
+
+.just-validate-error-label {
+  position: absolute;
+  top: -20px;
+  left: 24px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.form__input-box {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.form__box {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  margin-right: 22px;
+  margin-bottom: 5px;
+  padding: 13px 43px 9px 22px;
+  border-radius: 100px;
+  border: 1px solid var(--grey-umber);
+  min-width: 270px;
+  max-height: 50px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.form__box:focus-visible {
+  outline: none;
+  background-color: var(--isabelline);
+}
+
+.form__box:hover {
+  background-color: var(--isabelline);
+}
+
+.form__box:active {
+  background-color: transparent;
+}
+
+.form__box input {
+  outline: none;
+}
+
+.form__btn-mobail {
+  display: none;
+}
+
+.form__btn {
+  padding: 12.5px 36px 12.5px 35px;
+  border-radius: 100px;
+  border: 2px solid var(--amethyst);
+  max-height: 50px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24.51px;
+  color: var(--amethyst);
+  transition: outline-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.form__btn:focus-visible {
+  outline: 2px solid var(--bright-lavender);
+  outline-offset: 3px;
+}
+
+.form__btn:hover {
+  outline: none;
+  background-color: var(--amethyst);
+  color: var(--white);
+}
+
+.form__btn:active {
+  border: 2px solid var(--bright-lavender);
+  outline: 3px solid var(--bright-lavender);
+  background-color: var(--amethyst);
+  color: var(--white);
+}
+
+.form__social__link {
+  display: flex;
+}
+
+.whatsapp {
+  box-sizing: content-box;
+  margin-right: 20px;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  transition-property: border, fill;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+.whatsapp:focus-visible {
+  outline: none;
+  border-color: var(--amethyst);
+}
+
+.whatsapp:focus-visible .whatsapp-path {
+  fill: rgba(48, 191, 57, 0.6);
+  transition: fill 0.3s ease-in-out;
+}
+
+.whatsapp:hover .whatsapp-path {
+  fill: rgba(48, 191, 57, 0.6);
+  transition: fill 0.3s ease-in-out;
+}
+
+.whatsapp:active {
+  outline: none;
+  border-color: var(--amethyst);
+}
+
+.telegram {
+  box-sizing: content-box;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  transition-property: border, fill;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+.telegram:focus-visible {
+  outline: none;
+  border-color: var(--amethyst);
+}
+
+.telegram:focus-visible .telegram-path {
+  fill: rgba(38, 165, 228, 0.6);
+  transition: fill 0.3s ease-in-out;
+}
+
+.telegram:hover .telegram-path {
+  fill: rgba(38, 165, 228, 0.6);
+  transition: fill 0.3s ease-in-out;
+}
+
+.telegram:active {
+  border-color: var(--amethyst);
+}
+
+.telegram:active .telegram-path {
+  fill: rgba(38, 165, 228, 0.6);
+  transition: fill 0.3s ease-in-out;
+}
+
+.map {
+  width: 100%;
+  height: 708px;
+}
+
+.ymaps-2-1-79-map .ymaps {
+  display: none;
+}
+
+[class*="ground-pane"] {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+/*footer*/
+
+.footer {
+  background: var(--black);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 225px 50px 160px;
+}
+
+.footer__container-box {
+  display: block;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+}
+
+.footer__link {
+  width: 45px;
+  height: 45px;
+  transition: fill 0.3s ease-in-out;
+}
+
+.footer__link path {
+  transition: fill 0.3s ease-in-out;
+}
+
+.footer__link:focus-visible {
+  outline: none;
+}
+
+.footer__link:focus-visible path {
+  fill: var(--white);
+}
+
+.footer__link:hover path {
+  fill: var(--white);
+}
+
+.footer__link:active path {
+  fill: var(--amethyst);
+}
+
+.footer__link:not(:last-child) {
+  margin-right: 20px;
+}
+
+.slider-btn--js {
+  background-color: var(--bright-ube);
+  transform: rotate(180deg);
+  transition: transform 0.3s, background-color 0.3s, outline 0.3s;
+}
+
+.js-off {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  transition: visibility 0.3s, z-index 0.3s, opacity 0.3s;
+}
+
+.js--active {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  z-index: 5000;
+  transition: visibility 0.3s, z-index 0.3s, opacity 0.3s;
+}
+
+.js--active--flex {
+  opacity: 1;
+  visibility: visible;
+  z-index: 3000;
+  transition: visibility 0.3s, z-index 0.3s, opacity 0.3s;
+}
+
+.item-title--js {
+  color: var(--royal-purple);
+  transition:  color 0.3s;
+}
+
