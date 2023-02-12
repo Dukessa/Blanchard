@@ -1053,7 +1053,7 @@ section,
 }
 
 .checkbox__elem:not(:last-child) {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 .input-checkbox {
@@ -1554,7 +1554,6 @@ section,
   min-height: 338px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 30.5px;
   z-index: 1000;
 }
 
@@ -1868,54 +1867,53 @@ section,
   outline: none;
   margin-top: auto;
   margin-right: auto;
-  margin-left: -7px;
-  margin-bottom: 5px;
-  padding: 2px 8px 5px 8px;
+  padding: 0 0 7px 3px;
+  border-bottom: 1px solid transparent;
+  width: max-content;
   width: -webkit-max-content;
   width: -moz-max-content;
-  min-width: 104px;
-  height: 35px;
   font-weight: 400;
   font-size: 16px;
-  color: transparent;
-  transition: color 0.3s, border-color 0.3s, background-color 0.3s;
-}
-
-.news__btn::before {
-  content: "Подробнее";
-  position: absolute;
-  top: 13px;
-  right: 0px;
-  bottom: 0px;
-  left: 13px;
-  border-bottom: 1px solid var(--amethyst);
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  height: 22px;
-  
-  text-align: left;
   color: var(--amethyst);
+  z-index: 4000;
   transition: color 0.3s, border-color 0.3s, background-color 0.3s;
 }
 
-.news__btn:hover::before {
+.news__btn::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  bottom: -5px;
+  left: -8px;
+  border-top: 5px solid var(--amethyst);
+  border-right: 9px solid var(--amethyst);
+  border-bottom: 5px solid var(--amethyst);
+  border-left: 9px solid var(--amethyst);
+  background-color: transparent;
+  opacity: 0;
+  z-index: 1000;
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s, opacity 0.3s;
+}
+
+.news__btn:hover {
   color: var(--royal-purple);
   border-color: var(--royal-purple);
 }
 
-.news__btn:active::before {
+.news__btn:active {
   color: var(--grey-umber);
   border-color: var(--grey-umber);
 }
 
 .news__btn:focus-visible {
   background-color: var(--amethyst);
+  border-color: var(--white);
+  color: var(--white);
 }
 
-.news__btn:focus-visible::before {
-  color: var(--isabelline);
-  border-color: var(--isabelline);
+.news__btn:focus-visible::after {
+  opacity: 1;
 }
 
 
