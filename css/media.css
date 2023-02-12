@@ -272,15 +272,15 @@
     margin-right: auto;
     border: 2px solid var(--amethyst);
     border-radius: 100px;
+    outline: 2px solid transparent;
+    outline-offset: 3px;
     max-width: 257px;
     padding: 19px 80px 23px 80px;
     z-index: 4000;
   }
 
   .user:focus-visible {
-    outline: none;
-    outline: 2px solid var(--bright-lavender);
-    outline-offset: 3px;
+    outline-color: var(--bright-lavender);
   }
 
   .user:focus-visible .user__btn {
@@ -308,8 +308,8 @@
   .user:active {
     box-sizing: content-box;
     background: var(--amethyst);
-    border: 2px solid var(--bright-ube);
-    outline: 1px solid var(--bright-ube);
+    border-color: var(--bright-ube);
+    outline-color: var(--bright-ube);
   }
 
   .user:active .user__btn {
@@ -377,10 +377,6 @@
 
   /*hero*/
 
-  .hero__container img {
-    min-height: 768px;
-  }
-
   .hero__text {
     width: 81%;
   }
@@ -394,6 +390,7 @@
     padding-left: var(--pleft);
     padding-right: var(--pright);
     padding-bottom: 11%;
+    min-height: 770px;
   }
 
   .hero__btn {
@@ -468,7 +465,7 @@
 
   .catalog-text-off {
     width: 100%;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
 
   .catalog__item-box {
@@ -562,6 +559,11 @@
 
   .news__box-btn {
     padding: 0;
+  }
+
+  .news__btn::before {
+    top: 7px;
+    left: 7px;
   }
 
   .pagination {
@@ -684,8 +686,8 @@
   /*footer*/
 
   .footer__container {
-    padding-top: 43px;
-    padding-bottom: 41px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     padding-left: var(--pleft);
     padding-right: 130px;
   }
@@ -818,6 +820,11 @@
 
   .popup__box {
     width: 87%;
+  }
+
+  .accordion__item-link {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   /*catalog*/
@@ -1141,10 +1148,6 @@
 
   /*hero*/
 
-  .hero__container {
-    height: auto;
-  }
-
   .hero__box {
     padding-top: 23%;
     padding-left: var(--pleft);
@@ -1178,7 +1181,7 @@
     font-size: 12px;
   }
 
-  .hero__container img {
+  .hero__box {
     min-height: 355px;
   }
 
@@ -1215,14 +1218,15 @@
     font-size: 12px;
     line-height: 16.34px;
     border-radius: 100px;
-    border: 1px solid var(--amethyst);
+    border: 2px solid var(--amethyst);
+    outline: 2px solid transparent;
+    outline-offset: 3px;
     color: var(--amethyst);
-    transition: outline-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: outline-color 0.3s, background-color 0.3s, color 0.3s;
   }
 
   .form__btn-mobail:focus-visible {
     outline-color: var(--bright-lavender);
-    outline-offset: 3px;
   }
 
   .form__btn-mobail:hover {
@@ -1232,7 +1236,7 @@
   }
 
   .form__btn-mobail:active {
-    outline: 1px solid var(--bright-lavender);
+    border-color: var(--bright-ube);
     background-color: var(--amethyst);
     color: var(--white);
   }
@@ -1371,7 +1375,7 @@
     align-content: normal;
     justify-content: space-between;
     height: 100%;
-    padding: 23px 0 20px 0;
+    padding: 20px 0 20px 0;
   }
 
   .accordion__item-btn {
@@ -1554,7 +1558,7 @@
   .form__container {
     flex-direction: column;
     align-items: flex-start;
-    padding-bottom: 33px;
+    padding-bottom: 20px;
     padding-top: 36px;
   }
 
@@ -1632,6 +1636,7 @@
   
   .form__box {
     margin-right: 0;
+    margin-bottom: 19px;
   }
 
   .pagination {
