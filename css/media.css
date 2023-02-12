@@ -442,7 +442,8 @@
   }
 
   .swiper-pagination {
-    left: 49px;
+    top: 8px;
+    left: 52px;
   }
 
   .popup__box {
@@ -518,11 +519,11 @@
   }
 
   .news__box-item {
-    padding: 13px 35px 36px 32px;
+    padding: 13px 35px 45px 32px;
   }
 
   .news__box-item {
-    min-height: 480px;
+    min-height: 484px;
   }
 
   .news__box-decr {
@@ -667,7 +668,7 @@
   }
 
   .whatsapp {
-    margin-right: 13px;
+    margin-right: 15px;
   }
 
   .form__box {
@@ -806,6 +807,10 @@
     margin-bottom: 50px;
   }
 
+  .checkbox__elem:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
   .gallery__slider {
     width: 100%;
   }
@@ -826,7 +831,7 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-
+  
   /*catalog*/
 
   .catalog-text {
@@ -993,7 +998,7 @@
   }
 
   .news__box-item {
-    padding: 17px 18px 31px 33px;
+    padding: 17px 18px 40px 33px;
   }
 
   .form__btn {
@@ -1376,10 +1381,15 @@
     justify-content: space-between;
     height: 100%;
     padding: 20px 0 20px 0;
+    line-height: 29.5px;
   }
 
   .accordion__item-btn {
     width: 100%;
+  }
+
+  .accordion__item-btn:not(:last-child) {
+    margin-bottom: 1px;
   }
 
   .tabs__title {
@@ -1420,7 +1430,7 @@
   /*news*/
 
   .news {
-    padding-top: 35px;
+    padding-top: 39px;
     padding-left: var(--pleft);
     padding-right: calc(var(--pright) + 7px);
   }
@@ -1430,7 +1440,7 @@
   }
 
   .news__box-item {
-    padding: 17px 14px 35px 25px;
+    padding: 17px 14px 52px 24px;
   }
 
   .news__item-title {
@@ -1454,7 +1464,7 @@
   /*partners*/
 
   .partners {
-    padding-top: 40px;
+    padding-top: 36px;
     padding-right: var(--pright);
     padding-bottom: 8px;
   }
@@ -1464,7 +1474,7 @@
   }
 
   .partners-text {
-    margin-bottom: 47px;
+    margin-bottom: 44px;
     padding-right: 0;
     width: 100%;
     font-size: 16px;
@@ -1472,6 +1482,7 @@
   }
 
   .partners__link {
+    padding: 0px 5px 0px 2px;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
@@ -1490,11 +1501,11 @@
   }
 
   .slider__btn-left {
-    margin-right: 15px;
+    margin-right: 17px;
   }
 
   .slider__btn-right {
-    margin-left: 13px;
+    margin-left: 18px;
   }
 
   .partners__preview {
@@ -1561,7 +1572,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 20px;
-    padding-top: 36px;
+    padding-top: 39px;
   }
 
   .map {
@@ -1622,8 +1633,9 @@
   }
 
   .news__btn {
-    margin-left: -4px;
-  }
+    margin-left: 5px;
+    padding: 0;
+  } 
 
   .form__desc {
     margin-bottom: 21px;
@@ -1631,7 +1643,7 @@
   }
   
   .form__input {
-    margin-bottom: 17px;
+    margin-bottom: 20px;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -1642,7 +1654,11 @@
   }
 
   .pagination {
-    margin: -7px;
+    margin-top: 0;
   }
+
+  .tabs__title {
+    margin-bottom: 8px;
+  } 
 }
 
