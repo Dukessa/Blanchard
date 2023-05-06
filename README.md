@@ -1,2 +1,2 @@
 # Blanchard
-coursework basic layout
+Одностраничный сайт. Html, css, js.
