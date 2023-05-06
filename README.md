@@ -1,2 +1,3 @@
 # Blanchard
-Одностраничный сайт. Html, css, js.
+- Single page website.
+- Html, css, javascript.
